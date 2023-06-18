@@ -3,25 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --orange: 0 0 0;
+  --filter: brightness(30%);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
 }
+main{
+  min-height:calc(100vh - 2.4rem)
+}
+.bg {
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/SIGNALIS_Elster_1080p.webp');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  filter: var(--filter);
+  transition: all 300ms;
+  z-index: -1;
+}
+
