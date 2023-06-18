@@ -27,7 +27,7 @@ const searchClient = algoliasearch('RUV2926M98', '72d06ce24c99b0d369865bc10b6506
 // }
 
 function InfiniteHits(props) {
-	const { hits, isLastPage, showMore } = useInfiniteHits(props);
+	const { hits, isLastPage, showMore, results } = useInfiniteHits(props);
 	const sentinelRef = useRef(null);
 	const highlightedClasses = 'bg-transparent text-primary-blue font-bold';
 
@@ -50,12 +50,15 @@ function InfiniteHits(props) {
 	}, [isLastPage, showMore]);
 
 	return (
-		<div className="ais-InfiniteHits w-full">
-			<ul className="ais-InfiniteHits-list text-white flex flex-col gap-6">
+		<div className="ais-InfiniteHits w-full text-white">
+			<div className='font-light text-sm ml-2 mb-1'>
+				{results?.nbHits} {results?.nbHits !== 1 ? 'results' : 'result'}
+			</div>
+			<ul className="ais-InfiniteHits-list flex flex-col gap-6">
 				{hits.map((hit) => (
 					<li key={hit.objectID} className="ais-InfiniteHits-item">
 						<a href="" className="py-4 px-6 block border border-t-[18px] border-primary-orange">
-							<h3 className="text-2xl mb-4 font-medium">
+							<h3 className="text-2xl mb-4 font-semibold text-primary-orange">
 								<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
 							</h3>
 							<p className="px-4">
