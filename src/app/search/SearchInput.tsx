@@ -1,44 +1,79 @@
 'use client';
 
 import algoliasearch from 'algoliasearch/lite';
-import { Hits, InstantSearch, SearchBox, Snippet, useInstantSearch } from 'react-instantsearch-hooks-web';
-import { createInstantSearchRouterNext } from 'react-instantsearch-hooks-router-nextjs';
-import type { SearchBoxProps, HitsProps } from 'react-instantsearch-hooks-web';
+import { useRef, useEffect } from 'react';
+import {
+	useInfiniteHits,
+	InstantSearch,
+	SearchBox,
+	Snippet,
+	useInstantSearch,
+} from 'react-instantsearch-hooks-web';
+import { history } from 'instantsearch.js/es/lib/routers';
+import type { SearchBoxProps } from 'react-instantsearch-hooks-web';
 
 import Image from 'next/image';
 import AlgoliaBrand from '../../../public/Algolia-logo-white.svg';
 
 const searchClient = algoliasearch('RUV2926M98', '72d06ce24c99b0d369865bc10b650653');
 
-interface HitType {
-	hit: {
-		title: string;
-		place: string[];
-		text: string[];
-		tags: string[];
-	};
-}
+// interface HitType {
+// 	hit: {
+// 		title: string;
+// 		place: string[];
+// 		text: string[];
+// 		tags: string[];
+// 	};
+// }
 
-// className='text-white mb-12 grid'
+function InfiniteHits(props) {
+	const { hits, isLastPage, showMore } = useInfiniteHits(props);
+	const sentinelRef = useRef(null);
+	const highlightedClasses = 'bg-transparent text-primary-blue font-bold';
 
-function Hit({ hit }: HitType) {
-	const highlightedClasses = 'bg-transparent text-primary-orange font-bold';
+	useEffect(() => {
+		if (sentinelRef?.current !== null) {
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting && !isLastPage) {
+						showMore();
+					}
+				});
+			});
+
+			observer.observe(sentinelRef.current);
+
+			return () => {
+				observer.disconnect();
+			};
+		}
+	}, [isLastPage, showMore]);
+
 	return (
-		<a href="" className="py-4 px-6 block border border-t-[18px] border-primary-orange">
-			<h3 className="text-2xl mb-4 font-medium">
-				<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
-			</h3>
-			<p className="px-4">
-				<Snippet
-					hit={hit}
-					attribute="text"
-					classNames={{ highlighted: highlightedClasses, nonHighlighted: 'font-light' }}
-				/>
-			</p>
-			{/* <p>${hit.text[0]}</p> */}
-			{/* <p>${hit.tags[0]}</p>
-      <p>${hit.place[0]}</p> */}
-		</a>
+		<div className="ais-InfiniteHits w-full">
+			<ul className="ais-InfiniteHits-list text-white flex flex-col gap-6">
+				{hits.map((hit) => (
+					<li key={hit.objectID} className="ais-InfiniteHits-item">
+						<a href="" className="py-4 px-6 block border border-t-[18px] border-primary-orange">
+							<h3 className="text-2xl mb-4 font-medium">
+								<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
+							</h3>
+							<p className="px-4">
+								<Snippet
+									hit={hit}
+									attribute="text"
+									classNames={{ highlighted: highlightedClasses, nonHighlighted: 'font-light' }}
+								/>
+							</p>
+							{/* <p>${hit.text[0]}</p> */}
+							{/* <p>${hit.tags[0]}</p>
+      				<p>${hit.place[0]}</p> */}
+						</a>
+					</li>
+				))}
+				<li ref={sentinelRef} aria-hidden="true" />
+			</ul>
+		</div>
 	);
 }
 
@@ -64,39 +99,37 @@ function EmptyQueryBoundary({ children, fallback }) {
 	return children;
 }
 
-export default function SearchInput() {
+const routing = {
+	router: history({
+		writeDelay: 400,
+	}),
+};
 
-	// if (router.isFallback){
-	// 	return <div>Loading...</div>
-	// }
+export default function SearchInput() {
 	return (
 		<div className="text-black flex flex-col items-center w-full relative">
-			<InstantSearch
-				searchClient={searchClient}
-				indexName="signalis"
-			>
+			<InstantSearch searchClient={searchClient} indexName="signalis" routing={routing}>
 				<SearchBox
 					classNames={{
 						input:
-							'bg-black/80 border border-gray-500 px-4 h-12 w-full max-w-xl m-auto text-white rounded-sm focus:outline focus:outline-primary-orange focus:outline-4',
+							'bg-black/80 border border-gray-500 px-4 h-12 w-full m-auto text-white rounded-sm focus:outline focus:outline-primary-orange focus:outline-4',
 						root: 'w-full mb-12',
-						form: 'flex',
+						form: 'flex max-w-xl mx-auto relative',
+						submit:
+							'bg-off-white hover:bg-primary-orange hover:text-white font-medium text-black px-8 py-1 ml-4 h-min my-auto absolute left-full top-0 bottom-0',
+						reset: 'text-white',
 					}}
 					placeholder="Search Memories"
 					autoFocus={true}
 					queryHook={queryHook}
+					submitIconComponent={({ classNames }) => <div className={classNames.submitIcon}>Submit</div>}
+					resetIconComponent={({ classNames }) => <div className={classNames.resetIcon}>Reset</div>}
 				/>
 				<div className="absolute text-sm text-white flex gap-2 top-14 max-w-xl w-full justify-end mr-8 font-light">
 					Search by <Image width="70" priority src={AlgoliaBrand} alt="powered by algolia" />
 				</div>
 				<EmptyQueryBoundary fallback={null}>
-					<Hits
-						hitComponent={Hit}
-						classNames={{
-							list: 'text-white flex flex-col gap-6',
-							root: 'w-full',
-						}}
-					/>
+					<InfiniteHits />
 				</EmptyQueryBoundary>
 			</InstantSearch>
 		</div>
