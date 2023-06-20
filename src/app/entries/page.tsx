@@ -1,4 +1,4 @@
-import Items from './Items';
+import Accordion from './Accordion';
 
 const ch1 = {
 	parts: ['Installation Aeon', "Worker's Quarters", 'Hospital', 'Protektors'],
@@ -210,13 +210,13 @@ export default function Entries() {
 			<h2 className="text-2xl font-semibold mb-2">Chapter 1: Synchronicity</h2>
 			<ul className="w-full max-w-xl">
 				{ch1.parts.map((part, i) => {
-					return <Items key={part} part={part} places={ch1Places[part]} found={ch1Found[part]} index={i} />;
+					return <Accordion key={part} part={part} places={ch1Places[part]} found={ch1Found[part]} index={i} />;
 				})}
 			</ul>
 			<h2 className="text-2xl font-semibold mb-2">Chapter 2: Liminality</h2>
 			<ul className="w-full max-w-xl">
 				{ch2.parts.map((part, i) => {
-					return <Items key={part} part={part} places={ch2Places[part]} found={ch2Found[part]} index={i} />;
+					return <Accordion key={part} part={part} places={ch2Places[part]} found={ch2Found[part]} index={i} />;
 				})}
 			</ul>
 		</>
