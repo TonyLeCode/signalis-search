@@ -118,15 +118,17 @@ export default function SearchInput() {
 							'bg-black/80 border border-gray-500 px-4 h-12 w-full m-auto text-white rounded-sm focus:outline focus:outline-primary-orange focus:outline-4',
 						root: 'w-full mb-12',
 						form: 'flex max-w-xl mx-auto relative',
-						submit:
-							'bg-off-white hover:bg-primary-orange hover:text-white font-medium text-black px-8 py-1 ml-4 h-min my-auto absolute left-full top-0 bottom-0',
+						// submit:
+						// 	'bg-off-white hover:bg-primary-orange hover:text-white font-medium text-black px-8 py-1 ml-4 h-min my-auto absolute left-full top-0 bottom-0',
 						reset: 'text-white',
 					}}
 					placeholder="Search Memories"
 					autoFocus={true}
 					queryHook={queryHook}
-					submitIconComponent={({ classNames }) => <div className={classNames.submitIcon}>Submit</div>}
-					resetIconComponent={({ classNames }) => <div className={classNames.resetIcon}>Reset</div>}
+					// submitIconComponent={({ classNames }) => <div className={classNames.submitIcon}>Submit</div>}
+					// resetIconComponent={({ classNames }) => <div className={classNames.resetIcon}>Reset</div>}
+					submitIconComponent={() => <></>}
+					resetIconComponent={() => <></>}
 				/>
 				<div className="absolute text-sm text-white flex gap-2 top-14 max-w-xl w-full justify-end mr-8 font-light">
 					Search by <Image width="70" priority src={AlgoliaBrand} alt="powered by algolia" />
