@@ -41,12 +41,12 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 						return !currentState;
 					});
 				}}
-				className="font-medium bg-primary-red hover:bg-off-white hover:text-black w-full mb-1 py-0.5"
+				className="font-medium bg-primary-red hover:bg-off-white hover:text-black focus:bg-off-white focus:text-black w-full focus:outline focus:outline-off-white focus:outline-4 focus:outline-offset-2 focus:relative mb-1 py-0.5"
 			>
 				{part}
 			</button>
 
-			<ul ref={ref} className={`max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
+			<ul ref={ref} className={`max-h-0 overflow-hidden mb-1 ${open ? '' : 'hidden'}`} aria-hidden={!open}>
 				{places.map((place, i) => {
 					return (
 						<a
@@ -55,7 +55,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 							}}
 							href={`/entries/${place}`}
 							key={place}
-							className="flex flex-col px-4 sm:flex-row py-1 text-base sm:text-norm hover:bg-primary-red"
+							className="flex flex-col px-4 sm:flex-row py-1 text-base sm:text-norm hover:bg-primary-red focus:bg-primary-red focus:outline focus:outline-none focus:z-10"
 						>
 							<div title={place}>
 								{place.substring(0, 30)}
@@ -70,7 +70,6 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 					);
 				})}
 			</ul>
-
 		</li>
 	);
 }

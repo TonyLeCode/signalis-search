@@ -50,14 +50,14 @@ function InfiniteHits(props) {
 	}, [isLastPage, showMore]);
 
 	return (
-		<div className="ais-InfiniteHits w-full text-white">
+		<article className="ais-InfiniteHits w-full text-white">
 			<div className='font-light text-sm ml-2 mb-1'>
 				{results?.nbHits} {results?.nbHits !== 1 ? 'results' : 'result'}
 			</div>
 			<ul className="ais-InfiniteHits-list flex flex-col gap-6">
 				{hits.map((hit) => (
 					<li key={hit.objectID} className="ais-InfiniteHits-item">
-						<a href="" className="py-4 px-6 block border border-t-[18px] border-primary-orange">
+						<a href={`/entries/${hit.title}`} className="py-4 px-6 block border border-t-[18px] border-primary-orange">
 							<h3 className="text-2xl mb-4 font-semibold text-primary-orange">
 								<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
 							</h3>
@@ -76,7 +76,7 @@ function InfiniteHits(props) {
 				))}
 				<li ref={sentinelRef} aria-hidden="true" />
 			</ul>
-		</div>
+		</article>
 	);
 }
 
@@ -110,7 +110,7 @@ const routing = {
 
 export default function SearchInput() {
 	return (
-		<div className="text-black flex flex-col items-center w-full relative">
+		<section className="text-black flex flex-col items-center w-full relative">
 			<InstantSearch searchClient={searchClient} indexName="signalis" routing={routing}>
 				<SearchBox
 					classNames={{
@@ -137,6 +137,6 @@ export default function SearchInput() {
 					<InfiniteHits />
 				</EmptyQueryBoundary>
 			</InstantSearch>
-		</div>
+		</section>
 	);
 }
