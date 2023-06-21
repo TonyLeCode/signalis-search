@@ -59,7 +59,16 @@ input::-webkit-search-cancel-button {
 }
 
 .fly-up-fade {
-	animation: fly-up 250ms ease-out, fade 150ms ease-out;
+	animation: fly-up 300ms ease-out, fade 300ms ease-out;
+	animation-fill-mode: both;
+}
+
+.fly-right-fade{
+  animation: fly-right-entry 300ms ease-out, fade 300ms ease-out;
+	animation-fill-mode: both;
+}
+.fly-left-fade{
+  animation: fly-left-entry 300ms ease-out, fade 300ms ease-out;
 	animation-fill-mode: both;
 }
 
@@ -75,6 +84,24 @@ input::-webkit-search-cancel-button {
 @keyframes fly-left {
 	from {
 		transform: translateX(0.75rem);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fly-left-entry {
+	from {
+		transform: translateX(1rem);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fly-right-entry {
+	from {
+		transform: translateX(-1rem);
 	}
 	to {
 		transform: translateX(0);
