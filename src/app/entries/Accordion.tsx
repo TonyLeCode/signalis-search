@@ -36,6 +36,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 	return (
 		<li>
 			<button
+				aria-expanded={open}
 				onClick={() => {
 					setOpen((currentState) => {
 						return !currentState;
@@ -46,10 +47,12 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 				{part}
 			</button>
 
-			<ul ref={ref} className={`max-h-0 overflow-hidden mb-1 ${open ? '' : 'hidden'}`} aria-hidden={!open}>
+			<ul ref={ref} className={`max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
 				{places.map((place, i) => {
 					return (
 						<a
+							aria-hidden={!open}
+							tabIndex={!open ? -1 : undefined}
 							ref={(el: HTMLAnchorElement | null) => {
 								if (el) itemsRef.current[i] = el;
 							}}
