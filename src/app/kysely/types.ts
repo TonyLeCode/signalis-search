@@ -27,6 +27,7 @@ export interface TextTable {
 	id: Generated<number>;
 	text: string;
 	entryid: number;
+	page: number;
 }
 
 export type Entry = Selectable<EntryTable>;

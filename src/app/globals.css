@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --orange: 0 0 0;
   --filter: brightness(30%);
 }
 
@@ -29,6 +28,30 @@ main{
   filter: var(--filter);
   transition: all 300ms;
   z-index: -1;
+}
+
+.entry-title:after,
+.entry-title:before {
+  content: '';
+  width: 6px;
+  height: 15px;
+  display: block;
+  position: absolute;
+}
+.entry-title:before {
+  /* background-color:red; */
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+  border-left: 2px solid rgba(255, 255, 255, 0.6);
+  top: 5px;
+  right: calc(100% + 5px);
+}
+.entry-title:after {
+  /* background-color:red; */
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  border-right: 2px solid rgba(255, 255, 255, 0.6);
+  left: calc(100% + 5px);
+  bottom: 5px;
 }
 
 input::-webkit-search-cancel-button {

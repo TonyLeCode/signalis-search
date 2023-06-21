@@ -1,7 +1,7 @@
 import { Database, Place, Tag, Text } from './types';
 import { createKysely } from '@vercel/postgres-kysely';
 import { Entry } from './types';
-import { Kysely } from 'kysely';
+import { Kysely, sql } from 'kysely';
 
 const db = createKysely<Database>();
 
@@ -40,17 +40,37 @@ export async function insertEntry(fullEntry: fullEntry) {
 		fullEntry.tags.forEach(async (tag) => {
 			await db.insertInto('tag').values({ tag: tag, entryid: id }).executeTakeFirstOrThrow();
 		});
-		fullEntry.text.forEach(async (text) => {
-			await db.insertInto('text').values({ text: text, entryid: id }).executeTakeFirstOrThrow();
+		fullEntry.text.forEach(async (text, index) => {
+			await db.insertInto('text').values({ text: text, entryid: id, page: index }).executeTakeFirstOrThrow();
 		});
 	} catch (error) {
 		console.error(error);
 	}
 }
 
-export async function getEntry() {
+interface getEntryReturn {
+	id: number;
+	title: string;
+	place: string[];
+	tag: string[];
+	text: string[];
+}
+
+export async function getEntry(id: string) {
 	try {
-		const entry = await db.selectFrom('entry').selectAll().execute();
+		// const entry = await db.selectFrom('entry').selectAll().execute();
+		const entry = await db
+			.selectFrom('entry')
+			.select(['entry.id', 'entry.title'])
+			.innerJoin('text', 'text.entryid', 'entry.id')
+			.select(() => [sql<string[]>`array_agg(text.text ORDER BY text.page)::text[]`.as('text')])
+			.innerJoin('place', 'place.entryid', 'entry.id')
+			.select(() => [sql<string[]>`array_agg(DISTINCT place)::text[]`.as('place')])
+			.innerJoin('tag', 'tag.entryid', 'entry.id')
+			.select(() => [sql<string[]>`array_agg(DISTINCT tag)::text[]`.as('tag')])
+			.where('entry.title', '=', id)
+			.groupBy(['entry.id'])
+			.executeTakeFirstOrThrow();
 		return entry;
 	} catch (error) {
 		console.error(error);
