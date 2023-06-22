@@ -18,7 +18,7 @@ export default async function Home() {
 		<>
 			<h1 className="text-4xl mt-24 mb-4 font-semibold">Welcome</h1>
 			<p className="mb-12">This is an unofficial site for searching in-game entries.</p>
-			<a href="/entries" className="bg-primary-red hover:bg-off-white hover:text-black font-medium px-8 py-1">
+			<a href="/entries" className="bg-primary-orange hover:bg-off-white hover:text-black font-medium px-8 py-1">
 				Browse Entries
 			</a>
 		</>

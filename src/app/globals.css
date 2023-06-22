@@ -61,13 +61,20 @@ input::-webkit-search-cancel-button {
 .ais-InfiniteHits-list::-webkit-scrollbar{
   width: 10px;
 }
-/* .ais-InfiniteHits-list::-webkit-scrollbar-track{
-  background-color: red;
-} */
 .ais-InfiniteHits-list::-webkit-scrollbar-thumb{
   background-color: #00a2e8;
 }
 .ais-InfiniteHits-list::-webkit-scrollbar-thumb:hover{
+  background-color: #d6d6d6;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ff3e03;
+}
+::-webkit-scrollbar-thumb:hover{
   background-color: #d6d6d6;
 }
 

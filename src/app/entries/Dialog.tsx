@@ -37,7 +37,7 @@ export default function Dialog() {
 		<>
 			<button onClick={clickHandler} className="absolute -right-12" title={'Click to open search'}>
 				<svg
-					className="text-primary-red hover:text-off-white"
+					className="text-primary-orange hover:text-off-white"
 					width="45"
 					height="45"
 					version="1.0"
