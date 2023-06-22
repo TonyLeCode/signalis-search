@@ -9,29 +9,31 @@ export default function EntryPage({ text }: { text: string[] }) {
 	function prev() {
 		setPage((current) => {
 			if (current !== 0) {
+				setDirection('right');
+				if (ref?.current) {
+					ref.current.style.animation = 'none';
+					ref.current.offsetHeight;
+					ref.current.style.removeProperty('animation');
+				}
 				return current - 1;
 			}
 			return current;
 		});
-    setDirection('right')
 	}
 	function next() {
-    setPage((current) => {
-      if (current !== text.length - 1) {
-        return current + 1;
+		setPage((current) => {
+			if (current !== text.length - 1) {
+				setDirection('left');
+				if (ref?.current) {
+					ref.current.style.animation = 'none';
+					ref.current.offsetHeight;
+					ref.current.style.removeProperty('animation');
+				}
+				return current + 1;
 			}
 			return current;
 		});
-    setDirection('left')
 	}
-
-	useEffect(() => {
-		if (ref?.current) {
-			ref.current.style.animation = 'none';
-			ref.current.offsetHeight;
-			ref.current.style.removeProperty('animation');
-		}
-	}, [page]);
 
 	useEffect(() => {
 		function keyHandler(e: KeyboardEvent) {
