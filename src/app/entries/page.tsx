@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Accordion from './Accordion';
+import Dialog from './Dialog';
 
 const ch1 = {
 	parts: ['Installation Aeon', "Worker's Quarters", 'Hospital', 'Protektors'],
@@ -206,7 +208,10 @@ const ch2Found: { [key: string]: string[] } = {
 export default function Entries() {
 	return (
 		<>
-			<h1 className="text-4xl mt-24 mb-4 font-semibold">Entries</h1>
+			<div className="flex mt-24 mb-4 relative">
+				<h1 className="text-4xl font-semibold">Entries</h1>
+				<Dialog />
+			</div>
 			<h2 className="text-2xl font-semibold mb-2">Chapter 1: Synchronicity</h2>
 			<ul className="w-full max-w-xl">
 				{ch1.parts.map((part, i) => {

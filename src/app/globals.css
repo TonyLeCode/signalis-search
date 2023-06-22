@@ -58,6 +58,19 @@ input::-webkit-search-cancel-button {
   display:none;
 }
 
+.ais-InfiniteHits-list::-webkit-scrollbar{
+  width: 10px;
+}
+/* .ais-InfiniteHits-list::-webkit-scrollbar-track{
+  background-color: red;
+} */
+.ais-InfiniteHits-list::-webkit-scrollbar-thumb{
+  background-color: #00a2e8;
+}
+.ais-InfiniteHits-list::-webkit-scrollbar-thumb:hover{
+  background-color: #d6d6d6;
+}
+
 .fly-up-fade {
 	animation: fly-up 300ms ease-out, fade 300ms ease-out;
 	animation-fill-mode: both;

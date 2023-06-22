@@ -1,7 +1,7 @@
 'use client';
 
 import algoliasearch from 'algoliasearch/lite';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, MouseEventHandler } from 'react';
 import {
 	useInfiniteHits,
 	InstantSearch,
@@ -9,7 +9,6 @@ import {
 	Snippet,
 	useInstantSearch,
 } from 'react-instantsearch-hooks-web';
-import { history } from 'instantsearch.js/es/lib/routers';
 import type { SearchBoxProps } from 'react-instantsearch-hooks-web';
 
 import Image from 'next/image';
@@ -54,7 +53,7 @@ function InfiniteHits(props) {
 			<div className='font-light text-sm ml-2 mb-1'>
 				{results?.nbHits} {results?.nbHits !== 1 ? 'results' : 'result'}
 			</div>
-			<ul className="ais-InfiniteHits-list flex flex-col gap-6">
+			<ul className="ais-InfiniteHits-list flex flex-col gap-6 max-h-[38rem] overflow-y-auto px-4">
 				{hits.map((hit) => (
 					<li key={hit.objectID} className="ais-InfiniteHits-item">
 						<a href={`/entries/${hit.title}`} className="py-4 px-6 block border border-t-[18px] border-primary-orange">
@@ -74,7 +73,7 @@ function InfiniteHits(props) {
 						</a>
 					</li>
 				))}
-				<li ref={sentinelRef} aria-hidden="true" />
+				<li className='mb-4' ref={sentinelRef} aria-hidden="true" />
 			</ul>
 		</article>
 	);
@@ -102,16 +101,13 @@ function EmptyQueryBoundary({ children, fallback }) {
 	return children;
 }
 
-const routing = {
-	router: history({
-		writeDelay: 400,
-	}),
-};
-
 export default function SearchInput() {
+	function preventDefault(e){
+		e.stopPropagation()
+	}
 	return (
-		<section className="text-black flex flex-col items-center w-full relative">
-			<InstantSearch searchClient={searchClient} indexName="signalis" routing={routing}>
+		<section onClick={preventDefault} className="text-black flex flex-col items-center w-full relative">
+			<InstantSearch searchClient={searchClient} indexName="signalis">
 				<SearchBox
 					classNames={{
 						input:
