@@ -1,7 +1,7 @@
 'use client';
 
 import algoliasearch from 'algoliasearch/lite';
-import { useRef, useEffect, MouseEventHandler } from 'react';
+import { useRef, useEffect, MouseEventHandler, useState } from 'react';
 import { useInfiniteHits, InstantSearch, SearchBox, Snippet, useInstantSearch } from 'react-instantsearch-hooks-web';
 import type { SearchBoxProps } from 'react-instantsearch-hooks-web';
 
@@ -19,28 +19,75 @@ const searchClient = algoliasearch('RUV2926M98', '72d06ce24c99b0d369865bc10b6506
 // 	};
 // }
 
-function Hit(props){
+function Hit({ hit, listRef }) {
+	const [isVisible, setIsVisible] = useState(false);
+	const ref = useRef<HTMLLIElement>(null);
+	const highlightedClasses = 'bg-transparent text-primary-blue font-bold';
+
+	useEffect(() => {
+		if (!listRef) return;
+		let observerRefValue = ref.current;
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting && observerRefValue) {
+					setIsVisible(true);
+					observer.unobserve(observerRefValue);
+				}
+			},
+			{ rootMargin: '0px 0px -100px 0px', root: listRef.current, threshold: 0 }
+		);
+		if (observerRefValue) {
+			observer.observe(observerRefValue);
+		}
+		return () => {
+			if (observerRefValue) {
+				observer.unobserve(observerRefValue);
+			}
+		};
+	}, [ref, listRef]);
+
 	return (
-		<div>
-			s
-		</div>
-	)
+		<li ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
+			<a
+				href={`/entries/${hit.title.replaceAll(' ', '-')}`}
+				className="py-4 px-6 block border border-t-[18px] border-primary-orange"
+			>
+				<h3 className="text-2xl mb-4 font-semibold text-primary-orange">
+					<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
+				</h3>
+				<p className="px-4">
+					<Snippet
+						hit={hit}
+						attribute="text"
+						classNames={{ highlighted: highlightedClasses, nonHighlighted: 'font-light' }}
+					/>
+				</p>
+				{/* <p>${hit.text[0]}</p> */}
+				{/* <p>${hit.tags[0]}</p>
+      				<p>${hit.place[0]}</p> */}
+			</a>
+		</li>
+	);
 }
 
 function InfiniteHits(props) {
 	const { hits, isLastPage, showMore, results } = useInfiniteHits(props);
+	const listRef = useRef(null);
 	const sentinelRef = useRef(null);
-	const highlightedClasses = 'bg-transparent text-primary-blue font-bold';
 
 	useEffect(() => {
-		if (sentinelRef?.current !== null) {
-			const observer = new IntersectionObserver((entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting && !isLastPage) {
-						showMore();
-					}
-				});
-			}, {rootMargin: "100px"});
+		if (sentinelRef?.current !== null && listRef?.current !== null) {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting && !isLastPage) {
+							showMore();
+						}
+					});
+				},
+				{ rootMargin: '50px', root: listRef.current }
+			);
 
 			observer.observe(sentinelRef.current);
 
@@ -55,25 +102,9 @@ function InfiniteHits(props) {
 			<div className="font-light text-sm ml-2 mb-1">
 				{results?.nbHits} {results?.nbHits !== 1 ? 'results' : 'result'}
 			</div>
-			<ul className="ais-InfiniteHits-list flex flex-col gap-6 max-h-[38rem] overflow-y-auto px-4">
+			<ul ref={listRef} className="ais-InfiniteHits-list flex flex-col gap-6 max-h-[38rem] overflow-y-auto px-4">
 				{hits.map((hit) => (
-					<li key={hit.objectID} className="ais-InfiniteHits-item">
-						<a href={`/entries/${hit.title}`} className="py-4 px-6 block border border-t-[18px] border-primary-orange">
-							<h3 className="text-2xl mb-4 font-semibold text-primary-orange">
-								<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
-							</h3>
-							<p className="px-4">
-								<Snippet
-									hit={hit}
-									attribute="text"
-									classNames={{ highlighted: highlightedClasses, nonHighlighted: 'font-light' }}
-								/>
-							</p>
-							{/* <p>${hit.text[0]}</p> */}
-							{/* <p>${hit.tags[0]}</p>
-      				<p>${hit.place[0]}</p> */}
-						</a>
-					</li>
+					<Hit key={hit.objectID} hit={hit} listRef={listRef} />
 				))}
 				<li className="mb-4" ref={sentinelRef} aria-hidden="true" />
 			</ul>
@@ -103,29 +134,34 @@ function EmptyQueryBoundary({ children, fallback }) {
 	return children;
 }
 
-export default function SearchInput() {
+export default function SearchInput(props) {
 	function preventDefault(e) {
 		e.stopPropagation();
 	}
 	return (
 		<section onClick={preventDefault} className="text-black flex flex-col items-center w-full relative">
 			<InstantSearch searchClient={searchClient} indexName="signalis">
-				<SearchBox
-					classNames={{
-						input:
-							'bg-black/80 border border-gray-500 px-4 h-12 w-full m-auto text-white rounded-sm focus:outline focus:outline-primary-orange focus:outline-4',
-						root: 'w-full mb-12',
-						form: 'flex max-w-xl mx-auto relative',
-						submit: 'hidden',
-						reset: 'hidden',
-					}}
-					placeholder="Search Memories"
-					autoFocus={true}
-					queryHook={queryHook}
-				/>
-				<div className="absolute text-sm text-white flex gap-2 top-14 max-w-xl w-full justify-end mr-8 font-light">
-					Search by <Image width="70" priority src={AlgoliaBrand} alt="powered by algolia" />
-				</div>
+				<fieldset className='w-full relative flex gap-2 justify-center text-white'>
+					<SearchBox
+						classNames={{
+							input:
+								'bg-black/80 border border-gray-500 px-4 h-12 w-full rounded-sm focus:outline focus:outline-primary-orange focus:outline-4',
+							root: 'w-full mb-12 max-w-xl',
+							form: 'relative',
+							submit: 'hidden',
+							reset: 'hidden',
+						}}
+						placeholder="Search Memories"
+						autoFocus={true}
+						queryHook={queryHook}
+					/>
+					<button onClick={props.clickHandler} className='mt-2 h-min'>
+						Close
+					</button>
+					<div className="absolute text-sm flex gap-2 top-16 max-w-xl w-full justify-end mr-8 ml-auto font-light">
+						Search by <Image width="70" priority src={AlgoliaBrand} alt="powered by algolia" />
+					</div>
+				</fieldset>
 				<EmptyQueryBoundary fallback={null}>
 					<InfiniteHits />
 				</EmptyQueryBoundary>

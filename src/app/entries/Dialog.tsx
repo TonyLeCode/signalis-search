@@ -59,9 +59,9 @@ export default function Dialog() {
 			<dialog
 				ref={dialogRef}
 				onClick={clickHandler}
-				className="px-2 max-w-5xl w-full mt-24 bg-transparent backdrop:cursor-pointer backdrop:bg-zinc-950/90"
+				className="px-2 max-h-screen max-w-5xl w-full mt-24 bg-transparent backdrop:cursor-pointer backdrop:bg-zinc-950/90"
 			>
-				<SearchInput />
+				<SearchInput clickHandler={clickHandler} />
 			</dialog>
 		</>
 	);
