@@ -56,7 +56,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 							ref={(el: HTMLAnchorElement | null) => {
 								if (el) itemsRef.current[i] = el;
 							}}
-							href={`/entries/${place}`}
+							href={`/entries/${place.replaceAll(' ', '-')}`}
 							key={place}
 							className="flex flex-col px-4 sm:flex-row py-1 text-base sm:text-norm hover:bg-primary-red focus:bg-primary-red focus:outline focus:outline-none focus:z-10"
 						>

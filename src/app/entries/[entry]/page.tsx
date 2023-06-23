@@ -3,7 +3,8 @@ import { createKysely } from '@vercel/postgres-kysely';
 import EntryPage from './EntryPage';
 
 export default async function Entry({ params }: { params: { entry: string } }) {
-  const title = decodeURI(params.entry)
+  // const title = decodeURI(params.entry)
+  const title = params.entry.replaceAll('-', ' ')
   const entry = await getEntry(title)
   if (!entry){
     throw new Error('Entry not found')
