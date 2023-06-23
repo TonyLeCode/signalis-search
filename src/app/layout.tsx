@@ -5,7 +5,7 @@ import { Raleway } from 'next/font/google';
 const raleway = Raleway({ weight: ['200', '300', '400', '500', '600', '700'], subsets: ['latin'] });
 
 export const metadata = {
-	title: 'Signalis Search App',
+	title: 'Signalis Search',
 	description: 'Search engine for memories in Signalis',
 };
 
