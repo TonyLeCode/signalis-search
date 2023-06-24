@@ -51,12 +51,12 @@ function Hit({ hit, listRef }) {
 		<li ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
 			<a
 				href={`/entries/${hit.title.replaceAll(' ', '-')}`}
-				className="py-4 px-6 block border border-t-[18px] border-primary-orange"
+				className="block border border-t-[18px] border-primary-orange px-3 py-3 sm:px-6 sm:py-4"
 			>
-				<h3 className="text-2xl mb-4 font-semibold text-primary-orange">
+				<h3 className="mb-2 sm:mb-4 text-xl sm:text-2xl font-semibold text-primary-orange">
 					<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
 				</h3>
-				<p className="px-4">
+				<p className="px-4 text-base sm:text-norm">
 					<Snippet
 						hit={hit}
 						attribute="text"
@@ -99,10 +99,10 @@ function InfiniteHits(props) {
 
 	return (
 		<article className="ais-InfiniteHits w-full text-white">
-			<div className="font-light text-sm ml-2 mb-1">
+			<div className="mb-1 ml-2 text-sm font-light">
 				{results?.nbHits} {results?.nbHits !== 1 ? 'results' : 'result'}
 			</div>
-			<ul ref={listRef} className="ais-InfiniteHits-list flex flex-col gap-6 max-h-[38rem] overflow-y-auto px-4">
+			<ul ref={listRef} className="ais-InfiniteHits-list flex flex-col gap-6 overflow-y-auto px-2">
 				{hits.map((hit) => (
 					<Hit key={hit.objectID} hit={hit} listRef={listRef} />
 				))}
@@ -139,13 +139,13 @@ export default function SearchInput(props) {
 		e.stopPropagation();
 	}
 	return (
-		<section onClick={preventDefault} className="text-black flex flex-col items-center w-full relative">
+		<section onClick={preventDefault} className="relative flex w-full flex-col items-center text-black">
 			<InstantSearch searchClient={searchClient} indexName="signalis">
-				<fieldset className='w-full relative flex gap-2 justify-center text-white'>
+				<fieldset className="relative flex w-full justify-center gap-2 text-white">
 					<SearchBox
 						classNames={{
 							input:
-								'bg-black/80 border border-gray-500 px-4 h-12 w-full rounded-sm focus:outline focus:outline-primary-orange focus:outline-4',
+								'bg-black/80 border border-gray-500 px-4 h-12 w-full rounded-sm text-base sm:text-norm focus:outline focus:outline-primary-orange focus:outline-4',
 							root: 'w-full mb-12 max-w-xl',
 							form: 'relative',
 							submit: 'hidden',
@@ -155,10 +155,10 @@ export default function SearchInput(props) {
 						autoFocus={true}
 						queryHook={queryHook}
 					/>
-					<button onClick={props.clickHandler} className='mt-2 h-min'>
+					<button onClick={props.clickHandler} className="mt-2 h-min text-base sm:text-norm">
 						Close
 					</button>
-					<div className="absolute text-sm flex gap-2 top-16 max-w-xl w-full justify-end mr-8 ml-auto font-light">
+					<div className="absolute top-16 ml-auto mr-8 flex w-full max-w-xl justify-end gap-2 text-xs sm:text-sm font-light">
 						Search by <Image width="70" priority src={AlgoliaBrand} alt="powered by algolia" />
 					</div>
 				</fieldset>

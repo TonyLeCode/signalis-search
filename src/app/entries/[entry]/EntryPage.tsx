@@ -61,12 +61,15 @@ export default function EntryPage({ text }: { text: string[] }) {
 				ref={ref}
 				className={`${
 					direction === 'right' ? 'fly-right-fade' : 'fly-left-fade'
-				} mt-12 mb-12 min-h-[13rem] whitespace-pre-line max-w-[51rem]`}
-				style={{animationDelay:"100ms"}}
+				} mb-12 sm:mt-12 text-base sm:text-norm min-h-[13rem] max-w-[51rem] whitespace-pre-line`}
+				style={{ animationDelay: '100ms' }}
 			>
 				{text[page]}
 			</p>
-			<div className="fly-right-fade flex items-center font-light text-white/80 select-none" style={{animationDelay:"200ms"}}>
+			<div
+				className="fly-right-fade flex select-none text-base sm:text-norm items-center font-light text-white/80"
+				style={{ animationDelay: '200ms' }}
+			>
 				<button className={`px-3 ${page == 0 ? 'invisible' : ''}`} onClick={prev}>
 					{'\u003C'}
 				</button>{' '}

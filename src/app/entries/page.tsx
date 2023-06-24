@@ -208,17 +208,21 @@ const ch2Found: { [key: string]: string[] } = {
 export default function Entries() {
 	return (
 		<>
-			<div className="fly-right-fade flex mt-24 mb-4 relative">
-				<h1 className="text-4xl font-semibold">Entries</h1>
+			<div className="fly-right-fade relative mb-2 mt-12 flex sm:mb-4 sm:mt-24">
+				<h1 className="text-3xl font-semibold sm:text-4xl">Entries</h1>
 				<Dialog />
 			</div>
-			<h2 className="fly-right-fade text-2xl font-semibold mb-2" style={{animationDelay:"100ms"}}>Chapter 1: Synchronicity</h2>
+			<h2 className="fly-right-fade mb-2 text-xl font-semibold sm:text-2xl" style={{ animationDelay: '100ms' }}>
+				Chapter 1: Synchronicity
+			</h2>
 			<ul className="w-full max-w-xl">
 				{ch1.parts.map((part, i) => {
 					return <Accordion key={part} part={part} places={ch1Places[part]} found={ch1Found[part]} index={i} />;
 				})}
 			</ul>
-			<h2 className="fly-right-fade text-2xl font-semibold mb-2" style={{animationDelay:"200ms"}}>Chapter 2: Liminality</h2>
+			<h2 className="fly-right-fade mb-2 text-xl font-semibold sm:text-2xl" style={{ animationDelay: '200ms' }}>
+				Chapter 2: Liminality
+			</h2>
 			<ul className="w-full max-w-xl">
 				{ch2.parts.map((part, i) => {
 					return <Accordion key={part} part={part} places={ch2Places[part]} found={ch2Found[part]} index={i} />;

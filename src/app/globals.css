@@ -58,6 +58,10 @@ input::-webkit-search-cancel-button {
   display:none;
 }
 
+.ais-InfiniteHits-list{
+  max-height: calc(100vh - 13rem)
+}
+
 .ais-InfiniteHits-list::-webkit-scrollbar{
   width: 10px;
 }
@@ -141,3 +145,9 @@ input::-webkit-search-cancel-button {
   overflow:hidden;
   transition: max-height ease-out;
 } */
+
+@media (min-width: 640px) {
+  .ais-InfiniteHits-list{
+    max-height: calc(100vh - 16rem)
+  }
+}

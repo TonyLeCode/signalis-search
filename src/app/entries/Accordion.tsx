@@ -34,7 +34,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 	}, [open]);
 
 	return (
-		<li className='fly-right-fade' style={{animationDelay:`${index * 50 + 100}ms`}}>
+		<li className="fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
 			<button
 				aria-expanded={open}
 				onClick={() => {
@@ -42,7 +42,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 						return !currentState;
 					});
 				}}
-				className="font-medium bg-primary-red hover:bg-off-white hover:text-black focus:bg-off-white focus:text-black w-full focus:outline focus:outline-off-white focus:outline-4 focus:outline-offset-2 focus:relative mb-1 py-0.5"
+				className="mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black focus:relative focus:bg-off-white focus:text-black focus:outline focus:outline-4 focus:outline-offset-2 focus:outline-off-white sm:text-norm"
 			>
 				{part}
 			</button>
@@ -58,13 +58,13 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 							}}
 							href={`/entries/${place.replaceAll(' ', '-')}`}
 							key={place}
-							className="flex flex-col px-4 sm:flex-row py-1 text-base sm:text-norm hover:bg-primary-red focus:bg-primary-red focus:outline focus:outline-none focus:z-10"
+							className="flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm"
 						>
 							<div title={place}>
 								{place.substring(0, 30)}
 								{place.length >= 30 ? '...' : ''}
 							</div>
-							<div className="sm:ml-auto font-light text-sm sm:text-base text-white/80">
+							<div className="text-sm font-light text-white/80 sm:ml-auto sm:text-base">
 								{'\u003C'}
 								{found[i]}
 								{'\u003E'}

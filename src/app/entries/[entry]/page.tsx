@@ -40,7 +40,7 @@ export default async function Entry({ params }: Props) {
 	}
 	return (
 		<>
-			<h1 className="fly-right-fade entry-title relative text-[2.5rem] mt-40 mb-4 font-semibold">{entry.title}</h1>
+			<h1 className="fly-right-fade entry-title relative text-2xl sm:text-[2.5rem] mt-6 sm:mt-40 mb-4 font-semibold">{entry.title}</h1>
 			<EntryPage text={entry.text} />
 		</>
 	);
