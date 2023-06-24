@@ -62,10 +62,11 @@ export default function EntryPage({ text }: { text: string[] }) {
 				className={`${
 					direction === 'right' ? 'fly-right-fade' : 'fly-left-fade'
 				} mt-12 mb-12 min-h-[13rem] whitespace-pre-line max-w-[51rem]`}
+				style={{animationDelay:"100ms"}}
 			>
 				{text[page]}
 			</p>
-			<div className="flex items-center font-light text-white/80 select-none">
+			<div className="fly-right-fade flex items-center font-light text-white/80 select-none" style={{animationDelay:"200ms"}}>
 				<button className={`px-3 ${page == 0 ? 'invisible' : ''}`} onClick={prev}>
 					{'\u003C'}
 				</button>{' '}

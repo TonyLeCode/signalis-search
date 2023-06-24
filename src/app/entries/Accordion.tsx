@@ -34,7 +34,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 	}, [open]);
 
 	return (
-		<li>
+		<li className='fly-right-fade' style={{animationDelay:`${index * 50 + 100}ms`}}>
 			<button
 				aria-expanded={open}
 				onClick={() => {

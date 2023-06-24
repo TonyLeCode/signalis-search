@@ -13,13 +13,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Entry({ params }: Props) {
 	const title = params.entry.replaceAll('-', ' ');
-	const entry = await getEntry(title);
+	let entry;
+	let attempts = 3;
+
+	const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+	while (attempts--) {
+		console.log('s');
+		try {
+			entry = await getEntry(title);
+			if (entry) {
+				break;
+			} else {
+				throw new Error('Entry not found');
+			}
+		} catch (error) {
+			if (!attempts) {
+				break;
+			}
+			await delay(5000);
+		}
+	}
+
 	if (!entry) {
 		throw new Error('Entry not found');
 	}
 	return (
 		<>
-			<h1 className="entry-title relative text-[2.5rem] mt-40 mb-4 font-semibold">{entry.title}</h1>
+			<h1 className="fly-right-fade entry-title relative text-[2.5rem] mt-40 mb-4 font-semibold">{entry.title}</h1>
 			<EntryPage text={entry.text} />
 		</>
 	);
