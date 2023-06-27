@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getEntry, insertEntry } from './kysely/database';
 
-export default async function Home() {
+export default async function Page() {
 	// const entry = {
 	// 	title: 'The Red Eye',
 	// 	part: '',
@@ -17,9 +17,18 @@ export default async function Home() {
 	// await insertEntry(entry)
 	return (
 		<>
-			<h1 className="text-4xl mt-24 mb-4 font-semibold">Welcome</h1>
-			<p className="mb-12">This is an unofficial site for searching in-game entries.</p>
-			<Link href="/entries" className="bg-primary-orange hover:bg-off-white hover:text-black font-medium px-8 py-1">
+			<h1 className="mb-2 mt-12 text-3xl font-semibold sm:mb-4 sm:mt-24 sm:text-4xl">Welcome</h1>
+			<p className="mb-12 text-base sm:text-norm">
+				This is an unofficial site for searching memories in{' '}
+				<a className="text-primary-blue" href="https://store.steampowered.com/app/1262350/SIGNALIS/">
+					Signalis
+				</a>
+				.
+			</p>
+			<Link
+				href="/entries"
+				className="bg-primary-orange px-8 py-1 text-base font-medium hover:bg-off-white hover:text-black sm:text-norm"
+			>
 				Browse Entries
 			</Link>
 		</>

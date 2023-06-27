@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	};
 }
 
-export default async function Entry({ params }: Props) {
-	const title = params.entry.replaceAll('-', ' ');
+export default async function Page({ params }: Props) {
+	// const title = params.entry.replaceAll('-', ' ');
 	let entry;
 	let attempts = 3;
 
@@ -21,7 +21,7 @@ export default async function Entry({ params }: Props) {
 	while (attempts--) {
 		console.log('s');
 		try {
-			entry = await getEntry(title);
+			entry = await getEntry(params.entry);
 			if (entry) {
 				break;
 			} else {

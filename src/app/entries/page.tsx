@@ -2,6 +2,11 @@ import Image from 'next/image';
 import Accordion from './Accordion';
 import Dialog from './Dialog';
 
+export const metadata = {
+	title: 'Entries - Signalis Search',
+	description: 'Search engine for memories in Signalis',
+};
+
 const ch1 = {
 	parts: ['Installation Aeon', "Worker's Quarters", 'Hospital', 'Protektors'],
 };
@@ -205,7 +210,7 @@ const ch2Found: { [key: string]: string[] } = {
 	],
 };
 
-export default function Entries() {
+export default function Page() {
 	return (
 		<>
 			<div className="fly-right-fade relative mb-2 mt-12 flex sm:mb-4 sm:mt-24">
