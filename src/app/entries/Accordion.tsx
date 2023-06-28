@@ -2,17 +2,36 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+function useMediaQuery(query: string) {
+	const [matches, setMatches] = useState(window.matchMedia(query).matches);
+
+	useEffect(() => {
+		const mediaQuery = window.matchMedia(query);
+		const listener = (event) => setMatches(event.matches);
+
+		mediaQuery.addEventListener('change', listener);
+
+		return () => mediaQuery.removeEventListener('change', listener);
+	}, [query]);
+
+	return matches;
+}
+
 interface ItemsProps {
 	part: string;
-	places: string[];
-	found: string[];
+	entries: {
+		title: string;
+		place: string;
+	}[];
 	index: number;
 }
 
-export default function Accordion({ part, places, found, index }: ItemsProps) {
+export default function Accordion({ part, entries, index }: ItemsProps) {
 	const [open, setOpen] = useState(false);
+	const isMobile = useMediaQuery('(min-width: 640px)');
 	const ref = useRef<HTMLUListElement>(null);
 	const itemsRef = useRef<HTMLAnchorElement[]>([]);
+	console.log(isMobile);
 
 	useEffect(() => {
 		if (ref.current) {
@@ -31,7 +50,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 				item.style.animationFillMode = open ? 'both' : '';
 			}
 		});
-	}, [open]);
+	}, [open, isMobile]);
 
 	return (
 		<li className="fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
@@ -48,7 +67,7 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 			</button>
 
 			<ul ref={ref} className={`max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
-				{places.map((place, i) => {
+				{entries.map((entry, i) => {
 					return (
 						<a
 							aria-hidden={!open}
@@ -56,17 +75,17 @@ export default function Accordion({ part, places, found, index }: ItemsProps) {
 							ref={(el: HTMLAnchorElement | null) => {
 								if (el) itemsRef.current[i] = el;
 							}}
-							href={`/entries/${place.replaceAll(' ', '-')}`}
-							key={place}
+							href={`/entries/${entry.title.replaceAll(' ', '-')}`}
+							key={entry.title}
 							className="flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm"
 						>
-							<div title={place}>
-								{place.substring(0, 30)}
-								{place.length >= 30 ? '...' : ''}
+							<div title={entry.title}>
+								{entry.title.substring(0, 30)}
+								{entry.title.length >= 30 ? '...' : ''}
 							</div>
 							<div className="text-sm font-light text-white/80 sm:ml-auto sm:text-base">
 								{'\u003C'}
-								{found[i]}
+								{entry.place}
 								{'\u003E'}
 							</div>
 						</a>
