@@ -48,7 +48,7 @@ export const chapters = [
 			{
 				title: 'Protektors',
 				entries: [
-					{ title: 'Angry Note', place: 'TCR Dorm(B6)' },
+					{ title: 'Angry Note', place: 'STCR Dorm(B6)' },
 					{ title: 'Replica Overview: STAR', place: 'Cleaning Room' },
 					{ title: 'Buyan', place: 'STCR Dorm' },
 					{ title: 'Memorandum: Lighting Malfunctions', place: 'Cleaning Room Hallway' },
