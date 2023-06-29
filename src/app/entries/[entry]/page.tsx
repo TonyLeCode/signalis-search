@@ -6,7 +6,7 @@ import { tokenize } from '@/app/lib/tokenize';
 type Props = { params: { entry: string } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-	const title = decodeURIComponent(params.entry.replaceAll('-', ' '));
+	const title = decodeURIComponent(params.entry.replace(/-/gm, ' '));
 	return {
 		title: `${title} - Kohlibri`,
 	};

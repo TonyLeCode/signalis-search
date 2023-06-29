@@ -78,7 +78,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 							ref={(el: HTMLAnchorElement | null) => {
 								if (el) itemsRef.current[i] = el;
 							}}
-							href={`/entries/${entry.title.replaceAll(' ', '-')}`}
+							href={`/entries/${entry.title.replace(/\s/gm, '-')}`}
 							key={entry.title}
 							className="flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm"
 						>
