@@ -8,7 +8,7 @@ type Props = { params: { entry: string } };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const title = decodeURIComponent(params.entry.replaceAll('-', ' '));
 	return {
-		title: `${title} - Signalis Search`,
+		title: `${title} - Kohlibri`,
 	};
 }
 

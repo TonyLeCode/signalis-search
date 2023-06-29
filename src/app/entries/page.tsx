@@ -3,7 +3,7 @@ import Dialog from './Dialog';
 import { chapters } from './BrowseData';
 
 export const metadata = {
-	title: 'Entries - Signalis Search',
+	title: 'Entries - Kohlibri',
 	description: 'Search engine for memories in Signalis',
 };
 
