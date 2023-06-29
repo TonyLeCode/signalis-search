@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 
-export default function EntryPage({ text }: { text: string[] }) {
+export default function EntryPage({ text }: { text: { __html: string }[] }) {
 	const [page, setPage] = useState(0);
 	const [direction, setDirection] = useState('right');
 	const ref = useRef<HTMLParagraphElement>(null);
@@ -61,13 +61,12 @@ export default function EntryPage({ text }: { text: string[] }) {
 				ref={ref}
 				className={`${
 					direction === 'right' ? 'fly-right-fade' : 'fly-left-fade'
-				} mb-12 sm:mt-12 text-base sm:text-norm min-h-[13rem] max-w-[51rem] whitespace-pre-line`}
+				} mb-12	min-h-[13rem] w-full max-w-[51rem] whitespace-pre-line text-base leading-7 sm:mt-12 sm:text-norm`}
 				style={{ animationDelay: '100ms' }}
-			>
-				{text[page]}
-			</p>
+				dangerouslySetInnerHTML={text[page]}
+			></p>
 			<div
-				className="fly-right-fade flex select-none text-base sm:text-norm items-center font-light text-white/80"
+				className="fly-right-fade flex select-none items-center text-base font-light text-white/80 sm:text-norm"
 				style={{ animationDelay: '200ms' }}
 			>
 				<button className={`px-3 ${page == 0 ? 'invisible' : ''}`} onClick={prev}>
