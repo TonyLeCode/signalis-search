@@ -1,25 +1,34 @@
 'use client';
 
 import algoliasearch from 'algoliasearch/lite';
-import { useRef, useEffect, MouseEventHandler, useState } from 'react';
+import { useRef, useEffect, useState, MutableRefObject, ReactNode } from 'react';
 import { useInfiniteHits, InstantSearch, SearchBox, Snippet, useInstantSearch } from 'react-instantsearch-hooks-web';
-import type { SearchBoxProps } from 'react-instantsearch-hooks-web';
+import type { InfiniteHitsProps, SearchBoxProps, UseInfiniteHitsProps } from 'react-instantsearch-hooks-web';
 
 import Image from 'next/image';
 import AlgoliaBrand from '../../../public/Algolia-logo-white.svg';
 
 const searchClient = algoliasearch('RUV2926M98', '72d06ce24c99b0d369865bc10b650653');
 
-// interface HitType {
-// 	hit: {
-// 		title: string;
-// 		place: string[];
-// 		text: string[];
-// 		tags: string[];
-// 	};
-// }
+interface HitType {
+		title: string;
+		part: string;
+		place: string[];
+		text: string[];
+}
 
-function Hit({ hit, listRef }) {
+type UseInfiniteHitsResponse = {
+  hits: HitType[];
+  hasMore: boolean;
+  loadMore: () => void;
+  refineNext: () => void;
+  refinePrevious?: () => void;
+  isFirstPage: boolean;
+  isLastPage: boolean;
+  page: number;
+};
+
+function Hit({ hit, listRef }: { hit: any; listRef: MutableRefObject<null> }) {
 	const [isVisible, setIsVisible] = useState(false);
 	const ref = useRef<HTMLLIElement>(null);
 	const highlightedClasses = 'bg-transparent text-primary-blue font-bold';
@@ -69,7 +78,7 @@ function Hit({ hit, listRef }) {
 	);
 }
 
-function InfiniteHits(props) {
+function InfiniteHits(props: UseInfiniteHitsProps) {
 	const { hits, isLastPage, showMore, results } = useInfiniteHits(props);
 	const listRef = useRef(null);
 	const sentinelRef = useRef(null);
@@ -122,7 +131,7 @@ const queryHook: SearchBoxProps['queryHook'] = (query, search) => {
 	}, 200);
 };
 
-function EmptyQueryBoundary({ children, fallback }) {
+function EmptyQueryBoundary({ children, fallback }: { children: ReactNode; fallback: ReactNode }) {
 	const { indexUiState } = useInstantSearch();
 
 	if (!indexUiState.query) {
@@ -132,8 +141,8 @@ function EmptyQueryBoundary({ children, fallback }) {
 	return children;
 }
 
-export default function SearchInput(props) {
-	function preventDefault(e) {
+export default function SearchInput(props: { clickHandler: () => void }) {
+	function preventDefault(e: React.MouseEvent<HTMLElement>) {
 		e.stopPropagation();
 	}
 	return (
