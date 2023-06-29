@@ -10,24 +10,6 @@ import AlgoliaBrand from '../../../public/Algolia-logo-white.svg';
 
 const searchClient = algoliasearch('RUV2926M98', '72d06ce24c99b0d369865bc10b650653');
 
-interface HitType {
-		title: string;
-		part: string;
-		place: string[];
-		text: string[];
-}
-
-type UseInfiniteHitsResponse = {
-  hits: HitType[];
-  hasMore: boolean;
-  loadMore: () => void;
-  refineNext: () => void;
-  refinePrevious?: () => void;
-  isFirstPage: boolean;
-  isLastPage: boolean;
-  page: number;
-};
-
 function Hit({ hit, listRef }: { hit: any; listRef: MutableRefObject<null> }) {
 	const [isVisible, setIsVisible] = useState(false);
 	const ref = useRef<HTMLLIElement>(null);
