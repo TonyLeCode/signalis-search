@@ -41,9 +41,7 @@ function Hit({ hit, listRef }) {
 			observer.observe(observerRefValue);
 		}
 		return () => {
-			if (observerRefValue) {
-				observer.unobserve(observerRefValue);
-			}
+			observer.disconnect();
 		};
 	}, [ref, listRef]);
 
@@ -53,7 +51,7 @@ function Hit({ hit, listRef }) {
 				href={`/entries/${hit.title.replaceAll(' ', '-')}`}
 				className="block border border-t-[18px] border-primary-orange px-3 py-3 sm:px-6 sm:py-4"
 			>
-				<h3 className="mb-2 sm:mb-4 text-xl sm:text-2xl font-semibold text-primary-orange">
+				<h3 className="mb-2 text-xl font-semibold text-primary-orange sm:mb-4 sm:text-2xl">
 					<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
 				</h3>
 				<p className="px-4 text-base sm:text-norm">
@@ -158,7 +156,7 @@ export default function SearchInput(props) {
 					<button onClick={props.clickHandler} className="mt-2 h-min text-base sm:text-norm">
 						Close
 					</button>
-					<div className="absolute top-16 ml-auto mr-8 flex w-full max-w-xl justify-end gap-2 text-xs sm:text-sm font-light">
+					<div className="absolute top-16 ml-auto mr-8 flex w-full max-w-xl justify-end gap-2 text-xs font-light sm:text-sm">
 						Search by <Image width="70" priority src={AlgoliaBrand} alt="powered by algolia" />
 					</div>
 				</fieldset>
