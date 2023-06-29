@@ -1,10 +1,11 @@
-import Head from 'next/head';
+import { Metadata } from 'next';
 import './globals.css';
 import { Raleway } from 'next/font/google';
 
 const raleway = Raleway({ weight: ['200', '300', '400', '500', '600', '700'], subsets: ['latin'] });
 
-export const metadata = {
+export const metadata: Metadata = {
+	metadataBase: new URL(process.env.STATIC_URL || 'http://localhost:3000'),
 	title: 'Kohlibri',
 	description: 'Search engine for memories in Signalis',
 };
