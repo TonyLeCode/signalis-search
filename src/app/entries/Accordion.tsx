@@ -3,11 +3,15 @@
 import { useEffect, useRef, useState } from 'react';
 
 function useMediaQuery(query: string) {
-	const [matches, setMatches] = useState(window.matchMedia(query).matches);
+	const [matches, setMatches] = useState(false);
+
+	useEffect(() => {
+		setMatches(window.matchMedia(query).matches)
+	}, []);
 
 	useEffect(() => {
 		const mediaQuery = window.matchMedia(query);
-		const listener = (event) => setMatches(event.matches);
+		const listener = (event:MediaQueryListEvent) => setMatches(event.matches);
 
 		mediaQuery.addEventListener('change', listener);
 
@@ -31,7 +35,6 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 	const isMobile = useMediaQuery('(min-width: 640px)');
 	const ref = useRef<HTMLUListElement>(null);
 	const itemsRef = useRef<HTMLAnchorElement[]>([]);
-	console.log(isMobile);
 
 	useEffect(() => {
 		if (ref.current) {
