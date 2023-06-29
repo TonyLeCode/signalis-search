@@ -132,7 +132,7 @@ export const chapters = [
 				title: 'Rotfront',
 				entries: [
 					{ title: 'Message Inbox', place: 'Blockwart Office' },
-					{ title: "Teacher's evalation: Ariane Yeong", place: 'Hospital Room' },
+					{ title: "Teacher's Evalation: Ariane Yeong", place: 'Hospital Room' },
 					{ title: 'Mondfest celebrations canceled over safety concerns', place: 'Apartment' },
 					{ title: 'The Red Eye', place: 'Alley' },
 					{ title: 'Reunification', place: 'Apartment' },
