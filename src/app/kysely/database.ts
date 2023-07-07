@@ -2,9 +2,9 @@ import { Database } from './types';
 import { createKysely } from '@vercel/postgres-kysely';
 import {  sql } from 'kysely';
 
-const db = createKysely<Database>();
 
 export async function getEntry(id: string) {
+	const db = createKysely<Database>();
 	try {
 		const entry = await db
 			.selectFrom('entry')
@@ -20,4 +20,5 @@ export async function getEntry(id: string) {
 	} catch (error) {
 		console.error(error);
 	}
+	db.destroy()
 }

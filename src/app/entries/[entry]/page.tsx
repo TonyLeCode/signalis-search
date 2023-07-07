@@ -19,7 +19,6 @@ export default async function Page({ params }: Props) {
 	const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 	while (attempts--) {
-		console.log('s');
 		try {
 			entry = await getEntry(decodeURIComponent(params.entry));
 			if (entry) {
