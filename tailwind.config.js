@@ -12,6 +12,7 @@ module.exports = {
 				'primary-red': '#ff0b03',
 				'off-white': '#d6d6d6',
 				'primary-blue': '#00a2e8',
+				'primary-blue-hover': '#15b9ff',
 			},
 			fontWeight: {
 				extralight: '200',

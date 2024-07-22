@@ -5,10 +5,15 @@ import { tokenize } from '@/app/lib/tokenize';
 
 type Props = { params: { entry: string } };
 
+//TODO statically rendered
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const title = decodeURIComponent(params.entry.replace(/-/gm, ' '));
+	// const description = params.entry.text[0];
+	// TODO add description without accessing the database twice, use cache
 	return {
 		title: `${title} - Kohlibri`,
+		// description: description,
 	};
 }
 
@@ -45,7 +50,7 @@ export default async function Page({ params }: Props) {
 
 	return (
 		<>
-			<h1 className="fly-right-fade entry-title relative mb-4 mt-6 w-max max-w-xs sm:max-w-xl text-center text-2xl font-semibold leading-[3rem] sm:mt-40 sm:text-[2.5rem]">
+			<h1 className="fly-right-fade entry-title relative mb-4 mt-4 w-max max-w-xs sm:max-w-xl text-center text-2xl font-semibold leading-[3rem] sm:mt-20 sm:text-[2.5rem]">
 				{entry.title}
 			</h1>
 			<EntryPage text={formattedText} />

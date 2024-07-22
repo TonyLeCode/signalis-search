@@ -11,9 +11,13 @@ body {
 	background: rgb(0, 0, 0);
 	font-size: 1.2rem;
 	letter-spacing: 0.5px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 main {
-	min-height: calc(100vh - 2.4rem);
+	flex: 1;
+	/* min-height: calc(100vh - 4rem); */
 }
 .bg {
 	color: white;
