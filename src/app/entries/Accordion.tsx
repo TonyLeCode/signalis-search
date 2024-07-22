@@ -38,16 +38,23 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 
 	useEffect(() => {
 		if (ref.current) {
+			const reduceMotion = window.matchMedia('(prefers-reduced-motion)').matches;
 			const scrollHeight = ref.current.scrollHeight;
 			const itemHeight = 32;
 			const duration = 10 * (scrollHeight / itemHeight) + 140;
 
 			ref.current.style.maxHeight = open ? `${scrollHeight}px` : '';
-			ref.current.style.transition = `max-height ${duration}ms ease-in-out`;
+
+			if (reduceMotion) {
+				ref.current.style.transition = 'none';
+			} else {
+				ref.current.style.transition = `max-height ${duration}ms ease-in-out`;
+			}
 		}
 
 		itemsRef.current.forEach((item, index) => {
-			if (item) {
+			const reduceMotion = window.matchMedia('(prefers-reduced-motion)').matches;
+			if (item && !reduceMotion) {
 				const delay = index * 13; // milliseconds
 				item.style.animation = open ? `150ms ease-in ${delay}ms fly-left, 150ms ease-in ${delay}ms fade` : '';
 				item.style.animationFillMode = open ? 'both' : '';

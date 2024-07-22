@@ -191,3 +191,9 @@ input::-webkit-search-cancel-button {
 		bottom: 5px;
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	.fly-up-fade, .fly-right-fade, .fly-left-fade {
+		animation: none;
+	}
+}
