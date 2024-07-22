@@ -69,11 +69,11 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 				className="fly-right-fade flex select-none items-center text-base font-light text-white/80 sm:text-norm"
 				style={{ animationDelay: '200ms' }}
 			>
-				<button className={`px-3 ${page == 0 ? 'invisible' : ''}`} onClick={prev}>
+				<button className={`px-4 py-1 ${page == 0 ? 'invisible' : ''}`} onClick={prev}>
 					{'\u003C'}
 				</button>{' '}
 				{String(page + 1).padStart(2, '0')} / {String(text.length).padStart(2, '0')}
-				<button className={`px-3 ${page == text.length - 1 ? 'invisible' : ''}`} onClick={next}>
+				<button className={`px-4 py-1 ${page == text.length - 1 ? 'invisible' : ''}`} onClick={next}>
 					{'\u003E'}
 				</button>
 			</div>
