@@ -14,7 +14,7 @@ export default async function Page() {
 			</p>
 			<Link
 				href="/entries" style={{ animationDelay: '100ms' }}
-				className="fly-right-fade bg-primary-orange mb-12 px-8 py-1 text-base font-medium hover:bg-off-white hover:text-black sm:text-norm"
+				className="fly-right-fade bg-primary-orange mb-12 px-4 py-1 text-center text-base font-medium hover:bg-off-white hover:text-black sm:text-norm sm:px-8 sm:py-2"
 			>
 				Browse Entries
 			</Link>
