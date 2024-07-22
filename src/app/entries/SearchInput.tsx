@@ -2,8 +2,8 @@
 
 import algoliasearch from 'algoliasearch/lite';
 import { useRef, useEffect, useState, MutableRefObject, ReactNode } from 'react';
-import { useInfiniteHits, InstantSearch, SearchBox, Snippet, useInstantSearch } from 'react-instantsearch-hooks-web';
-import type { InfiniteHitsProps, SearchBoxProps, UseInfiniteHitsProps } from 'react-instantsearch-hooks-web';
+import { useInfiniteHits, InstantSearch, SearchBox, Snippet, useInstantSearch } from 'react-instantsearch';
+import type { SearchBoxProps, UseInfiniteHitsProps } from 'react-instantsearch';
 
 import Image from 'next/image';
 import AlgoliaBrand from '../../../public/Algolia-logo-white.svg';
@@ -129,7 +129,7 @@ export default function SearchInput(props: { clickHandler: () => void }) {
 	}
 	return (
 		<section onClick={preventDefault} className="relative flex w-full flex-col items-center text-black">
-			<InstantSearch searchClient={searchClient} indexName="signalis">
+			<InstantSearch searchClient={searchClient} indexName="signalis" future={{ preserveSharedStateOnUnmount: true }}>
 				<fieldset className="relative flex w-full justify-center gap-2 text-white">
 					<SearchBox
 						classNames={{
