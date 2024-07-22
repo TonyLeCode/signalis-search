@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<div className="bg" />
 				<Breadcrumbs />
 				<main className="w-full m-auto flex max-w-4xl flex-col items-center px-2 overflow-x-hidden">{children}</main>
-				<footer className="mt-auto w-full bg-black/50 py-3 text-center text-[.6rem] font-extralight sm:tracking-[2px] text-white/75">
+				<footer className="mt-auto w-full bg-black/50 py-3 text-center text-[.6rem] font-extralight sm:tracking-[1px] text-white/75">
 					disclaimer: this website is not associated with rose-engine games
 				</footer>
 			</body>
