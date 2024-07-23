@@ -10,7 +10,7 @@ export const metadata = {
 export default function Page() {
 	return (
 		<>
-			<div className="fly-right-fade relative mb-2 mt-4 flex sm:mb-4 sm:mt-20">
+			<div className="fly-right-fade relative mb-2 mt-4 flex sm:mb-4 sm:mt-4">
 				<h1 className="text-3xl font-semibold sm:text-4xl">Entries</h1>
 				<Dialog />
 			</div>
