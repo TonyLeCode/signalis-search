@@ -63,7 +63,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 	}, [open, isMobile]);
 
 	return (
-		<li className="fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
+		<li className="accordion fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
 			<button
 				aria-expanded={open}
 				onClick={() => {
@@ -71,7 +71,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 						return !currentState;
 					});
 				}}
-				className="mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black focus:relative focus:bg-off-white focus:text-black focus:outline focus:outline-4 focus:outline-offset-2 focus:outline-off-white sm:text-norm"
+				className="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black focus:relative focus:bg-off-white focus:text-black focus:outline focus:outline-4 focus:outline-offset-2 focus:outline-off-white focus:z-30 sm:text-norm"
 			>
 				{part}
 			</button>
