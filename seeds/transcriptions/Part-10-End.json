@@ -1,0 +1,151 @@
+[
+	{
+		"title": "Workforce assignment for Yeong, Ariane",
+		"part": "End",
+		"place": ["Home"],
+		"text": [
+			"We have been informed that your compulsory military service period was recently completed.\n According to our files, you have previously graduated from Mandelbrot Polytechnical High School in Rotfront Sektor C on R-34.59c and have recently submitted an application for a military service assignment (Penrose Program).",
+			"You have been processed by AEON Workforce Assignment.\n Previous work experience:\n Store Clerk (Yeong Photo Store), Part Time\n Compulsory military service (Rotfront Orbital)\n Long-Range Radio Operations Officer Training",
+			"Should you not be accepted by a military service program by the end of the season or find other employment, you will be assigned the following workplace:\n\nS-23 Sierpinski Production and Mining Facility on Leng"
+		]
+	},
+	{
+		"title": "Auntie's Note",
+		"part": "End",
+		"place": ["Home"],
+		"text": [
+			"Ariane,\n I left some of yesterday's dinner in the fridge for you, you can warm it up when you get back from school.\n Please pick up the books your Uncle ordered from the Itou Bookstore on your way home. Remember to @leave some space in your school bag@ for them this time so they don't get wet!"
+		]
+	},
+	{
+		"title": "Letter from Mother",
+		"part": "End",
+		"place": ["Home"],
+		"text": [
+			"My dearest Ariane,\n I'm so glad to hear you're feeling better again. I was very worried when I heard from your Aunt that you're in the hospital again. I still remember how you used to get sick so much as a child. Please don't overexert yourself, okay?",
+			"The photo you sent me is very interesting. What a strange coincidence that she looks so much like you. You could be twins! Perhaps she is related to us somehow, though I don't know anyone named Seo in our family. From the looks of it, it was shot on Vineta.",
+			"Your military service will begin soon, so you might be wearing a uniform like her soon enough. Please send me a photo when that happens!\n Love,\n Mother"
+		]
+	},
+	{
+		"title": "Adler's Note",
+		"part": "End",
+		"place": ["Falke Hall"],
+		"text": [
+			"All efforts to contain this illness have been in vain.\n All the Gestalt workers have succumbed to it, leaving only dark shadows on walls and floors where they died.\n And soon, all of us Replika will have lost our senses and turned to writhing masses of flesh.",
+			"I now believe it was not an infectious disease, nor some form of poison or radiation - it was a slow corruption of reality itself. As I've relived the same cycle over and over, each time details changed, things are twisted, added, removed...\n how long until it all turns to nothing but noise?"
+		]
+	},
+	{
+		"title": "A Red Dream",
+		"part": "End",
+		"place": ["Falke Hall"],
+		"text": [
+			"A crashed ship\n A strange gate\n A hole in the ground.",
+			"An island beyond reach\n Memories from other lives\n dreams of suffering and loneliness.\n A promise.\n A search for someone lost.",
+			"I saw her, in the red emptiness, waiting for me.\n We had made a promise.\n As the memories of a stranger rushed into my mind,\n I felt the borders of my self blur.",
+			"Now, I can no longer tell\n Where \"Falke\" ends and \"Elster\" begins."
+		]
+	},
+	{
+		"title": "STOP",
+		"part": "End",
+		"place": ["Falke Hall"],
+		"text": [
+			"You must turn back.\n There is nothing for you there.",
+			"You've tried so many times,\n and you've failed every time.",
+			"Don't you see that you're ruining everything?\n This is your final warning.\n - Adler"
+		]
+	},
+	{
+		"title": "Falke's Memory",
+		"part": "End",
+		"place": ["Falke Hall"],
+		"text": [
+			"We were dancing\n       to that song\n             they start the broadcast with",
+			"We fell asleep\n        watching that movie\n               we had seen before so many times",
+			"If only\n        I could take us back\n               to  that time\n                      when we were happy",
+			"These memories\n       are mine now."
+		]
+	},
+	{
+		"title": "Excavation Team C",
+		"part": "End",
+		"place": ["ADLR Study"],
+		"text": ["MNHR-S2301\n MNHR-S2302\n MNHR-S2303\n LSTR-S2301\n ARAR-S2317\n ARAR-S2318"]
+	},
+	{
+		"title": "Adler's Diary (Hidden Top)",
+		"part": "End",
+		"place": ["ADLR Study"],
+		"text": [
+			"Date: 84-21-6\n I have been fascinated by a peculiar piece of furniture I discovered in storage: A strange box with a removable dial in the front that was confiscated from a worker some time ago. I was instantly drawn to it, though I'm not sure why. When I put my ear on the mechanism, I can hear it faintly clicking, like a clock.",
+			"Date: 84-21-7\n Met with Kolibri to review the latest additions to the facility staff. Halfway through the meeting, she stormed out of the room for no discernable reason. While incredibly rude of her, I didn’t particularly mind, since I've had quite the annoying head-ache ever since morning.",
+			"Date: 85-21-8\n I had a dream tonight, the first one in a long time. There was a young woman, her hair white as snow, and I was conducting some sort of test. I had a deck of cards with astronomical symbols on them, but I can't remember what I was doing with them.",
+			"Date: 85-21-9\n Had to go down to the mining site today for the scheduled inspection. We're still waiting for that new LSTR unit we ordered - the shipment was delayed by several cycles - but the excavation progress is still on schedule, so it shouldn't be a problem as long as no more staff gets sick.",
+			"Date: 85-21-A\n I finally managed to open that strange box. Sadly, all it contained was a small notebook, of which all pages turned out to be blank. For some reason, I feel like I somehow knew beforehand, as if I had already opened the box before. Did I dream it?",
+			"Date: 85-21-B\n Apparently, there's more rumors of an infectious disease spreading among the Gestalt workers. Could it be another flu outbreak? the timing is quite concerning...",
+			"Date: 85-21-C\n  Another diary filled, for no benefit but my own satisfaction. I've not ordered a new one yet, since I spent my saved Rationmarks on that marvelous-looking fountain pen, but I guess I'll make use of that notebook..."
+		]
+	},
+	{
+		"title": "Adler's Diary (Hidden Right)",
+		"part": "End",
+		"place": ["ADLR Study"],
+		"text": [
+			"Date: 84-21-6\n I have been fascinated by a peculiar piece of furniture I discovered in storage: A strange box with a removable dial in the front that was confiscated from a worker some time ago. I was instantly drawn to it, though I'm not sure why. When I put my ear on the mechanism, I can hear it faintly clicking, like a clock.",
+			"Date: 84-21-7\n Met with Kolibri to review the latest additions to the facility staff. As usual, it ended in an extended argument - no matter what I do, that woman just always has to have the last word. Still, we both agreed that the LSTR unit was a good investment, so no adjustments will need to be made for now.",
+			"Date: 85-21-8\n Another boring day. Even the paperwork is uninteresting and trivial lately. On the way back to my room, I saw another new STAR unit hit her head on a door frame.",
+			"Date: 85-21-9\n Had to go down to the mining site today for the scheduled inspection. The new Elster unit was showing some surveying equipment to me, when something she said about planets and stars suddenly made me realize what that dial reminded me of - an astronomical calendar. I will have to investigate further at once now that my shift is over.",
+			"Date: 85-21-A\n The little enigma of that box could only distract me from the dullness of work for so long. All the box contained was a small notebook, of which all pages turned out to be blank. While the mechanism is fascinating, I'm not quite sure what to do with the box yet. Would it make a nice gift for the Commander? Maybe I should ask Kolibri what she thinks.",
+			"Date: 85-21-B\n In a fit of adventurousness, I decided to try something new for dinner and promptly regretted it - I could barely stomach the taste. Such a detestable combination of sweet and savoury, it made me sick.",
+			"Date: 85-21-C\n  Another diary filled, for no benefit but my own satisfaction. I've not ordered a new one yet, since I spent my saved Rationmarks on that marvelous-looking fountain pen, but I guess I'll make use of that notebook..."
+		]
+	},
+	{
+		"title": "Cycle 225",
+		"part": "End",
+		"place": ["Upper Gallery"],
+		"text": [
+			"Cycle 225\n When I signed up for this mission, I just wanted to get away from everything. I was sick of Rotfront, of school, of the photo store.\n Sick of the fake smiles and the whispering behind people's backs.",
+			"When I saw the photo of that soldier, I wondered who she was.\n Was she happy? Was her family proud of her? Did her comrades love her?\n Since we looked alike, could I have been like her?\n But in the end, I just wanted to leave.",
+			"Nothing I had done or made ever meant anything to anyone, so why bother?\n Here, I am finally free.",
+			"I get to be by myself, and do what I want.\n I can finally be happy."
+		]
+	},
+	{
+		"title": "Penrose Briefing: Phase III",
+		"part": "End",
+		"place": ["Medical"],
+		"text": [
+			"--- Start of decrypted transmission ---\n Congratulations, Comrade! You've survived 3000 cycles, reaching the final phase of the Penrose Program.\n With the end of the operational lifetime of your Replika Unit approaching, it is time to prepare for the final phase of your mission.",
+			"If you have not found a suitable world for landing by this point, accept that you will not. Find solace in the thought that others might be successful where you failed.\n As you are probably aware, your ship's spare parts and rations will soon be depleted.",
+			"Life support systems and reactor shielding will soon begin to fail, and radiation may begin to leak from the cooling system.\n We recommend you do not attempt to prolong your suffering by reusing old filters or rationing supplies.",
+			"Instead, make peace with your fate. We suggest that you ask your Replika, while it is still functional, to spare you a slow and agonizing death, or that you take permanent rest in the cryogenic pod.",
+			"Remember, you will die having served your Nation by partaking in a glorious demonstration of our power.\n --- End of decrypted transmission ---"
+		]
+	},
+	{
+		"title": "Cycle 1294",
+		"part": "End",
+		"place": ["Reaktor"],
+		"text": [
+			"Cycle 1294\n Had a strange dream. I was listening to the radio with my mother.\n Like back then, the numbers were on, and mother was taking notes with a book on her lap.\n It was that book I saw in the shop window of the bookstore where the twins lived, the one with a yellow hooded figure on the cover.\n When I went there to buy it, it was gone, and Erika said the Protektors had confiscated it.",
+			"Or was it Isa? I can't remember...",
+			"Cycle 1840\n Everything is always the same.\n I feel like I'm trapped inside this ship.\n I know every bolt on every panel in every room of it.\n I've seen everything, I've done everything there is to do in here.",
+			"I can't concentrate on anything.\n It's like there's this fog inside my head,\n and whenever I try to do anything, I just can't focus.\n I want to go outside, I want to breathe fresh air,\n I want to feel wind on my face and in my hair.",
+			"Cycle 2503\n I think I lost more hair.\n I'm sitting here, getting older.\n Every time I wake up, I feel older, weaker, sicker.\n I get out of breath so easily lately, and my back hurts when I sit down.\n How much longer will this go on? It feels like i'm just slowly dying..."
+		]
+	},
+	{
+		"title": "Cycle 5309",
+		"part": "End",
+		"place": ["Stern Hall"],
+		"text": [
+			"Cycle 5$30$9\n I'm tired of it all.\n Every time I go to sleep, I wonder if I'll wake up again.\n I'm scared that it'll be the last time I said good night to her.\n Did I say it right? Will she be okay?\n What if one of us just won't wake up tomorrow?",
+			"Cycle 54$34$\n I don't want to die,\n I don't want to live anymore either.\n Everything is just so exhausting.\n I just want to lie down and disappear.",
+			"Cycle $6666$\n I just want to sleep\n Please just let me sleep",
+			"please, just make it stop\n \n please"
+		]
+	}
+]

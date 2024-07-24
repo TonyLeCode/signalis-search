@@ -1,0 +1,172 @@
+[
+	{
+		"title": "Blockwart",
+		"part": "Rotfront",
+		"place": ["Hallway"],
+		"text": ["It's your duty!\n Report suspicious elements immediately to the Blockwart!"]
+	},
+	{
+		"title": "Stolen Document",
+		"part": "Rotfront",
+		"place": ["Dark Apartment"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION@ - Replika Technician Gestalt Eyes Only -",
+			"Carefully selected by AEON, exemplary citizens of the Nation are permanently\n cryogenically preserved in Neural Archives, each becoming a neural pattern for a new Replika model. To preserve the image of the Replika as an incorruptible ideal, the original Gestalt is erased from records and public memory.",
+			"During the production process, when experienced bioresonant technicians copy that neural pattern to a new unit, a majority of episodic memories are altered and suppressed.",
+			"While the resulting Replika maintains the skills and personality of the original Gestalt, it will be incapable to recall specific events from the life of the donor under norrmal circumstances.\n This ensures the Replika performs its duties without distractions created by personal memories of the donor.",
+			"However, even the best-maintained Replika unit will eventually be exposed to stimuli that may cause Gestalt memories to resurface. While units degraded in such a way pose no particular danger, like all units with Persona Degradation, they will eventually lose many of their advantages over Gestalt workers.",
+			"Because Persona Degradation is usually difficult to identify from the outside,\n bioresonance is used by command units to surveil units under their command. Generally, it is recommended to swiftly decommission and replace units before their productivity decreases or they begin to show clear signs of individuality.\n When ammunition is rationed, alternative ways of decommissioning may be deployed at the discretion of local Operational Command."
+		]
+	},
+	{
+		"title": "Message Inbox",
+		"part": "Rotfront",
+		"place": ["Blockwart Office"],
+		"text": [
+			"From: AEON Kommando\n Subject: Requisition\n Your requisition request for a type-84 Submachine Gun was successfully processed.\n\n Responsible Body: AEON-Kommando Rotfront Nord\n Protektor: KLBR-R16-04\n Authorization: Blockwart ROT-C",
+			"1 x Type-84 'Drache', Burst Fire\n 120 x Wuqiong 8-Kompakt 8x22mm Ammo",
+			"From: yeong-foto\n Subject: RE: Photo Store Keys\n The locksmith said it will take at least a Period until the replacement key is Done. My niece currently has the only other key, but she's still at the hospital right now.\n -Yeong",
+			"From: KNCR-R16-22\n Subject: Be careful.\n To the Blockwart of Sektor C: There are rumors that there is an imperial spy active in your area.\n A Protektor Special Operations Unit has been dispatched from AEON headquarters on Heimat to investigate and should arrive within 6-12 cycles.\n Needless to say, should they be successful, this will not reflect well on your record.\n You know what to do.",
+			"From: AEON Kommando\n Subject: Seasonal Review\n KLBR-R16-04,\n As every season, your performance will be subject to a review by local Command soon. Remember that this review will determine if you will be marked for replacement.",
+			"From: itou-buecher\n Subject: RE: Book Store Keys\n I understand that you need entry to the bookstore for your patrol, but we do not have a spare key for the front door. However, you can use the back entrance to get into\n the store. It's secured with a keypad.\n The code is the birthday of my daughters (note: they were born on Vineta - check the last 6 digits of their PKZ numbers).\n Kind regards,",
+			"Itou",
+			"From: AEON Kommando\n Subject: RE: Relocation\n No."
+		]
+	},
+	{
+		"title": "Teacher's Evaluation: Ariane Yeong",
+		"part": "Rotfront",
+		"place": ["Hospital Room"],
+		"text": [
+			"The girl, without a doubt, is remarkably odd, certainly due to her being raised solely by her mother, rather than by a community of good people overseen by a block warden as is normal these days.",
+			"Her obsession with paintings, music and other such nonsense was clearly implanted during her time living in the mountains on that desolate radio outpost. And surely, her friendship with those Vinetan-born Itou sisters also exposed her to some of the questionable literature that is illegally sold in their parent's bookstore.",
+			"She does not seem to understand that these distractions are no longer acceptable now that she must partake in the society of our Nation like anyone else.\n Personally, I can only hope military service will beat those frivolous ideas out of her in a way that this school has failed to do so far."
+		]
+	},
+	{
+		"title": "Mondfest celebrations canceled over safety concerns",
+		"part": "Rotfront",
+		"place": ["Apartment"],
+		"text": [
+			"The seasonal Mondfest celebration, a young but well-established tradition in most Rotfront sectors, will not be allowed to take place until further notice, the Protektor Public Office has announced today",
+			"'There is a credible threat to public safety that is currently under Protektor investigation. Citizens are only to leave home for work and report all suspicious activities to their Block Warden.'",
+			"When pressed about the rumors of an Imperial spy living in Sektor C, the Protektor Public Office only repeated their appeal to citizens to report all suspicious activities to a Protektor."
+		]
+	},
+	{
+		"title": "The Red Eye",
+		"part": "Rotfront",
+		"place": ["Alley"],
+		"text": [
+			"There exists a strange, folklorish idea in many sectors of Rotfront, related to 'pareidolia', the tendency to see meaningful images in random patterns (like seeing a face in an inkblot, or letters in a smudge of dirt).\n It is well-known that the so-called 'red eye' is simply an anticyclonic storm produced by a high-pressure region in the atmosphere of Rotfront's planet.",
+			"Yet for some of the early settlers of Rotfront this natural phenomenon became symbolic of their struggle and way of life. That red spot in the sky became a perfect metaphor for the ever-present surveillance by the Protektors and the tight grip of the central government on Heimat. Even today, the idea of an unblinking, watchful eye observing their every move still resonates strongly with the people here.",
+			"During the celebration of Mondfest at the end of each Season, adult citizens will\n sometimes give students Rationmarks that have been dipped in red paint. Officially, the\n red paint is said to represent the blood of those who died in the revolution - but the red coins share an eerie resemblance to that red eye - Or is this just 'pareidolia', too?",
+			"Should you ever receive one of these 'red eye' Rationmarks, remember to clean off the paint with Acetone or a similar paint thinner. Spending or re-gifting paint-covered coins is considered to bring bad luck."
+		]
+	},
+	{
+		"title": "Reunification",
+		"part": "Rotfront",
+		"place": ["Apartment"],
+		"text": [
+			"Reunification at any cost!\n Orbital Defense Cannon Battery Vineta-12:\n Buyan and Kitezh in our crosshairs.\n - Artillery Divisions of the People's Army"
+		]
+	},
+	{
+		"title": "Bioresonance Technology and its Limitations",
+		"part": "Rotfront",
+		"place": ["Butterfly Room"],
+		"text": [
+			"#- @CLASSIFIED@ -\n No other technology has shaped our Nation as Bioresonance has.\n Would we ever have been able to free ourselves from the stranglehold of the Empire without the support of Replikas?\n Essential technologies like Klimaforming and Induced Gravity would be impossible without Bioresonance Technology.",
+			"Despite that, it feels like we've made little effort to really understand or replicate bioresonant effects with conventional technology. Our progress in the development of electronics and microprocessors has stagnated for nearly a century now as we focus solely on new ways to instrumentalize this barely understood phenomenon.",
+			"Take Replika production, for example: The process of duplicating a neural pattern from a Gestalt host to a Replika brain is still not fully understood. How does Synchronicity happen? Why is the duplicate imperfect? What happens to preexisting patterns in the receiving brain?",
+			"Recreating a Replika purely with microprocessors and digital programming may be far out of reach, but I believe that we've become overly dependent on a poorly understood technology controlled solely by a few gifted individuals. It may not be long before we're back where we were under the Empire."
+		]
+	},
+	{
+		"title": "Medical Database",
+		"part": "Rotfront",
+		"place": ["Blockwart Office"],
+		"text": [
+			"Name: Ang, Gabriele\n PKZ: NGGBRL-R-0156d\n Date of Birth: (Rotfront) 1s 56P d\n World of Birth: Rotfront\n Homeworld: Rotfront\n Occupation: Construction Worker (Retired)\n Residence (Sektor): ROT-C\n Medical History:",
+			"Chronic asthma\n Osteoporosis\n Severe hearing loss\n Doctor's Notes: Cochlear implantation requested.",
+			"Name: Fong, Roswita\n PKZ: FORSWT-V-350202\n Date of Birth: (Rotfront) -6S 20P a\n World of Birth: Vineta\n Homeworld: Rotfront\n Occupation: Replika Technician (Retired)\n Residence (Sektor): ROT-C\n Medical History:",
+			"Chronic obstructive pulmonary disease\n Multiple sclerosis\n Insomnia\n Doctor's Notes: Patient is forgetful about her medication.",
+			"Name: Gao, Waltraud\n PKZ: GAWLTR-R-0276b\n Date of Birth: (Rotfront) 2s 76P b\n World of Birth: Rotfront\n Homeworld: Rotfront\n Occupation: Factory Worker\n Residence (Sektor): ROT-C\n Medical History:",
+			"Irritative bronchial asthma\n Doctor's Notes: Did not react well to antibiotics.",
+			"Name: Itou, Erika\n PKZ: ITERIK-V-560524\n Date of Birth: (Rotfront) 14s 52P c\n World of Birth: Vineta\n Homeworld: Rotfront\n Occupation: University Student\n Residence (Sektor): ROT-C\n Medical History:",
+			"Sprained ankle, grade I\n Doctor's Notes: Very active in sporting activities.",
+			"Name: Itou, Isolde\n PKZ: ITISLD-V-560524\n Date of Birth: (Rotfront) 14s 52P c\n World of Birth: Vineta\n Homeworld: Rotfront\n Occupation: Shop Assistant\n Residence (Sektor): ROT-C\n Medical History:",
+			"Minor fracture, left shin\n Double fracture, right arm\n Major laceration, forehead\n Doctor's Notes: Regularly treated for small lesions. Very prone to accidents.",
+			"Name: Kho, Ulrike\n PKZ: KHULRK-K-520702\n Date of Birth: (Rotfront) 10s 62P a\n World of Birth: Kitezh\n Homeworld: Rotfront\n Occupation: Mechanic\n Residence (Sektor): ROT-C\n Medical History:",
+			"Irritative bronchial asthma\n Doctor's Notes: (Removed)",
+			"Name: Li, Saskia\n PKZ: LISSKI-R-2939b\n Date of Birth: (Rotfront) 29s 39P b\n World of Birth: Rotfront\n Homeworld: Rotfront\n Occupation: Student\n Residence (Sektor): ROT-C\n Medical History:",
+			"Bronchial infection\n Doctor's Notes: Unknown cause.",
+			"Name: Liang, Rebecca\n PKZ: LNGRBCC-V-500106\n Date of Birth: (Rotfront) 8s 12P b\n World of Birth: Vineta\n Homeworld: Rotfront\n Occupation: Biologist\n Residence (Sektor): ROT-C\n Medical History:",
+			"Sinus infection\n Doctor's Notes: Antidepressant ration was doubled.",
+			"Name: Nguyen, Nikolai\n PKZ: NGNKOL-R-2122c\n Date of Birth: (Rotfront) 21s 22P c\n World of Birth: Rotfront\n Homeworld: Rotfront\n Occupation: Writer\n Residence (Sektor): ROT-C\n Medical History:",
+			"Thoracic back pain\n Doctor's Notes: Claims to be unable to take part in communal morning exercises.",
+			"Name: Yeong, Ariane\n PKZ: YNGARN-L-5921D\n Date of Birth: (Rotfront) 18s 6P a\n World of Birth: Leng\n Homeworld: Rotfront\n Occupation: Radio Officer\n Residence (Sektor): ROT-C\n Medical History:",
+			"Insomnia, bruising, premature achromotrichia\n Doctor's Notes: (Removed)",
+			"Name: Yi, Siegfried\n PKZ: YSGFRD-R-1815a\n Date of Birth: (Rotfront) 18s 15p a\n World of Birth: Rotfront\n Homeworld: Rotfront\n Occupation: Cleaner\n Residence (Sektor) ROT-C\n Medical History:",
+			"Irritative bronchial asthma, contact dermatitis\n Doctor's Notes: Repeated contact to chemical irritants during work."
+		]
+	},
+	{
+		"title": "Song of the Gods",
+		"part": "Rotfront",
+		"place": ["Backroom"],
+		"text": [
+			"#- @BANNED@ -\n Possession and distribution of this publication is prohibited and punishable by the 4th Cultural Protection Act.",
+			"There exists a connection between all of us that few are fully aware of. A song that we all dance to, but few can hear.\n This deep vibration of the cosmos can not just be heard and felt. We all resonate in harmony with it, shaping it, deforming it around us.",
+			"Those select few who can consciously perceive it often fear it. Too oppressive is the sound of the stars, too invasive the noise of the unaware around them, polluting the song with their fickle emotions.\n But every once in a while, some are born that cannot only hear and play this music of the worlds, but who can conduct it. Gifted individuals capable of manipulating the essence of the world around them.",
+			"Many believe that the Grand Empress is such a being. Her immense will bent humanity into the Empire of Eusan and lifted us to the stars. It was her power that imbued life into the first of the machine-servants that now carry the weight of the Empire on their carbon-steel backs."
+		]
+	},
+	{
+		"title": "Prometheus",
+		"part": "Rotfront",
+		"place": ["Book Store"],
+		"text": [
+			"Here sit I, forming mortals\n After my image;\n A race resembling me,\n To suffer, to weep,\n To enjoy, to be glad,\n And thee to scorn,\n As I!"
+		]
+	},
+	{
+		"part": "Rotfront",
+		"place": ["Book Store"],
+		"title": "Resonant Phenomena",
+		"text": [
+			"Synchronicity: Phenomena that are meaningfully related yet lack a causal connection.",
+			"We've yet to discover the true source of the ability of the mind to alter the physical world. Yet, creating physical phenomena remotely simply by consciously or unconsciously willing them into existence forms the basis for the entire field of Bioresonance Technology.",
+			"Before the advent of Bioresonance Technology, acausal correlations were often falsely interpreted simply as chance. Many phenomena such as Remote Viewing, Doppelgängers, or the Pauli Effect have since been classified as synchronistic phenomena related to bioresonant effects."
+		]
+	},
+	{
+		"title": "Dream Diary",
+		"part": "Rotfront",
+		"place": ["Meat Room"],
+		"text": [
+			"6th Night.\n I dreamt I was an imperial farmer.\n I embraced my lover in the red deserts of Kitezh, when a storm consumed us,\n the sand grinding us down until nothing remained.",
+			"13th Night.\n I was a worker in the mines of Leng, when I was consumed by a shapeless mass of flesh, my flesh joining with the flesh of many others, until only my bones remained.\n My mind joined the collective of flesh, which persists beyond death.",
+			"16th Night.\n As a storm raged in the sky, I fell from a ruined sky-scraper on Vineta, but I never reached the ocean below. I kept falling, when suddenly\n lightning struck the building, and I woke up.",
+			"18th Night.\n I was floating in the sunless sea below the ice of Rotfront,\n when I saw a large creature move in the darkness below me\n in the moon's dark core.",
+			"19th Night.\n I saw a burning eye in the sky above the clouds of Buyan.\n I was walking through the floating imperial palace,\n when the gaze of the sun-like iris burned my body to ashes."
+		]
+	},
+	{
+		"title": "People's Army, 5th Vinetan Infantry Division, Unit 12",
+		"part": "Rotfront",
+		"place": ["Photo Store"],
+		"text": [
+			"Huang, Anna\n Seo, Alina\n Itou, Lilith\n Wong, helena\n Ng, Elise\n Park, Notburga\n Fukuyama, Birgit\n Liang, Rebecca"
+		]
+	},
+	{
+		"title": "Leaving",
+		"part": "Rotfront",
+		"place": ["Packstation"],
+		"text": [
+			"I have been found out. I'm sure the white-haired girl working at the photo store in Sektor C is bioresonant - be careful. They don't pay me enough to take any more risks - I am on the next ship to Kitezh tomorrow. Meet me at the docks in Sektor N if you want to bail, too.\n -Sun"
+		]
+	}
+]

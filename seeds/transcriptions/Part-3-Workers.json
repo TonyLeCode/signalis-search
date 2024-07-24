@@ -1,0 +1,102 @@
+[
+	{
+		"title": "Scrawled Note",
+		"part": "Workers",
+		"place": ["A61"],
+		"text": [
+			"KICK 'EM WHILE THEY'RE DOWN\n KICK 'EM WHILE THEY'RE DOWN\n KICK 'EM WHILE THEY'RE DOWN\n KICK 'EM WHILE THEY'RE DOWN\n"
+		]
+	},
+	{
+		"title": "Alina's Diary",
+		"part": "Workers",
+		"place": ["A61"],
+		"text": [
+			"Feeling a little light-headed today. I hope it's not that new flu that seems to be going around... I can't afford to miss any more shifts. That Storch at the factory was chewing me out for what felt like hours for fainting at work the last time I got a cold.\n I haven't seen Elster the last few days, I hope she's okay... more and more people go missing in the mine lately, including Replikas. Not even the Protektors seem to be safe..."
+		]
+	},
+	{
+		"title": "Diary",
+		"part": "Workers",
+		"place": ["A64"],
+		"text": [
+			"The protektors have been worried lately. they're hiding something there's less of them $on patrol and the$ ration plan keeps changing Alina says I am imagining $things but\n when I look$ at them I can feel their fear like it's my own\n what are they scared of?"
+		]
+	},
+	{
+		"part": "Workers",
+		"place": ["Office"],
+		"title": "Interrogation Report",
+		"text": [
+			"Subject: Worker S-23-A-6514 (Chen, Wilhelm)\n Offense: Contraband found in locker\n Result: Confession\n Punishment: No food, 3 cycles",
+			"Subject: Worker S-23-A-3054 (Wong, Michaela)\n Offense: Illegal use of radio\n Result: Confession\n Punishment: Iso, 2 cycles",
+			"Subject: Worker S-23-A-4952 (Wong, Wolfgang)\n Offense: Illegal use of radio\n Result: Expired during interrogation\n Punishment: None",
+			"Subject: Worker S-23-A-3928 (Huo, Franz)\n Offense: Obscenity to the State\n Result: Passed out during interrogation\n Punishment: Double work shift, 2 cycles",
+			"Subject: Worker S-23-A-7331 (Huang, Emilie)\n Offense: Trespassing\n Result: Expired during interrogation\n Punishment: None"
+		]
+	},
+	{
+		"part": "Workers",
+		"place": ["Office"],
+		"title": "Wunderwaffen",
+		"text": ["##Superweapons of our Nation\n in the battle against the Empire: Falke Units"]
+	},
+	{
+		"title": "Service Request Form R-90",
+		"part": "Workers",
+		"place": ["Pantry"],
+		"text": [
+			"Date of filing Service Request Form: 84-21-3\n Full Protektor ID of unit filing request: EULR-S2303 (Replika)\n Status: Staff        Department: Kitchen Staff, Worker Quarters\n Object: EULR RKM-7 Spatial Navigation Module",
+			"Note: My mapping module is still defective and won't show any map data. I keep getting lost on my way to work and back. I had to sleep in a hallway last cycle because I couldn't find the staff elevator to get to my dorm. Please, I can't find my way around this place without a map! - März"
+		]
+	},
+	{
+		"title": "Service Request Form F-29 (2)",
+		"part": "Workers",
+		"place": ["Block A6"],
+		"text": [
+			"Date of filing Service Request Form: 84-21-6\n Full Protektor ID of unit filing request: STAR-S2306 (Replika)\n Status: Guard      Department:Worker Quarters\n Full Protektor ID of unit processing request: ARAR-S2305 (Replika)",
+			"Service Object: Himmel typ D automatic Security Door\n Location of Object: Worker Block A6 Corridor\n Description: The lock on the staff door in A6 is jammed again. Requesting a locksmith.",
+			"Service Status: Electronics reset key is nowhere to be found. I set up a lock picking kit but management bumped the elevator engines up in priority, so next shift will have to pick the lock. It's just trial and error at this point. Find me if you need a key to open the service hatch (or ask management, whatever) - Fünf"
+		]
+	},
+	{
+		"title": "About the Administrator",
+		"part": "Workers",
+		"place": ["Rationing Office"],
+		"text": [
+			"From: Work shift Controller\n To: Night shift Controller\n Due to recent events, some Security Technicians will be serving both work shifts and night shifts.\n Affected Guard Units: STAR-S2304, STAR-S2305, STAR-S22306, STAR-S2309.\n Affected Controller Units: STCR-S2303, STCR-S2306.",
+			"Until an effective treatment is found, or reinforcements are sent from Heimat, we'll all have to stay strong and do our best to keep the facility secure.\n Failure is not an option.\n - Storch Sieben (STCR-S2307)",
+			"PS: Keep an eye on the administrator unit.\n Since the Incident, he's been acting stranger than usual.\n Without the Commander to keep him in check, we'll have to ask the Kolibri for help."
+		]
+	},
+	{
+		"title": "Search Protocol",
+		"part": "Workers",
+		"place": ["Registry"],
+		"text": [
+			"Protektor-Controller on Duty: STCR-S2303\n Protektor on Duty: STAR-S2305",
+			"Worker S-23-A-4822: Song, Helene\n Confiscated Items: Watch, Ring\n Residence: Dorm A16\n Workplace: Political Morals Class\n Arrested in ongoing investigation: Stolen Radio\n Original reason for transfer: Counter-revolutionary activity (distributing flyers at university).",
+			"Worker S-23-A-3582: Huang, Julia\n Confiscated Items: Medication\n Residence: Dorm A64\n Workplace: Mining Operation A\n Arrested on suspicion of Bioresonance.\n Confiscated hydroxycarbamide pills have been sent to the medical wing.\n Special supervision request has been forwarded to Kolibri.",
+			"Worker S-23-A-0512: Seo, Alina\n Confiscated: Cosmetic box with butterfly inlay (locked)\n Residence: Dorm A61\n Workplace: Factory\n Collapsed at the workplace from exhaustion. Bunk was searched before transfer to medical wing.",
+			"Worker S-23-A-2367: Fukuyama, Heinrich\n Confiscated: Fountain Pen\n Residence: Dorm A22\n Workplace: Mining Operation A (recent transfer from factory)\n Arrested on suspicion of conspiracy against the state."
+		]
+	},
+	{
+		"title": "Frequencies",
+		"part": "Workers",
+		"place": ["Interrogation"],
+		"text": [
+			"##MOON   = 054.000\n SUN    = 075.000\n SCALES = 103.000\n ROOK   = 137.000\n TREE   = 161.000\n SWORD  = 231.000"
+		]
+	},
+	{
+		"title": "To Radio Officer Yeong, Station 6",
+		"part": "Workers",
+		"place": ["Rotfront Station 06"],
+		"text": [
+			"Dear Iris,\n I hope you and Ariane are both well.\n I've spoken to the officials at AEON and they agreed that it would be best for Ariane to attend school in Sektor C.",
+			"I have a spare room she can stay in until she graduates. I know you two are inseparable, but we both know that it is best for your daughter if she receives a normal education in the city.\n Love,\n your sister\n Kamilla"
+		]
+	}
+]

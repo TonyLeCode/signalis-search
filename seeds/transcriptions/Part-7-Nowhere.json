@@ -1,0 +1,52 @@
+[
+	{
+		"title": "Offerings",
+		"part": "Nowhere",
+		"place": ["Shrine Room"],
+		"text": [
+			"and in the darkness the dead shall be offered\n a light and holy spices so that they may find a way\n out of this cursed place"
+		]
+	},
+	{
+		"title": "Warnings",
+		"part": "Nowhere",
+		"place": ["Nursery"],
+		"text": [
+			"##this place $is not a place of honor\n no deed is commemorated$ here\n nothing valued is here\n what is $here$ was dangerous and repulsive\n $this$ message is a warning about $danger$\n the danger is still present $in your$ time\n as it was $in ours$\n $the danger$ is to the body and $it can kill$",
+			"##$the$ form of the danger is $an emanation of energy$\n the danger is $unleashed if you substantially$\n disturb this place $physically$\n $this place is best$ shunned and left uninhabited",
+			"##when $the beast$ within is killed\n a path will open here"
+		]
+	},
+	{
+		"title": "The Dreamer",
+		"part": "Nowhere",
+		"place": ["Falke"],
+		"text": [
+			"##A prison from which the only escape is death.\n Deep below, the dreamer floats in the sea of flesh",
+			"##The red eye birthing a new world from their dream for eternity\n and each time the dreamer turns over in their sleep,",
+			"##the world turns over too\n until only flesh remains"
+		]
+	},
+	{
+		"title": "Alina's Diary (4)",
+		"part": "Nowhere",
+		"place": ["Lamp Room"],
+		"text": [
+			"How long has it been that I'm down here? How did I get here?\n Where is this place and why am I here?\n My memory feels so blurry - As if I had always been here, forever.\n Even my hair is slowly turning white.\n I remember my name, and I remember my life.\n But I also remember a different name, and a different life,\n and it feels like the line between her and me is blurring the longer I stay here.\n - Alina"
+		]
+	},
+	{
+		"title": "Leave",
+		"part": "Nowhere",
+		"place": ["Classroom"],
+		"text": ["LEAVE\n LEAVE THIS PLACE"]
+	},
+	{
+		"title": "The Empress' Hand",
+		"part": "Nowhere",
+		"place": ["Chapel"],
+		"text": [
+			"EMPRESS\n ON THE FIRST DAY SHE WAS CROWNED\n ON THE LONGEST DAY NOTHING WAS DONE\n ON THE NEXT DAY SHE WAS WED\n ON THE LAST DAY SHE TOOK HER LIFE"
+		]
+	}
+]

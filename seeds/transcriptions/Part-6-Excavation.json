@@ -1,0 +1,68 @@
+[
+	{
+		"title": "Monofilament Fiber",
+		"part": "Excavation",
+		"place": ["Monowire"],
+		"text": [
+			"##Diameter: <2nm average\n - Handle with care -\n @! RISK OF DEATH !@\n Monofiber will effortlessly cut through limbs and equipment in an instant!\n ALWAYS wear protective clothing!\n Do not touch Monofiber without proper protective gear!\n Only handle in brightly lit places!"
+		]
+	},
+	{
+		"title": "Alina's Diary (3)",
+		"part": "Excavation",
+		"place": ["Mining Station"],
+		"text": [
+			"It's worse than I thought. Everyone has disappeared.\n I still haven't found any trace of Elster... it's as if she had never been here.\n Something's wrong with the Protektors - those that are still around.\n A guard spotted me earlier sneaking out of the Medical Wing, and she let out a monstrous scream as she chased after me.\n When I looked back, I saw her face, and now I can't forget.\n It looked like she'd been in some horrible accident..."
+		]
+	},
+	{
+		"title": "The Twin Suns",
+		"part": "Excavation",
+		"place": ["Shore of Oblivion"],
+		"text": ["along the shore the cloud waves break,\n the twin suns sink $behind the lake,$\n the shadows lengthen"]
+	},
+	{
+		"title": "Black Stars",
+		"part": "Excavation",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"$Strange is$ the night where black stars rise,\n and strange moons circle through the skies\n but stranger still"
+		]
+	},
+	{
+		"title": "Tears Unshed",
+		"part": "Excavation",
+		"place": ["Shore of Oblivion"],
+		"text": ["Song of $my soul, my voice is dead;\n die thou,$ unsung, as tears unshed\n shall dry and die"]
+	},
+	{
+		"title": "Sorts of Death",
+		"part": "Excavation",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"For there be $divers s$orts of death - some wherein the body rem$aineth; and\n in$ some it vanisheth quite away with the spirit."
+		]
+	},
+	{
+		"title": "Sorts of Death (2)",
+		"part": "Excavation",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"$i$n one kind of death the spirit also die$th, and this it hath been\n known to do$ while yet the body was in vigour for many years. Sometimes, $as is veritably attested,$ it dieth with the body, but $after a season$ is raised up again $in that place$ where the body did decay"
+		]
+	},
+	{
+		"title": "And a Star Fell",
+		"part": "Excavation",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"and a $great burning$ star fell $from th$e sky,\n and a mounta$in fe$ll into the sea an$d the water$ turned to blood, $and th$ e\n moon $and stars and sun$ turned dark"
+		]
+	},
+	{
+		"title": "A Sea of Flesh",
+		"part": "Excavation",
+		"place": ["Shore of Oblivion"],
+		"text": ["##it calls me\n in a sea of flesh\n we will become one\n but i can never go back\n to being me"]
+	}
+]

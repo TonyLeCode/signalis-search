@@ -1,0 +1,113 @@
+[
+	{
+		"title": "Penrose emergency procedures appendix H",
+		"part": "Memory",
+		"place": ["Medical"],
+		"text": [
+			"Based on data from previous long-range survey missions, salvaging the Replika\n Technician for sustenance is not recommended, even in extreme circumstances. \n Replika biocomponents can cause various health problems when ingested. It may look and taste like ordinary flesh, but bioengineered tissue may cause more harm than good when eaten in an emergency situation. Oxidant may look like blood, but is indigestible to Gestalts.",
+			"It should also be considered that Pioneer Replikas statistically have a 860% greater survivability\n than Gestalt Pioneer Officers. For the sake of a successful mission, keeping\n the Replika operational rather than prolonging your own suffering may be preferable"
+		]
+	},
+	{
+		"title": "Penrose Briefing: Phase II",
+		"part": "Memory",
+		"place": ["Medical"],
+		"text": [
+			"--- Start of decrypted transmission ---\n By our calculations, 1500 cycles of mission time will have passed when you receive this message.\n Congratulations, Comrade! By now, you should have become fully acclimated to your new life onboard your ship.",
+			"As you approach the Oort Cloud, your search for new worlds will being.\n Utilizing the long-range sensors, you will scout for valuable resources, habitable worlds, or signs of alien life.\n Remeber to rely on your Replika to assist you in maintaining your vessel.\n We all wish you great success in your mission.\n --- End of decrypted transmission ---"
+		]
+	},
+	{
+		"title": "Scheduled Maintenance Checklist",
+		"part": "Memory",
+		"place": ["Stern Hall"],
+		"text": [
+			"[x] Inspect LST Replika Calibration & Storage Unit (Maintenance)\n [ ] Inspect Mainframe Access Terminal (Mess Hall)\n [ ] Inspect Flight Controls (Flight Deck)\n [ ] Inspect Coolant Injection Pipes (Reactor)\n [ ] Inspect Emergency Cryogenic Hibernation Unit (Cryogenics)\n [ ] Report to Gestalt Scout Officer"
+		]
+	},
+	{
+		"title": "Operation Penrose",
+		"part": "Memory",
+		"place": ["Stern Observatory"],
+		"text": ["Pride of the Eusan Nation:\n Space Vessel Type \"pensrose\"\n - People's Navy"]
+	},
+	{
+		"title": "Replika Known Issues, Penrose Program",
+		"part": "Memory",
+		"place": ["Mess Hall"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION@ - Gestalt Officer Eyes Only -\n Previous experience with this Replika model has given us insight into irregularities in\n their behavior that stem from the original neural pattern used for this unit. Due to the\n sensitive nature of this information, this document should be destroyed after reading.",
+			"LSTR\n Elster units were chosen for the Penrose Program for their adaptability and reliability\n under long-term isolation conditions.\n Stoic and reserved, Elster units have a relatively stable neural pattern. It is best for\n you to leave it alone and interact with the Elster unit as little as possible.\n Elsters' neural pattern was a soldier of Vinetan origin, so their needs are basic. Avoid\n talking to the Elster unit about the war.",
+			"Penrose vessels are fitted with a specialized calibration pod which may help with Persona stabilization.\n To avoid resurfacing of Gestalt memories, do not show or give the Elster unit photographs, especially of soldiers during the war. Do not show the Elster unit movies,\n or let it listen to music. Do not try to befriend the Elster unit."
+		]
+	},
+	{
+		"title": "Ariane's Notes",
+		"part": "Memory",
+		"place": ["Storage"],
+		"text": [
+			"Running out of ochre paint. Elster laughed when I told her! Now I have to mix it myself -\n so annoying.\n I still haven't read a whole bunch of those manuals... I feel like they gave me enough to read for the rest of my life.\n Most of them are boring technical manuals, anyway.\n They could have given us more films to watch instead. Half of them are war films, which\n Elster doesn't like, and the other half are kitschy propaganda dramas."
+		]
+	},
+	{
+		"title": "Smeared Diary Page (2)",
+		"part": "Memory",
+		"place": ["Personnel (Wrecked)"],
+		"text": [
+			"Cycle $2$*$2144$\n $no longer can$ tell whether awake or asleep\n anymore. $everything hurts my$ vision is blurry and my fingers hurt. my back $hurts my feet$ hurt.\n my teeth hurt. $my$ eyes hurt. everything hurts,\n all of the time. i can't go on $any longer$\n please make it stop"
+		]
+	},
+	{
+		"title": "Unnamed Note",
+		"part": "Memory",
+		"place": ["Stern Hall (Wrecked)"],
+		"text": [
+			"lost another tooth\n there was so much blood\n my hands are shaking",
+			"Why is my hair falling out\n i can't sleep\n i just want to sleep\n please just let me sleep"
+		]
+	},
+	{
+		"title": "Unnamed Note (2)",
+		"part": "Memory",
+		"place": ["Stern Hall (Wrecked)"],
+		"text": ["please, just make it stop\n \n please"]
+	},
+	{
+		"title": "Together we will be eternal",
+		"part": "Memory",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"Those who sing the same song\n have heard it in their dreams.\n A dark tone, at the edge of hearing\n A silent voice, whispering to my heart:",
+			"##Come join us\n Together we will be eternal\n There is no escape\n We will be one.",
+			"##But I fear the dark sea\n that will swallow me"
+		]
+	},
+	{
+		"title": "An ocean of memories",
+		"part": "Memory",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"Something old, far older than humanity,\n sleeps deep below the ground.",
+			"Those of us who can\n hear its call in the night.\n An invitation.",
+			"An ocean of memories, where \"I\" ends and \"We\" begin."
+		]
+	},
+	{
+		"title": "Great holes secretly are digged",
+		"part": "Memory",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"Great holes\n secretly are digged\n where earth's pores\n ought to suffice\n and things have learnt to walk\n that ought to crawl.",
+			"we should have never left\n the primordial soup\n only through death can i escape\n the call of the one who rules\n above all life"
+		]
+	},
+	{
+		"title": "kill me",
+		"part": "Memory",
+		"place": ["Shore of Oblivion"],
+		"text": [
+			"kill me.\n kill me.\n kill me.\n kill me.\n kill me.\n kill me.\n kill me.\n kill me.\n",
+			"kill me.\n kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kill me.kil"
+		]
+	}
+]

@@ -1,0 +1,70 @@
+[
+	{
+		"title": "Alina's Diary (2)",
+		"part": "Hospital",
+		"place": ["ICU 01"],
+		"text": [
+			"Something is wrong.\n Nobody will tell me what's happening, but ever since I woke up, everyone has been behaving strangely.",
+			"The Protektors won't let me leave my room and return to work even though the wound from my fall is already healed. I think there must have been an accident in the mine...",
+			"I overheard two Eules whispering in front of my room that they're running out of staff. I'm worried that something has happened to Elster - I haven't heard from her in a while. I can't just sit around here any longer...\n - Alina Seo"
+		]
+	},
+	{
+		"title": "Patient EULR-S2321",
+		"part": "Hospital",
+		"place": ["ICU 01"],
+		"text": [
+			"Patient complained about severe nausea and headaches.\n Admitted to hospital wing after vomiting oxidant fluid during work.\n Clinical picture in line with other recent cases among Protektor staff.",
+			"While we still have no indication what causes this syndrome, we've observed similar developments in all patients.",
+			"Most puzzlingly, development of the syndrome seems to progress similarly in both Replika and Gestalt patients.\n Initial admission test showed hypotension, high fever and dehydration, internal hemorrhaging. Strong cognitive decline within the first cycle, alopecia and purpura.",
+			"Within 5 cycles, skin will begin to peel in large patches; decline of vision quality and ability to communicate may follow. Gestalt patients will usually expire at this stage due to infections, while results for Replika patients seem to vary."
+		]
+	},
+	{
+		"title": "Proper Disposal of Corpses",
+		"part": "Hospital",
+		"place": ["Incinerator"],
+		"text": [
+			"From: EULR-S2306\n To: EULR-S2305\n Mai,\n As you've probably heard, there have been multiple accounts of bodies of decommissioned Protektors spontaneously reactivating and acting in a defective manner.",
+			"Based on November's autopsy report, it seems that all affected units showed some sort of cancerous growth in their organic components.\n According to her, unless completely incinerated, this growth may reactivate the Replika even after it's been dead for hours!",
+			"We don't know what causes this and we're unsure who's affected...\n we can't keep  up with incinerating all the bodies, with just two incinerators that constantly need recalibrating, so we're improvising:",
+			"These thermite flares are able to melt through replika armor and burn the organic components from the inside.\n I've requisitioned more of them, but there was some paperwork missing so we'll have to wait a bit longer.\n - Juni"
+		]
+	},
+	{
+		"title": "Flood Drainage System Malfunction",
+		"part": "Hospital",
+		"place": ["Pump Room"],
+		"text": [
+			"To all medical wing Aras:\n The automatic equalizer pumps in the flood drainage system still appear to be broken, causing the @lower level to be flooded@. Since we're currently focusing repair efforts on the east wing staircase structure, the drainage system pressure has to be manually equalized from the control panel in the pump control room for now.",
+			"To drain the water, make sure that both the @A and B tanks have the same amount of water@ in them and that the @C tank is completely empty@. You can see the water levels in the tanks on the control panel.\n Press the buttons at the bottom of the panel to move water between the tanks using the air pressure system.",
+			"It's a bit tricky to get the two tanks equalized this way because you can only move all the water in a tank at once this way (unless the receiving tank is full).\n With the pumps out of order, only tank A will fill up by itself."
+		]
+	},
+	{
+		"title": "Reservoir Drainage Instructions",
+		"part": "Hospital",
+		"place": ["Pump Room"],
+		"text": [
+			"With tank A full, here's how to equalize the reservoir:\n Fill tank B, then fill tank C with water only from B. Move the water from tank C back to tank A. Fill tank C again with the remaining water from tank B, then refill tank B from tank A. Again, fill tank C with water only from tank B, and then move it back to tank A. If you make a mistake and get stuck, just fill everything back into tank A and start over."
+		]
+	},
+	{
+		"title": "Personal Grievance Form P-14",
+		"part": "Hospital",
+		"place": ["Vent Room"],
+		"text": [
+			"Date of filing Personnel Grievance Form: 84-20-F\n Full Protektor ID of unit filing grievance: ARAR-S2308 (Replika)\n Status: Staff        Department: Medical\n Full Protektor ID(s) of involved unit(s): ARAR-S2311 (Replika)\n Date-Time of Incident: All the time!\n Location of Incident: Medical Wing",
+			"Description: Elf keeps using my wrench and misplacing the 10mm socket.\n I have been reprimanded for not repairing the fan in the vent\n in the lower level, but I can't remove the vent cover without\n a 10mm wrench socket! I know she's doing it on purpose."
+		]
+	},
+	{
+		"title": "Quick-Curing Construction Foam",
+		"part": "Hospital",
+		"place": ["Exam Room"],
+		"text": [
+			"Since the ration plan has changed again, we're short on @Quick-Curing Repair Spray@.\n Turns out we can make our own by combining Koagulant K with normal expanding PU Foam. It won't expand as much, but it'll @harden instantly@ and make a fairly solid bond if you're in a rush to get some repairs done.",
+			"You can use normal Replika Repair Patches since they're a pretty easy source of Koagulant K and just combine them with normal Repair Sprays."
+		]
+	}
+]

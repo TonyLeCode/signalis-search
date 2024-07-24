@@ -1,0 +1,77 @@
+[
+	{
+		"title": "Welcome to S-23 Sierpinski",
+		"part": "Reeducation",
+		"place": ["Surface Access"],
+		"text": [
+			"You've been selected or have elected to be relocated by AEON to S-23 Sierpinski. Located on Leng, at the frontier of the solar system, S-23 Sierpinski is the perfect place for a new beginning.",
+			"At our prestigious *********** vocational school facility, you will learn new skills to shape your future as a productive citizen of our wonderful Nation.\n Here you will learn all about mineral extraction, ore refinement and munition production, helping the war effort against the remnants of the Empire.",
+			"And of course, learning is not just about theory - AEON lets you earn your share while practicing your new craft right at the workplace!",
+			"Concerned about your family, friends or former colleagues? Ask a Protektor about our Ration-sharing plan. A portion of your Rationsmarks will be sent to a beneficiary of your choice."
+		]
+	},
+	{
+		"part": "Reeducation",
+		"place": ["Corridor"],
+		"title": "The Rule of Six",
+		"text": [
+			"Remember the Rule of Six!\n Never carry more than Six items on your person!\n Private property is a prvilege:\n Keep your pockets empty and your bag light."
+		]
+	},
+	{
+		"part": "Reeducation",
+		"place": ["Staff Room"],
+		"title": "Keep Records!",
+		"text": [
+			"Protocol everything!\n Remember: if you didn't write it down, it never happened!\n Get the right forms from Administration and save your files frequently!"
+		]
+	},
+	{
+		"part": "Reeducation",
+		"place": ["Class 4B"],
+		"title": "No running in the hallways!",
+		"text": ["No running in the hallways!\n Be mindful of your neighbors.\n everyone can hear you run!"]
+	},
+	{
+		"title": "Memorandum: Wall Safe Codes",
+		"part": "Reeducation",
+		"place": ["Staff Room", "Office (Workers)", "Nurse Station (Hospital)"],
+		"text": [
+			"It has come to my attention that at least one worker might be aware of the code broadcasting frequencies for the Protektor wall safes.\n Any workers connected to this leak are to be interrogated until the culprit is found. I'm restricting all radio privileges for workers until further notice.\n - Adler"
+		]
+	},
+	{
+		"title": "Service Request Form F-29",
+		"part": "Reeducation",
+		"place": ["Staff Room"],
+		"text": [
+			"Date of filing Service Request Form 84-21-4\n Full Protektor ID of unit filing request: EULR-S2309 (Replika)\n Status: Staff        Department: $Reeducation$\n Full Protektor ID of unit processing request: ARAR-S2303 (Replika)",
+			"Service Object: Mond & Töchter High-Security Wall Safe (Numeric Keypad)\n Location of Object: Classroom 4B\n Description: The wall safe in classroom 4B keeps resetting to the default combination. What's the point of the whole radio code broadcasting system if our safe can only be opened with the code in the manual?"
+		]
+	},
+	{
+		"title": "Mond&Töchter High-Security Wall Safe (Numeric)",
+		"part": "Reeducation",
+		"place": ["Library"],
+		"text": [
+			"This wall safe complies with Eusan Public Safety Equipment Regulations 41&43 and features a high density Kraftstahl door secured with a numeric keypad.\n Proudly produced on Heimat by VEB Mond & Töchter Tresortechnik.",
+			"- Instructions for Use -\n 1. Enter the code using the keypad.\n 2. Press the confirm key in the lower right corner. If correct, a green light will light up.\n 3. Rotate the dial on the left to open the door.\n To clear any previously entered digits, press the \"E\" key in the lower left.",
+			"- First time setup -\n 1. Enter the factory default code (204512) to open the safe.\n 2. While the door is open, enter the desired new code in the keypad.\n 3. Press and hold the confirm key for 10 seconds until the green light lights up."
+		]
+	},
+	{
+		"title": "Isa's Note",
+		"part": "Reeducation",
+		"place": ["Library"],
+		"text": ["Erika,\n If you find this note,\n despite everything that's happened,\n I've come to look for you.\n Isa"]
+	},
+	{
+		"part": "Reeducation",
+		"place": ["Library"],
+		"title": "Dictionary",
+		"text": [
+			"Replika, /Re•pli•ká/, noun. Pl. Replikas (Kitezh: Replika).\nShortened from (archaic) Replikat (→Copy, →Replica).\nBiomechanical person. Synthetic reproduction of a →Gestalt. Biological culture grafted onto an artificial endoskeleton and enclosed in a protective exoskeleton. ",
+			"Gestalt, /Ge•shtalt/, noun. Pl.\nGestalts. Shortened from (archaic) Urgestalt (Original shape; compare →Archetype, →Prototype).\n A person that is not a →Replika. "
+		]
+	}
+]

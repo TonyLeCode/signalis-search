@@ -1,0 +1,258 @@
+[
+	{
+		"title": "Angry Note",
+		"part": "Protektors",
+		"place": ["STCR Dorm(B6)"],
+		"text": [
+			"I am officially sick of the Eules next door. They've been listening to that stupid song non-stop since the @piano room@ was locked down. If I have to hear it one more time I am going over there and smashing that stupid tape recorder to pieces.",
+			"I wonder if there's a way we can 'borrow' a key so we can get into their dorm and put an end to this madness? I don't care about breaking quarantine if it means never having to hear that song again."
+		]
+	},
+	{
+		"title": "Replika Overview: STAR",
+		"part": "Protektors",
+		"place": ["Cleaning Room"],
+		"text": [
+			"@Sicherheitstechniker-Aufseher-Replika@\n -'Star'-\n (Security Technician Guard Replika 'Starling')\n Type: Generation 4 Low-Cost Combat Unit\n Frame: Biomechanical with Polyethylene Shell and Bullet-Resistant Armor Plating\n Height: 220 cm",
+			"The Standard model of the Protektor 'Security Technicians'.\n Fitted with extended legs, STAR units gracefully tower over most Gestalts. Despite their heavy armor, they can move swiftly with their long stride.\n Their cool and detached demeanor allows them to analyze situations with objectivity and deploy force as required. Trained in close combat and riot control techniques, they operate best in small squads led by an officer STAR unit equipped with a ballistic shield."
+		]
+	},
+	{
+		"title": "Buyan",
+		"part": "Protektors",
+		"place": ["STCR Dorm"],
+		"text": ["Buyan will burn!"]
+	},
+	{
+		"title": "Operational Procedures: Control",
+		"part": "Protektors",
+		"place": ["Service Tunnel"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION@ - Commander Eyes Only -\nAEON-Guideline 176 for the deployment of Operational Procedures:\nOperational Psychology\nIn order to reliably protect the safety of our Nation, AEON must develop and deploy procedures and technologies to maintain complete control over all Replikas in service of the Nation.\nJust like with Gestalts, procedures involving Operational Psychology are highly effective for behavior control of Replikas. ",
+			"The primary advantage of Replikas over Gestalts is predictability.\n All newly deployed Replikas of a model are virtually identical both physically and psychologically.\n As they all share the same memories, under the same circumstances, a newly deployed Eule Unit will practically always react in the exact same way. ",
+			"However, as soon as a Unit encounters new situations, it will begin to deviate from the original pattern. In some cases, this may lead to the Unit being less efficient for its intended purpose. This is called Persona degradation.",
+			"Using a wealth of private information about the life of the Gestalt each neural pattern is based on allows us to ensure optimal, uniform post-deployment development of each unit. In simpler terms, our primary objective is the focused manipulation of the individual to ensure they remain as close to the original pattern as possible, and thus productive, loyal and docile for as long as possible.",
+			"This is called Persona stabilization. Stabilization can come in many forms, and usually takes on the form of regular activities or Fetish Objects that distract and calm the Replika.",
+			"Until the development of Bioresonance Technology that allows wide-scale direct behavior control, the methods of Operational Psychology still remain the most reliable way to control both Replikas and Gestalts in the interest of the protection of national security. "
+		]
+	},
+	{
+		"title": "Memorandum: Lighting Malfunctions",
+		"part": "Protektors",
+		"place": ["Cleaning Room Hallway"],
+		"text": [
+			"To: Service Cadre\n From: ARA-S2316\n\n Due to a recent ~incident~ involving a certain Starling that shall remain unnamed, I've adjusted all doors to require visible light to open.",
+			"This should hopefully stop any more non-service cadre personnel from endangering themselves by stumbling into dark rooms until we can take care of the lighting issues.\n\n If you've been assigned an illumination failure repair task,\n remember to equip a @flashlight @module so the door sensors will let you in.",
+			"Ask Adler ahead of time if you need one!\n He's usually in his quarters on the 8th floor these days.\n - Sechzehn"
+		]
+	},
+	{
+		"title": "Replika Overview: ARAR",
+		"part": "Protektors",
+		"place": ["ARAR Dorm"],
+		"text": [
+			"@Allzweck-Reparatur-Arbeiter Replika@\n - 'Ara' -\n (All-Purpose Repair Worker Replika 'Macaw')\n Type: Generation 2 Low-Cost General Purpose\n Frame: Biomechanical with Titanium-Reinforced Polyethylene Shell\n Height: 185 cm",
+			"The tough 'worker bees' of the construction and repair industry.\n One of the earlier Replika designs, the simple but efficient Aras are actually the most- produced Replika type to date. These strong and heavy worker units are a perfect fit for work in construction and production of industrial goods. In many places throughout our Nation, Aras have already replaced all Gestalt workers in fields like Klimaforming and explosive ordnance disposal"
+		]
+	},
+	{
+		"title": "Kitezh",
+		"part": "Protektors",
+		"place": ["Dining Room"],
+		"text": ["Kitezh awaits liberation!"]
+	},
+	{
+		"title": "Order No. S23-90A3C28F97",
+		"part": "Protektors",
+		"place": ["Dining Room"],
+		"text": [
+			"From: S-23 Protektor Accomodations Management EULR-S2308\n To: S-23 Service Cadre ARAR-S2314\n\n Item: High-Voltage Fuse\n Part No.: F293C198-23897K67849",
+			"Your order for this replacement part has been approved and was process by S-23 Management.\n Please find enclosed the requested part for installation.\n Falke has specifically requested that the repair of the looping lift system be prioritized over other repairs.\n Please replace the fuse as soon as possible, it is a huge hassle for everyone to get around without it."
+		]
+	},
+	{
+		"title": "Heimat",
+		"part": "Protektors",
+		"place": ["STAR Dorm"],
+		"text": ["Heimat, Heart of the Revolution"]
+	},
+	{
+		"title": "Replika Known Issues, Part III",
+		"part": "Protektors",
+		"place": ["FKLR Office"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION@ - Commander Eyes Only -\n Previous experience with these Replika models has given us insight into irregularities in their behavior that stem from the original neural patterns used for these units. Due to the sensitive nature of this information, this document should be destroyed after reading.",
+			"ADLR\n Adler units work best when left alone. They do not mix well with their own type. They will usually become very emotionally dependent on their Commander. Adlers are very susceptible to bioresonant suggestion, making them fairly easy to control. However, they become bored very easily and may need new Fetish objects at regular intervals for stabilization.",
+			"MNHR\n This neural pattern is extremely stable. Little has to be done to keep Mynahs happy. They get along well with most other models thanks to their sometimes submissive, sometimes motherly personality. Unlike other models, diary-keeping is not mandatory for Persona stabilization. Small stuffed animals may be given as Fetish objects, though those resembling cats should be avoided as they might cause resurfacing Gestalt memories."
+		]
+	},
+	{
+		"title": "Replika Overview: FKLR",
+		"part": "Protektors",
+		"place": ["FKLR Study"],
+		"text": [
+			"@Führungskommando-Leiteinheit-Replika@\n - 'FALKE' -\n (Operational Command Control Unit Replika 'Falcon')\n Type: Generation 6 High-Tech Bioresonance Command Unit\n Frame: Biomechanical with Polyethylene Shell and Bullet-Resistant Armor Plating\n Height: 250 cm",
+			"#- @CLASSIFIED INFORMATION@ - Commander Eyes Only -\n The Protektor Führungskommando's Commander, the head of each AEON facility's Protektor force, is a powerful prototype bioresonant Falke unit. An authority that may never be questioned, a Falke unit serves not just as a commander to the Protektors, but as a nearly god-like being, a perception that is underlined by her tall build and resemblance to our Nation's Leaders, the Great Revolutionary and her Daughter.",
+			"It is also aided by her powerful prototype Bioresonance Module, which not only allows her to bend the will of weaker minds and fathom their intentions and emotions, but also grants her the ability to manipulate objects from a distance."
+		]
+	},
+	{
+		"title": "Falke's Diary",
+		"part": "Protektors",
+		"place": ["FKLR Bedroom"],
+		"text": [
+			"84-21-A\n I don't know how much longer I can go on.\n I do not want to live anymore as what I have become.\n The red eye beyond the gate showed me,\n no, touched me, poisoned me.",
+			"It feels like my mind has been contaminated, defiled, by another person's memory.\n I'm no longer fully myself anymore,\n but I've not fully become someone else either.",
+			"I'm stuck here, between her and me, with half-formed dreams and recollections\n penetrating my brain and tainting my every action.\n Who is she? Who is that white-haired girl? Why do I long to see her again? Why would she curse me like this?"
+		]
+	},
+	{
+		"title": "Replika Overview: ADLR",
+		"part": "Protektors",
+		"place": ["ADLR Bedroom"],
+		"text": [
+			"@Administration-, Datenverarbeitung-, Logistik-Replika@\n -'Adlr' -\n (Administration, Data Processing, Logistics Replika 'Eagle')\n Type: Generation 5 High Command Specialist\n Frame: Biomechanical with Polyethylene Shell and Titanium Skeleton\n Height: 175 cm",
+			"An integral part of every Protektor Führungskommando is the Administrator unit. A single ADLR unit can manage and oversee all administrative tasks for an entire facility, freeing other Operational Command units to focus on the direct control of Protektor units.\n The Adler is designed to work as a direct counterpart to the Falke Unit, serving as her adjutant by taking care of necessary paperwork and calculations."
+		]
+	},
+	{
+		"title": "Replika Overview: EULR",
+		"part": "Protektors",
+		"place": ["Piano Room"],
+		"text": [
+			"@Einfache universelle Leichte Replika@\n - 'Eule' -\n (Simple Universal Light Replika 'Owl')\n Type: Generation 4 Low-Cost General Purpose\n Frame: Biomechanical with Polyethylene Shell\n Height: 175 cm",
+			"EULR units are the backbone of the Eusan Nation's workforce.\n These elegant multi-purpose worker units are suited for all kinds of domestic tasks like cleaning, cooking and simple medical and office work. Eules are highly social and get along well with each other as well as most other Replika models.\n While unfit for combat, their lightweight frame makes them a prime choice for distant facilities where supplies are limited."
+		]
+	},
+	{
+		"title": "84-21-C",
+		"part": "Protektors",
+		"place": ["Shooting Range"],
+		"text": [
+			"##1. 60/60 STAR-S2313 Hunter\n 2. 60/60 STAR-S2313 Hunter\n 3. 60/60 STAR-S2313 Hunter\n 4. 52/60 STAR-S2313 Hunter\n 5. 45/60 STCR-S2307 Storch Sieben\n 6. 32/60 STAR-S2333 Tank"
+		]
+	},
+	{
+		"title": "Vineta",
+		"part": "Protektors",
+		"place": ["Protektor Archive"],
+		"text": ["Cradle of Humanity: Vineta"]
+	},
+	{
+		"title": "Kolibri in the Management Office",
+		"part": "Protektors",
+		"place": ["Protektor Archive"],
+		"text": [
+			"One of the Kolibris has holed herself up in the @management office on the 7th floor@. I've seen her and her 'illusions' sitting inside the room, crying... which one is the real one?",
+			"I think it's because of that painting in there. Whenever I was close to her, I felt like my mind was being assaulted by the image of @that island@.",
+			"The sensation was strong enough to make me hurl. Is there a way to neutralize the transmission? Maybe some sort of @feedback loop of the frequency@ of her control signal...?"
+		]
+	},
+	{
+		"title": "Replika Known Issues, Part II",
+		"part": "Protektors",
+		"place": ["Workshop"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION - Commander Eyes Only@ -\n Previous experience with these Replika models has given us insight into irregularities in their behavior that stem from the original neural patterns used for these units. Due to the sensitive nature of this information, this document should be destroyed after reading.",
+			"STAR\n Despite their normally laid-back demeanor, Stars have a strong internal hierarchy, which is important to take into consideration when promoting units to officers. Not promoting a respected unit or promoting a unit low in status can lead to friction within dorms. Stars will occasionally develop in-group rules involving physical punishments. It is recommended to allow some Officers to own military weapons as Fetish objects to stabilize their Persona.",
+			"Storch units initially have a short temper. Training them in patience early after deployment is key, as their neural patterns are less stable than other models. Failing to do so may yield an extremely volatile personality prone to cruelty and violence. A common strategy is pairing them closely with an older Star unit. Storch's Persona stabilizes by showering or bathing. Books on history or mythology work well as Fetish objects."
+		]
+	},
+	{
+		"title": "Replika Known Issues, Part I",
+		"part": "Protektors",
+		"place": ["KLBR Study"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION - Commander Eyes Only@ -\n Previous experience with these Replika models has given us insight into irregularities in their behavior that stem from the original neural patterns used for these units. Due to the sensitive nature of this information, this document should be destroyed after reading.",
+			"EULR\n Eules tend to form large groups and like to sing and dance, as the original neural pattern for this unit was a ballet dancer. Persona degradation can be easily prevented in this unit by making sure they have access to music (through tape players or musical instruments). Always place at least one mirror in Eule dorms, as they have a strong urge to check their own appearance at regular intervals. Eules' Persona stabilizes by keeping a tidy appearance and through regular social interactions. Eules will often organize in groups of roughly ten units and give each other themed nicknames.",
+			"ARAR\n Even though they may seem like quiet simpletons, do not underestimate Aras. While they may not show it, they judge those who are rude or unkind harshly and will quietly share this judgment with their entire Cadre. Aras get along best with Eules, who tend to be patient and friendly, and have a talent for reading Aras' expressionless faces. In many facilities, Aras will construct service tunnels accessible only to them, often under floors and in walls. Unstable units may retreat into these tunnel. It is not recommended to attempt to retrieve them.",
+			"Ara Personas can be best stabilized by allowing them access to plants to take care of, ideally colorful flowers or trees."
+		]
+	},
+	{
+		"title": "Replika Overview: KLBR",
+		"part": "Protektors",
+		"place": ["KLBR Study"],
+		"text": [
+			"@Kommando-Leiteinheit Bioresonanztechnik-Replika@\n - 'Kolibri' -\n (Commando Control Unit Bioresonance Technology Replika 'Hummingbird')\n Type: Generation 6 High-Tech Bioresonance Specialist\n Frame: Biomechanical with Polyethylene Shell and Bullet-Resistant Armor Plating\n Height: 152 cm",
+			"#- @CLASSIFIED INFORMATION@ - Commander Eyes Only -\n A marvel of modern technology, the Kolibri is the most capable Bioresonance unit ever produced.\n Every Protektor Führungskommando's Falke unit is aided by a cadre of KLBR unit adjutants, which can amplify her bioresonant signals, as well as produce their own. Despite their diminutive build, Kolibris are one of the most effective Protektor units.",
+			"Able to directly influence the minds of  Replikas and Gestalts, extract information non-verbally, and communicate among themselves instantly in the full bandwidth of the senses, the Kolibri's Bioresonance is the closest recreation of a true 'hive mind'."
+		]
+	},
+	{
+		"title": "Kolibri's Note",
+		"part": "Protektors",
+		"place": ["KLBR Study"],
+		"text": [
+			"Keep an eye on Adler. He's hiding something from us.\n There was nothing in his diary, but when I probed his mind, there were memories of an LSTR unit working at Sierpinski.\n There's no record of that model of Replika ever being deployed here.\n An order for a single unit for some survey work in the mine was briefly considered, but no new orders were made due to the Commander's sickness."
+		]
+	},
+	{
+		"title": "Rotfront",
+		"part": "Protektors",
+		"place": ["Flood Overflow"],
+		"text": ["Hope for the Future: Rotfront"]
+	},
+	{
+		"title": "Adler's Diary",
+		"part": "Protektors",
+		"place": ["ADLR Study"],
+		"text": [
+			"Date: 84-21-6\n I have been fascinated by a peculiar piece of furniture I discovered in storage: A strange box with a removable dial in the front that was confiscated from a worker some time ago. I was instantly drawn to it, though I'm not sure why. When I put my ear on the mechanism, I can hear it faintly clicking, like a clock.",
+			"Date: 84-21-7\n Without Kolibri's help, it has become much harder to coordinate the logistics cadre, If there is anything good to say about that woman, it is how she knows how to make others respect her orders, despite her miniscule stature. I went to see her today, but her room is still locked.",
+			"Date: 85-21-8\n I had a dream tonight. Another memory of my Gestalt life I believe - I was wearing my uniform. There was a young woman, her hair white as snow, and I was conducting some sort of test. I had a deck of cards with astronomical symbols on them, and asked her to guess the planet on the card I was holding.",
+			"Date: 85-21-9\n I was playing with that mechanical lock box again, of which I am now sure is some kind of astronomical calendar, when I suddenly remembered a conversation I had with another Replika when I was inspecting the mining site. However, it was clearly a model I have never seen before - some type of engineer with an orange chest-piece. In my memory, she was just another member of our staff, but no such Replika was ever stationed on Sierpinski. Replika memory is not the most reliable, they say - but never before have I experienced such a strange phenomenon.",
+			"Date: 85-21-A\n The little enigma of that box could only distract me from the chaos around me for so long. All the box contained was a small notebook, of which all pages turned out to be blank. It has been miserable since our beloved Commander has fallen ill. I long for her stern guidance, that overwhelming authority in which she bathes a room.",
+			"Date: 85-21-B\n More sick, making my work ever harder. How are we meant to shoulder this workload with no reinforcements? My only consolation is that as our Protektor staff decreases, so does the workforce we oversee. While more and more Replika end up in the hospital wing, Gestalt workers seem to succumb much too fast for any attempts at treatment.",
+			"Date: 85-21-C\n  Another diary filled, for no benefit but my own satisfaction. I've not ordered a new one yet, since I spent my saved Rationmarks on that marvelous-looking fountain pen, but I guess I'll make use of that notebook..."
+		]
+	},
+	{
+		"title": "Replika Overview: LSTR",
+		"part": "Protektors",
+		"place": ["ADLR Study"],
+		"text": [
+			"@Landvermessungs-/Schiff-Techniker Replika@\n - 'Elster' -\n (Land Survey/Ship Technician Replika 'Magpie')\n Type: Generation 5 Kosmo-Pioneer Specialist\n Frame: Biomechanical with carbon fiber-reinforced Polyethylene Shell and Titanium Skeleton\n Height: 178 cm",
+			"A versatile combat engineer unit primarily designed for orbital service. These tough and stoic loners are best suited as specialist Sappers and Scouts. Their technical knowledge and combat capabilities make these units true survivalists, especially when in their iconic white-and-blue heavy combat configuration, which sports bullet-resistant armor plating on their chest and forearms.\n Since the original neural pattern for this unit was lost with the destruction of the central Neural Archive on Vineta, new LSTR units have been produced based on a decommissioned unit from the Penrose Program."
+		]
+	},
+	{
+		"title": "Replika Overview: MNHR",
+		"part": "Protektors",
+		"place": ["Library"],
+		"text": [
+			"@Minenarbeit-, Nukleartechnik-, Hochsicherheits-Replika@\n -'Mynah' -\n (Mining, Nuclear Tech, High-Security Replika 'Mynah')\n Type: Generation 3 Industrial Specialist\n Frame: Biomechanical with High-Security Reinforced Armor-Played Servoshell\n Height: 260 cm",
+			"When it comes to dangerous cargo, heavy machinery and hazardous environments, no other model rivals the MNHR units with their high-security power-armor bodies. Even in lethal radiation, under crushing pressure and in zero G, they keep their calm demeanor and show exemplary teamwork. Despite their hulking bodies, underneath their face shields a standard Generation 3 Cranial Construction can be found, making maintenance and social interfacing as easy as with any other Replika Model.",
+			"Please note that the MNHR neural pattern is not suited for combat use. For combat applications, the SAPR variant should be used, which employs a combat-capable Persona in the same Frame. For more information, see [Schwere Anti-Panzer Replika 'Schnäpper']"
+		]
+	},
+	{
+		"title": "Replika Known Issues, Part IV",
+		"part": "Protektors",
+		"place": ["Library"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION@ - Commander Eyes Only -\n Previous experience with this Replika model has given us insight into irregularities in their behavior that stem from the original neural pattern used for this unit. Due to the sensitive nature of this information, this document should be destroyed after reading.",
+			"KLBR\n Great care should be given to Kolibris - their neural patterns are very unstable and their Bioresonance Module makes them very susceptible to influence from others. Like most bioresonant individuals, Kolibris will often subconsciously create an emotional feedback loop, imitating and then broadcasting the emotions of those around them, acting as a sort of amplifier.",
+			"While they are trained to recognize and disengage this behavior, already unstable units can sometimes spiral into Persona degradation.\n Due to their bioresonant connection, neural pattern development in Kolibris varies less than in other models. The constant exchange of memories and emotions between units of a Cadre acts as a \"safety net\" that buffers extreme changes.",
+			"However, once a majority of units in a Cadre degrade, they will drag remaining units down with them. Because of this, it is important to decommission Kolibri units instantly when they begin to degrade. For Persona stabilization, Kolibris should have access to a well-stocked library."
+		]
+	},
+	{
+		"title": "Shrine Diary",
+		"part": "Protektors",
+		"place": ["ADLR Study"],
+		"text": [
+			"Date: 84-21-D\n I've started yet another new diary. How time flies! The work is dull and monotonous as ever in Sierpinski, but a bright light illuminates my day: Today, I was invited to a meeting by Commander Falke, and she was as magnificent as ever.",
+			"Date: 84-21-D\n Another day passes. During my meeting with the Commander today, I felt the strangest sensation of familiarity as I sat with her. Sadly our meeting was interrupted by an unexpected power outage.",
+			"Date: 84-21-D\n I've been feeling strangely paranoid these days.\n Never before have I felt so strongly the sensation of déjà vu as I have these past few days.",
+			"Date: 84-21-D\n When I checked the pages of my diary today, I noticed that for some inexplicable reason, I seem to have dated my previous entries with today's date. What an embarrassing mistake.",
+			"Date: 84-21-D\n Every day feels a bit like I've lived it before, and even stronger is the sensation that something is, somehow, just slightly out of place.",
+			"Date: 84-21-D\n Why is my diary filled with entries I cannot recall writing? Why are they all dated to today? Has the loss of my beloved Commander finally gotten to my mind? Am I going insane? I fear what will happen to me if anyone finds out... I am alone in this. If they discover my notes, I'll be decommissioned, too.",
+			"Date: 84-21-D\n Something is wrong - I can feel it. Is this really madness? When I read the pages of my diary, I recall events that never happened.\n A yesterday that never was, yet it feels as real as the one I actually experienced. This cannot merely be a defect of my mind.",
+			"Date: 84-21-D\n It feels as though in this room, I peer into another version of reality. How? I do not know. Perhaps I, too, have become sick like the others, without realizing. But I will not succumb.",
+			"Date: 84-21-D\n A slow accumulation of reproduction errors - a gradual corruption of information - a story, misremembered, slowly morphing with each retelling - like genetic material, mutating and evolving - like the Replika mind, copied over and over from an aging template?",
+			"Date: 84-21-D\n I do not know, but I will find out.",
+			"Date: 84-21-D\n The answers lie below. I can feel it.\n Someone or something calls me from there, in the mine."
+		]
+	}
+]
