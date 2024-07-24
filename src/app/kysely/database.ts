@@ -1,10 +1,18 @@
 import { Database } from './types';
-import { createKysely } from '@vercel/postgres-kysely';
-import {  sql } from 'kysely';
+import { Pool } from 'pg';
+import { Kysely, PostgresDialect, sql } from 'kysely';
 
+const dialect = new PostgresDialect({
+	pool: new Pool({
+		connectionString: process.env.DATABASE_URL,
+	}),
+});
+
+const db = new Kysely<Database>({
+	dialect,
+});
 
 export async function getEntry(id: string) {
-	const db = createKysely<Database>();
 	try {
 		const entry = await db
 			.selectFrom('entry')
@@ -20,5 +28,5 @@ export async function getEntry(id: string) {
 	} catch (error) {
 		console.error(error);
 	}
-	db.destroy()
+	db.destroy();
 }
