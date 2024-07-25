@@ -65,7 +65,7 @@ export const chapters = [
 					{ title: 'Kitezh', place: 'Dining Room' },
 					{ title: 'Replika Known Issues, Part III', place: 'FKLR Office' },
 					{ title: 'Replika Overview: FKLR', place: 'FKLR Study' },
-					{ title: "Falke's Diary", place: 'FLKR Bedroom' },
+					{ title: "Falke's Diary", place: 'FKLR Bedroom' },
 					{ title: 'Replika Overview: ADLR', place: 'ADLR Bedroom' },
 					{ title: 'Replika Overview: EULR', place: 'Piano Room' },
 					{ title: 'Vineta', place: 'Protektor Archive' },
