@@ -39,7 +39,7 @@ function Hit({ hit, listRef }: { hit: any; listRef: MutableRefObject<null> }) {
 	return (
 		<li ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
 			<a
-				href={`/entries/${hit.title.replace(/\s/gm, '-')}`}
+				href={`/entries/${hit.slug}`}
 				className="block border border-t-[18px] border-primary-orange px-3 py-3 sm:px-6 sm:py-4"
 			>
 				<h3 className="mb-2 text-xl font-semibold text-primary-orange sm:mb-4 sm:text-2xl">
