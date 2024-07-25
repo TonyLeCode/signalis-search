@@ -6,12 +6,12 @@ function useMediaQuery(query: string) {
 	const [matches, setMatches] = useState(false);
 
 	useEffect(() => {
-		setMatches(window.matchMedia(query).matches)
+		setMatches(window.matchMedia(query).matches);
 	}, []);
 
 	useEffect(() => {
 		const mediaQuery = window.matchMedia(query);
-		const listener = (event:MediaQueryListEvent) => setMatches(event.matches);
+		const listener = (event: MediaQueryListEvent) => setMatches(event.matches);
 
 		mediaQuery.addEventListener('change', listener);
 
@@ -63,7 +63,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 	}, [open, isMobile]);
 
 	return (
-		<li className="accordion fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
+		<li key={part} className="accordion fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
 			<button
 				aria-expanded={open}
 				onClick={() => {
@@ -79,26 +79,28 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 			<ul ref={ref} className={`max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
 				{entries.map((entry, i) => {
 					return (
-						<a
-							aria-hidden={!open}
-							tabIndex={!open ? -1 : undefined}
-							ref={(el: HTMLAnchorElement | null) => {
-								if (el) itemsRef.current[i] = el;
-							}}
-							href={`/entries/${entry.title.replace(/\s/gm, '-')}`}
-							key={entry.title}
-							className="flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm"
-						>
-							<div title={entry.title}>
-								{entry.title.substring(0, 30)}
-								{entry.title.length >= 30 ? '...' : ''}
-							</div>
-							<div className="text-sm font-light text-white/80 sm:ml-auto sm:text-base">
-								{'\u003C'}
-								{entry.place}
-								{'\u003E'}
-							</div>
-						</a>
+						<li key={entry.title + entry.place}>
+							<a
+								aria-hidden={!open}
+								tabIndex={!open ? -1 : undefined}
+								ref={(el: HTMLAnchorElement | null) => {
+									if (el) itemsRef.current[i] = el;
+								}}
+								href={`/entries/${entry.title.replace(/\s/gm, '-')}`}
+								key={entry.title}
+								className="flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm"
+							>
+								<div title={entry.title}>
+									{entry.title.substring(0, 30)}
+									{entry.title.length >= 30 ? '...' : ''}
+								</div>
+								<div className="text-sm font-light text-white/80 sm:ml-auto sm:text-base">
+									{'\u003C'}
+									{entry.place}
+									{'\u003E'}
+								</div>
+							</a>
+						</li>
 					);
 				})}
 			</ul>

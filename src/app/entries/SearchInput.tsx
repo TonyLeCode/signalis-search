@@ -37,7 +37,7 @@ function Hit({ hit, listRef }: { hit: any; listRef: MutableRefObject<null> }) {
 	}, [ref, listRef]);
 
 	return (
-		<li ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
+		<li key={hit.objectID} ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
 			<a
 				href={`/entries/${hit.slug}`}
 				className="block border border-t-[18px] border-primary-orange px-3 py-3 sm:px-6 sm:py-4"
@@ -95,7 +95,7 @@ function InfiniteHits(props: UseInfiniteHitsProps) {
 				{hits.map((hit) => (
 					<Hit key={hit.objectID} hit={hit} listRef={listRef} />
 				))}
-				<li className="mb-4" ref={sentinelRef} aria-hidden="true" />
+				<li key={'sentinel'} className="mb-4" ref={sentinelRef} aria-hidden="true" />
 			</ul>
 		</article>
 	);
