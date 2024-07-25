@@ -112,16 +112,22 @@ input::-webkit-search-cancel-button {
 }
 
 .fly-up-fade {
-	animation: fly-up 300ms ease-out, fade 300ms ease-out;
+	animation:
+		fly-up 300ms ease-out,
+		fade 300ms ease-out;
 	animation-fill-mode: both;
 }
 
 .fly-right-fade {
-	animation: fly-right-entry 300ms ease-out, fade 300ms ease-out;
+	animation:
+		fly-right-entry 300ms ease-out,
+		fade 300ms ease-out;
 	animation-fill-mode: both;
 }
 .fly-left-fade {
-	animation: fly-left-entry 300ms ease-out, fade 300ms ease-out;
+	animation:
+		fly-left-entry 300ms ease-out,
+		fade 300ms ease-out;
 	animation-fill-mode: both;
 }
 
@@ -202,7 +208,9 @@ input::-webkit-search-cancel-button {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.fly-up-fade, .fly-right-fade, .fly-left-fade {
+	.fly-up-fade,
+	.fly-right-fade,
+	.fly-left-fade {
 		animation: none;
 	}
 }

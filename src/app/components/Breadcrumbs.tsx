@@ -29,7 +29,7 @@ export default function Breadcrumbs() {
 		<ol className="w-full m-auto flex max-w-4xl p-4 pt-4 gap-3 text-sm sm:text-base sm:pt-10" aria-label="Breadcrumb">
 			{home ? (
 				<li key='home'>
-					<a href="/" className="text-primary-blue hover:underline hover:text-primary-blue-hover">
+					<a href="/" className="text-primary-blue hover:underline hover:text-primary-blue-hover focus:text-primary-blue-hover focus:underline">
 						Home
 					</a>
 				</li>

@@ -40,7 +40,7 @@ function Hit({ hit, listRef }: { hit: any; listRef: MutableRefObject<null> }) {
 		<li key={hit.objectID} ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
 			<a
 				href={`/entries/${hit.slug}`}
-				className="block border border-t-[18px] border-primary-orange px-3 py-3 sm:px-6 sm:py-4"
+				className="block border border-t-[18px] border-primary-orange px-3 py-3 sm:px-6 sm:py-4 focus:outline focus:outline-primary-orange focus:outline-offset-2 focus:outline-4"
 			>
 				<h3 className="mb-2 text-xl font-semibold text-primary-orange sm:mb-4 sm:text-2xl">
 					<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
@@ -91,7 +91,7 @@ function InfiniteHits(props: UseInfiniteHitsProps) {
 			<div className="mb-1 ml-2 text-sm font-light">
 				{results?.nbHits} {results?.nbHits !== 1 ? 'results' : 'result'}
 			</div>
-			<ul ref={listRef} className="ais-InfiniteHits-list flex flex-col gap-6 overflow-y-auto px-2">
+			<ul ref={listRef} className="ais-InfiniteHits-list flex flex-col gap-6 overflow-y-auto px-2 pt-4">
 				{hits.map((hit) => (
 					<Hit key={hit.objectID} hit={hit} listRef={listRef} />
 				))}
