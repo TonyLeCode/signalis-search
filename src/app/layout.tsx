@@ -8,7 +8,7 @@ const raleway = Raleway({ weight: ['200', '300', '400', '500', '600', '700'], su
 export const metadata: Metadata = {
 	metadataBase: new URL(process.env.STATIC_URL || 'http://localhost:3000'),
 	title: 'Kohlibri',
-	description: 'Kohlibri is a search engine for Signalis. This is a fan made website to search through memories in Signalis.',
+	description: 'Kohlibri is a fan made website for the game, Signalis, to help players search through in-game memories.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
