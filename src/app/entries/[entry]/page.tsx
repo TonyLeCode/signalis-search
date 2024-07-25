@@ -1,16 +1,21 @@
-import { getEntry } from '@/app/kysely/database';
+import { getAllEntrySlugs, getEntry } from '@/app/kysely/database';
 import EntryPage from './EntryPage';
 import { Metadata } from 'next';
 import { tokenize } from '@/app/lib/tokenize';
+import { notFound } from 'next/navigation';
 
 type Props = { params: { entry: string } };
 
-//TODO statically rendered
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+	const slugs = await getAllEntrySlugs();
+	return slugs.map((slug) => ({ entry: slug.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const title = decodeURIComponent(params.entry.replace(/-/gm, ' '));
 	// const description = params.entry.text[0];
-	// TODO add description without accessing the database twice, use cache
 	return {
 		title: `${title} - Kohlibri`,
 		// description: description,
@@ -18,30 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-	let entry;
-	let attempts = 3;
+	const entry = await getEntry(decodeURIComponent(params.entry));
 
-	const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
-	while (attempts--) {
-		try {
-			entry = await getEntry(decodeURIComponent(params.entry));
-			if (entry) {
-				break;
-			} else {
-				throw new Error('Entry not found');
-			}
-		} catch (error) {
-			if (!attempts) {
-				break;
-			}
-			await delay(1000);
-		}
-	}
-
-	if (!entry) {
-		throw new Error('Entry not found');
-	}
+	if (!entry) notFound();
 
 	let formattedText: { __html: string }[] = [];
 	entry.text.forEach((entry) => {

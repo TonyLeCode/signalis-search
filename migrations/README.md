@@ -4,6 +4,7 @@ To use, type `npm run kysely <command>`, replacing `<command>`.
 Alternatively, for convenience, you can use the following:
 `npm run migrate-up`
 `npm run migrate-down`
+`npm run seed`
 
 ## Kysely Commands
 

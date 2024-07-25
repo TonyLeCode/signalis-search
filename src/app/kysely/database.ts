@@ -1,31 +1,28 @@
 import { Database } from './types';
-import { Pool } from 'pg';
-import { Kysely, PostgresDialect, sql } from 'kysely';
+import { sql } from 'kysely';
+import { createKysely } from '@vercel/postgres-kysely';
 
-const dialect = new PostgresDialect({
-	pool: new Pool({
-		connectionString: process.env.DATABASE_URL,
-	}),
-});
+function connectDB() {
+	return createKysely<Database>();
+}
 
-const db = new Kysely<Database>({
-	dialect,
-});
-
-export async function getEntry(id: string) {
-	try {
-		const entry = await db
-			.selectFrom('entry')
-			.select(['entry.id', 'entry.title'])
-			.innerJoin('text', 'text.entryid', 'entry.id')
-			.select(() => [sql<string[]>`array_agg(text.text ORDER BY text.page)::text[]`.as('text')])
-			.where('entry.slug', '=', id)
-			.groupBy(['entry.id'])
-			.executeTakeFirstOrThrow();
-
-		return entry;
-	} catch (error) {
-		console.error(error);
-	}
+export async function getEntry(slug: string) {
+	const db = connectDB();
+	const entry = await db
+		.selectFrom('entry')
+		.select(['entry.id', 'entry.title'])
+		.innerJoin('text', 'text.entryid', 'entry.id')
+		.select(() => [sql<string[]>`array_agg(text.text ORDER BY text.page)::text[]`.as('text')])
+		.where('entry.slug', '=', slug)
+		.groupBy(['entry.id'])
+		.executeTakeFirst();
 	db.destroy();
+	return entry;
+}
+
+export async function getAllEntrySlugs() {
+	const db = connectDB();
+	const slugs = await db.selectFrom('entry').select(['entry.slug']).execute();
+	db.destroy();
+	return slugs;
 }

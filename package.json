@@ -9,9 +9,12 @@
     "lint": "next lint",
     "kysely": "kysely",
     "migrate-up": "kysely migrate:up",
-    "migrate-down": "kysely migrate:down"
+    "migrate-down": "kysely migrate:down",
+    "seed": "kysely seed:run"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.9.0",
+    "@vercel/postgres-kysely": "^0.9.0",
     "algoliasearch": "^4.24.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.5",
