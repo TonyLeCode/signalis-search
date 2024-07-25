@@ -1,15 +1,15 @@
 export function tokenize(text: string): string {
 	const rules = [
 		{
-			pattern: /##(.*)/gms, // Center lines for entire text
+			pattern: /##([\s\S]*)/gm, // Center lines for entire text
 			replacement: '<span class="entry-center">$1</span>',
 		},
 		{
-			pattern: /\$(.*?)\$/gms, // Ciphered Words
+			pattern: /\$([\s\S]*?)\$/gm, // Ciphered Words
 			replacement: '<span class="entry-ciphered">$1</span>',
 		},
 		{
-			pattern: /@(.*?)@/gms, // Red words
+			pattern: /@([\s\S]*?)@/gm, // Red words
 			replacement: '<span class="entry-orange">$1</span>',
 		},
 		{
