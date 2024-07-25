@@ -16,11 +16,11 @@ export default function Page() {
 			</div>
 			{chapters.map((chapter, chapterNum) => {
 				return (
-					<section key={chapter.chapter} className='mb-4'>
+					<section key={chapter.chapter} className='mb-4 w-full text-center'>
 						<h2 className="fly-right-fade mb-2 text-xl font-semibold sm:text-2xl" style={{ animationDelay: '100ms' }}>
 							{`Chapter ${chapterNum + 1}: ${chapter.chapter}`}
 						</h2>
-						<ul className="w-full max-w-xl">
+						<ul className="w-full max-w-xl mx-auto">
 							{chapter.parts.map((part, i) => {
 								return <Accordion key={part.title} part={part.title} entries={part.entries} index={i} />;
 							})}
