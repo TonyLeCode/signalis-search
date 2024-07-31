@@ -4,7 +4,8 @@ import { chapters } from './BrowseData';
 
 export const metadata = {
 	title: 'Entries - Kohlibri',
-	description: 'Kohlibri is a search engine for Signalis. This is a fan made website to search through memories in Signalis. ',
+	description:
+		'Kohlibri is a search engine for Signalis. This is a fan made website to search through memories in Signalis. ',
 };
 
 export default function Page() {
@@ -16,7 +17,7 @@ export default function Page() {
 			</div>
 			{chapters.map((chapter, chapterNum) => {
 				return (
-					<section key={chapter.chapter} className='mb-4 w-full text-center'>
+					<section key={chapter.chapter} className="mb-4 w-full text-center">
 						<h2 className="fly-right-fade mb-2 text-xl font-semibold sm:text-2xl" style={{ animationDelay: '100ms' }}>
 							{`Chapter ${chapterNum + 1}: ${chapter.chapter}`}
 						</h2>

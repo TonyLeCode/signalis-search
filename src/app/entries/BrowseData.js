@@ -119,6 +119,7 @@ export const chapters = [
 					{ title: 'Penrose Briefing: Phase II', place: 'Medical' },
 					{ title: 'Scheduled Maintenance Checklist', place: 'Stern Hall' },
 					{ title: 'Operation Penrose', place: 'Stern Observatory' },
+					{ title: 'Chronometer Adjustment', place: 'Mess Hall' },
 					{ title: 'Replika Known Issues, Penrose Program', place: 'Mess Hall' },
 					{ title: "Ariane's Notes", place: 'Storage' },
 					{ title: 'Smeared Diary Page (2)', place: 'Personnel (Wrecked)' },

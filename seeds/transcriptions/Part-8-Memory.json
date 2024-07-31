@@ -32,6 +32,14 @@
 		"text": ["Pride of the Eusan Nation:\n Space Vessel Type \"pensrose\"\n - People's Navy"]
 	},
 	{
+		"title": "Chronometer Adjustment",
+		"part": "Memory",
+		"place": ["Mess Hall"],
+		"text": [
+			"Technical Service Record, Scout Officer Yeong Ariane\n Officer's Note: I've adjusted the ship's internal clock to run slightly slower. By my calculations, each cycle should be exactly 6.13% longer, simulating what I believe is the length of a \"day\" on Vineta.\n I wonder if Elster will notice the difference.\n Judging from her accent, I'm sure that she's Vinetan. She pronounces \"Ship\" just like Isa and Eri used to. It's very cute. Hearing her speak makes me dream of the ocean... I wonder if I'll ever get to visit something like it. Maybe on a distant world?"
+		]
+	},
+	{
 		"title": "Replika Known Issues, Penrose Program",
 		"part": "Memory",
 		"place": ["Mess Hall"],
