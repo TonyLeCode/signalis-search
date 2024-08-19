@@ -18,6 +18,7 @@ export const chapters = [
 					{ title: 'No running in the hallways!', place: 'Class 4B' },
 					{ title: 'Memorandum: Wall Safe Codes', place: 'Staff Room' },
 					{ title: 'Service Request Form F-29', place: 'Staff Room' },
+					{ title: 'Memorandum: Terminology', place: 'Observation Room' },
 					{ title: 'Mond&Töchter High-Security Wall Safe (Numeric)', place: 'Library' },
 					{ title: "Isa's Note", place: 'Library' },
 					{ title: 'Dictionary', place: 'Library' },

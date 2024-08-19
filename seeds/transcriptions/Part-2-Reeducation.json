@@ -11,25 +11,25 @@
 		]
 	},
 	{
+		"title": "The Rule of Six",
 		"part": "Reeducation",
 		"place": ["Corridor"],
-		"title": "The Rule of Six",
 		"text": [
 			"Remember the Rule of Six!\n Never carry more than Six items on your person!\n Private property is a privilege:\n Keep your pockets empty and your bag light."
 		]
 	},
 	{
+		"title": "Keep Records!",
 		"part": "Reeducation",
 		"place": ["Staff Room"],
-		"title": "Keep Records!",
 		"text": [
 			"Protocol everything!\n Remember: if you didn't write it down, it never happened!\n Get the right forms from Administration and save your files frequently!"
 		]
 	},
 	{
+		"title": "No running in the hallways!",
 		"part": "Reeducation",
 		"place": ["Class 4B"],
-		"title": "No running in the hallways!",
 		"text": ["No running in the hallways!\n Be mindful of your neighbors.\n everyone can hear you run!"]
 	},
 	{
@@ -47,6 +47,16 @@
 		"text": [
 			"Date of filing Service Request Form 84-21-4\n Full Protektor ID of unit filing request: EULR-S2309 (Replika)\n Status: Staff        Department: $Reeducation$\n Full Protektor ID of unit processing request: ARAR-S2303 (Replika)",
 			"Service Object: Mond & Töchter High-Security Wall Safe (Numeric Keypad)\n Location of Object: Classroom 4B\n Description: The wall safe in classroom 4B keeps resetting to the default combination. What's the point of the whole radio code broadcasting system if our safe can only be opened with the code in the manual?"
+		]
+	},
+	{
+		"title": "Memorandum: Terminology",
+		"part": "Reeducation",
+		"place": ["Observation Room"],
+		"text": [
+			"I announce the following, by order of AEON:\nDue to recent events, in acccordance with the new AEON Public Interest Media Regulation AGM-87, the term ********, which is currently in use in various AEON facilities, is no longer permissible and must no longer be used.\nPremises and departments that are currently using the term are to be IMMEDIATELY renamed.",
+			"Management personnel shall black out the term from all signage and documents until replacement terminology is announced by AEON.\nWith immediate effect, usage of the term in conversation and correspondence is an Offense (Obscenity to the State) to be punished with 2 cycles of double work shift.",
+			"It may not be easy, but we all have to do our part here. Always remember:\n\"Our language shapes our world; a perfect world requires a perfect language.\"\n-Adler"
 		]
 	},
 	{
