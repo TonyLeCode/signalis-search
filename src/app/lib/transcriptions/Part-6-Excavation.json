@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Monofilament Fiber",
+		"slug": "Monofilament-Fiber",
 		"part": "Excavation",
 		"place": ["Monowire"],
 		"text": [
@@ -9,6 +10,7 @@
 	},
 	{
 		"title": "Alina's Diary (3)",
+		"slug": "Alina's-Diary-(3)",
 		"part": "Excavation",
 		"place": ["Mining Station"],
 		"text": [
@@ -17,12 +19,14 @@
 	},
 	{
 		"title": "The Twin Suns",
+		"slug": "The-Twin-Suns",
 		"part": "Excavation",
 		"place": ["Shore of Oblivion"],
 		"text": ["along the shore the cloud waves break,\n the twin suns sink $behind the lake,$\n the shadows lengthen"]
 	},
 	{
 		"title": "Black Stars",
+		"slug": "Black-Stars",
 		"part": "Excavation",
 		"place": ["Shore of Oblivion"],
 		"text": [
@@ -31,12 +35,14 @@
 	},
 	{
 		"title": "Tears Unshed",
+		"slug": "Tears-Unshed",
 		"part": "Excavation",
 		"place": ["Shore of Oblivion"],
 		"text": ["Song of $my soul, my voice is dead;\n die thou,$ unsung, as tears unshed\n shall dry and die"]
 	},
 	{
 		"title": "Sorts of Death",
+		"slug": "Sorts-of-Death",
 		"part": "Excavation",
 		"place": ["Shore of Oblivion"],
 		"text": [
@@ -45,6 +51,7 @@
 	},
 	{
 		"title": "Sorts of Death (2)",
+		"slug": "Sorts-of-Death-(2)",
 		"part": "Excavation",
 		"place": ["Shore of Oblivion"],
 		"text": [
@@ -53,6 +60,7 @@
 	},
 	{
 		"title": "And a Star Fell",
+		"slug": "And-a-Star-Fell",
 		"part": "Excavation",
 		"place": ["Shore of Oblivion"],
 		"text": [
@@ -61,6 +69,7 @@
 	},
 	{
 		"title": "A Sea of Flesh",
+		"slug": "A-Sea-of-Flesh",
 		"part": "Excavation",
 		"place": ["Shore of Oblivion"],
 		"text": ["##it calls me\n in a sea of flesh\n we will become one\n but i can never go back\n to being me"]

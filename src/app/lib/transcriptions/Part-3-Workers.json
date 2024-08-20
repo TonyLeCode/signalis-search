@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Scrawled Note",
+		"slug": "Scrawled-Note",
 		"part": "Workers",
 		"place": ["A61"],
 		"text": [
@@ -9,6 +10,7 @@
 	},
 	{
 		"title": "Alina's Diary",
+		"slug": "Alinas-Diary",
 		"part": "Workers",
 		"place": ["A61"],
 		"text": [
@@ -17,6 +19,7 @@
 	},
 	{
 		"title": "Diary",
+		"slug": "Diary",
 		"part": "Workers",
 		"place": ["A64"],
 		"text": [
@@ -24,9 +27,10 @@
 		]
 	},
 	{
+		"title": "Interrogation Report",
+		"slug": "Interrogation-Report",
 		"part": "Workers",
 		"place": ["Office"],
-		"title": "Interrogation Report",
 		"text": [
 			"Subject: Worker S-23-A-6514 (Chen, Wilhelm)\n Offense: Contraband found in locker\n Result: Confession\n Punishment: No food, 3 cycles",
 			"Subject: Worker S-23-A-3054 (Wong, Michaela)\n Offense: Illegal use of radio\n Result: Confession\n Punishment: Iso, 2 cycles",
@@ -36,13 +40,15 @@
 		]
 	},
 	{
+		"title": "Wunderwaffen",
+		"slug": "Wunderwaffen",
 		"part": "Workers",
 		"place": ["Office"],
-		"title": "Wunderwaffen",
 		"text": ["##Superweapons of our Nation\n in the battle against the Empire: Falke Units"]
 	},
 	{
 		"title": "Service Request Form R-90",
+		"slug": "Service-Request-Form-R-90",
 		"part": "Workers",
 		"place": ["Pantry"],
 		"text": [
@@ -52,6 +58,7 @@
 	},
 	{
 		"title": "Service Request Form F-29 (2)",
+		"slug": "Service-Request-Form-F-29-(2)",
 		"part": "Workers",
 		"place": ["Block A6"],
 		"text": [
@@ -62,6 +69,7 @@
 	},
 	{
 		"title": "About the Administrator",
+		"slug": "About-the-Administrator",
 		"part": "Workers",
 		"place": ["Rationing Office"],
 		"text": [
@@ -72,6 +80,7 @@
 	},
 	{
 		"title": "Search Protocol",
+		"slug": "Search-Protocol",
 		"part": "Workers",
 		"place": ["Registry"],
 		"text": [
@@ -84,6 +93,7 @@
 	},
 	{
 		"title": "Frequencies",
+		"slug": "Frequencies",
 		"part": "Workers",
 		"place": ["Interrogation"],
 		"text": [
@@ -92,6 +102,7 @@
 	},
 	{
 		"title": "To Radio Officer Yeong, Station 6",
+		"slug": "To-Radio-Officer-Yeong,-Station-6",
 		"part": "Workers",
 		"place": ["Rotfront Station 06"],
 		"text": [

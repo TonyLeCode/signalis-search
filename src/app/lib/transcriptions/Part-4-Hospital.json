@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Alina's Diary (2)",
+		"slug": "Alinas-Diary-(2)",
 		"part": "Hospital",
 		"place": ["ICU 01"],
 		"text": [
@@ -11,6 +12,7 @@
 	},
 	{
 		"title": "Patient EULR-S2321",
+		"slug": "Patient-EULR-S2321",
 		"part": "Hospital",
 		"place": ["ICU 01"],
 		"text": [
@@ -22,6 +24,7 @@
 	},
 	{
 		"title": "Proper Disposal of Corpses",
+		"slug": "Proper-Disposal-of-Corpses",
 		"part": "Hospital",
 		"place": ["Incinerator"],
 		"text": [
@@ -33,6 +36,7 @@
 	},
 	{
 		"title": "Flood Drainage System Malfunction",
+		"slug": "Flood-Drainage-System-Malfunction",
 		"part": "Hospital",
 		"place": ["Pump Room"],
 		"text": [
@@ -43,6 +47,7 @@
 	},
 	{
 		"title": "Reservoir Drainage Instructions",
+		"slug": "Reservoir-Drainage-Instructions",
 		"part": "Hospital",
 		"place": ["Pump Room"],
 		"text": [
@@ -51,6 +56,7 @@
 	},
 	{
 		"title": "Personal Grievance Form P-14",
+		"slug": "Personal-Grievance-Form-P-14",
 		"part": "Hospital",
 		"place": ["Vent Room"],
 		"text": [
@@ -60,6 +66,7 @@
 	},
 	{
 		"title": "Quick-Curing Construction Foam",
+		"slug": "Quick-Curing-Construction-Foam",
 		"part": "Hospital",
 		"place": ["Exam Room"],
 		"text": [

@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Penrose emergency procedures appendix H",
+		"slug": "Penrose-emergency-procedures-appendix-H",
 		"part": "Memory",
 		"place": ["Medical"],
 		"text": [
@@ -10,6 +11,7 @@
 	},
 	{
 		"title": "Penrose Briefing: Phase II",
+		"slug": "Penrose-Briefing:-Phase-II",
 		"part": "Memory",
 		"place": ["Medical"],
 		"text": [
@@ -19,6 +21,7 @@
 	},
 	{
 		"title": "Scheduled Maintenance Checklist",
+		"slug": "Scheduled-Maintenance-Checklist",
 		"part": "Memory",
 		"place": ["Stern Hall"],
 		"text": [
@@ -27,12 +30,14 @@
 	},
 	{
 		"title": "Operation Penrose",
+		"slug": "Operation-Penrose",
 		"part": "Memory",
 		"place": ["Stern Observatory"],
 		"text": ["Pride of the Eusan Nation:\n Space Vessel Type \"pensrose\"\n - People's Navy"]
 	},
 	{
 		"title": "Chronometer Adjustment",
+		"slug": "Chronometer-Adjustment",
 		"part": "Memory",
 		"place": ["Mess Hall"],
 		"text": [
@@ -41,6 +46,7 @@
 	},
 	{
 		"title": "Replika Known Issues, Penrose Program",
+		"slug": "Replika-Known-Issues,-Penrose-Program",
 		"part": "Memory",
 		"place": ["Mess Hall"],
 		"text": [
@@ -51,6 +57,7 @@
 	},
 	{
 		"title": "Ariane's Notes",
+		"slug": "Ariane's-Notes",
 		"part": "Memory",
 		"place": ["Storage"],
 		"text": [
@@ -59,6 +66,7 @@
 	},
 	{
 		"title": "Smeared Diary Page (2)",
+		"slug": "Smeared-Diary-Page-(2)",
 		"part": "Memory",
 		"place": ["Personnel (Wrecked)"],
 		"text": [
@@ -67,6 +75,7 @@
 	},
 	{
 		"title": "Unnamed Note",
+		"slug": "Unnamed-Note",
 		"part": "Memory",
 		"place": ["Stern Hall (Wrecked)"],
 		"text": [
@@ -76,12 +85,14 @@
 	},
 	{
 		"title": "Unnamed Note (2)",
+		"slug": "Unnamed-Note-(2)",
 		"part": "Memory",
 		"place": ["Stern Hall (Wrecked)"],
 		"text": ["please, just make it stop\n \n please"]
 	},
 	{
 		"title": "Together we will be eternal",
+		"slug": "Together-we-will-be-eternal",
 		"part": "Memory",
 		"place": ["Shore of Oblivion"],
 		"text": [
@@ -92,6 +103,7 @@
 	},
 	{
 		"title": "An ocean of memories",
+		"slug": "An-ocean-of-memories",
 		"part": "Memory",
 		"place": ["Shore of Oblivion"],
 		"text": [
@@ -102,6 +114,7 @@
 	},
 	{
 		"title": "Great holes secretly are digged",
+		"slug": "Great-holes-secretly-are-digged",
 		"part": "Memory",
 		"place": ["Shore of Oblivion"],
 		"text": [
@@ -111,6 +124,7 @@
 	},
 	{
 		"title": "kill me",
+		"slug": "kill-me",
 		"part": "Memory",
 		"place": ["Shore of Oblivion"],
 		"text": [

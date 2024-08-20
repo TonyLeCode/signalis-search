@@ -1,6 +1,7 @@
 import Accordion from './Accordion';
 import Dialog from './Dialog';
-import { chapters } from './BrowseData';
+// import { chapters } from './BrowseData';
+import { getBrowseEntries } from '../lib/transcriptions';
 
 export const metadata = {
 	title: 'Entries - Kohlibri',
@@ -9,6 +10,7 @@ export const metadata = {
 };
 
 export default function Page() {
+	const chapters = getBrowseEntries();
 	return (
 		<>
 			<div className="fly-right-fade relative mb-2 mt-4 flex sm:mb-4 sm:mt-4">

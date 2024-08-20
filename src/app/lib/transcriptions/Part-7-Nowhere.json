@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Offerings",
+		"slug": "Offerings",
 		"part": "Nowhere",
 		"place": ["Shrine Room"],
 		"text": [
@@ -9,6 +10,7 @@
 	},
 	{
 		"title": "Warnings",
+		"slug": "Warnings",
 		"part": "Nowhere",
 		"place": ["Nursery"],
 		"text": [
@@ -19,6 +21,7 @@
 	},
 	{
 		"title": "The Dreamer",
+		"slug": "The-Dreamer",
 		"part": "Nowhere",
 		"place": ["Falke"],
 		"text": [
@@ -29,6 +32,7 @@
 	},
 	{
 		"title": "Alina's Diary (4)",
+		"slug": "Alina's-Diary-(4)",
 		"part": "Nowhere",
 		"place": ["Lamp Room"],
 		"text": [
@@ -37,12 +41,14 @@
 	},
 	{
 		"title": "Leave",
+		"slug": "Leave",
 		"part": "Nowhere",
 		"place": ["Classroom"],
 		"text": ["LEAVE\n LEAVE THIS PLACE"]
 	},
 	{
 		"title": "The Empress' Hand",
+		"slug": "The-Empress'-Hand",
 		"part": "Nowhere",
 		"place": ["Chapel"],
 		"text": [

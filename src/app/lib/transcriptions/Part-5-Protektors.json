@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Angry Note",
+		"slug": "Angry-Note",
 		"part": "Protektors",
 		"place": ["STCR Dorm(B6)"],
 		"text": [
@@ -10,6 +11,7 @@
 	},
 	{
 		"title": "Replika Overview: STAR",
+		"slug": "Replika-Overview-STAR",
 		"part": "Protektors",
 		"place": ["Cleaning Room"],
 		"text": [
@@ -19,12 +21,14 @@
 	},
 	{
 		"title": "Buyan",
+		"slug": "Buyan",
 		"part": "Protektors",
 		"place": ["STCR Dorm"],
 		"text": ["Buyan will burn!"]
 	},
 	{
 		"title": "Operational Procedures: Control",
+		"slug": "Operational-Procedures-Control",
 		"part": "Protektors",
 		"place": ["Service Tunnel"],
 		"text": [
@@ -38,6 +42,7 @@
 	},
 	{
 		"title": "Memorandum: Lighting Malfunctions",
+		"slug": "Memorandum:-Lighting-Malfunctions",
 		"part": "Protektors",
 		"place": ["Cleaning Room Hallway"],
 		"text": [
@@ -48,6 +53,7 @@
 	},
 	{
 		"title": "Replika Overview: ARAR",
+		"slug": "Replika-Overview-ARAR",
 		"part": "Protektors",
 		"place": ["ARAR Dorm"],
 		"text": [
@@ -57,12 +63,14 @@
 	},
 	{
 		"title": "Kitezh",
+		"slug": "Kitezh",
 		"part": "Protektors",
 		"place": ["Dining Room"],
 		"text": ["Kitezh awaits liberation!"]
 	},
 	{
 		"title": "Order No. S23-90A3C28F97",
+		"slug": "Order-No.-S23-90A3C28F97",
 		"part": "Protektors",
 		"place": ["Dining Room"],
 		"text": [
@@ -72,12 +80,14 @@
 	},
 	{
 		"title": "Heimat",
+		"slug": "Heimat",
 		"part": "Protektors",
 		"place": ["STAR Dorm"],
 		"text": ["Heimat, Heart of the Revolution"]
 	},
 	{
 		"title": "Replika Known Issues, Part III",
+		"slug": "Replika-Known-Issues,-Part-III",
 		"part": "Protektors",
 		"place": ["FKLR Office"],
 		"text": [
@@ -88,6 +98,7 @@
 	},
 	{
 		"title": "Replika Overview: FKLR",
+		"slug": "Replika-Overview:-FKLR",
 		"part": "Protektors",
 		"place": ["FKLR Study"],
 		"text": [
@@ -98,6 +109,7 @@
 	},
 	{
 		"title": "Falke's Diary",
+		"slug": "Falke's-Diary",
 		"part": "Protektors",
 		"place": ["FKLR Bedroom"],
 		"text": [
@@ -108,6 +120,7 @@
 	},
 	{
 		"title": "Replika Overview: ADLR",
+		"slug": "Replika-Overview:-ADLR",
 		"part": "Protektors",
 		"place": ["ADLR Bedroom"],
 		"text": [
@@ -117,6 +130,7 @@
 	},
 	{
 		"title": "Replika Overview: EULR",
+		"slug": "Replika-Overview:-EULR",
 		"part": "Protektors",
 		"place": ["Piano Room"],
 		"text": [
@@ -126,6 +140,7 @@
 	},
 	{
 		"title": "84-21-C",
+		"slug": "84-21-C",
 		"part": "Protektors",
 		"place": ["Shooting Range"],
 		"text": [
@@ -134,12 +149,14 @@
 	},
 	{
 		"title": "Vineta",
+		"slug": "Vineta",
 		"part": "Protektors",
 		"place": ["Protektor Archive"],
 		"text": ["Cradle of Humanity: Vineta"]
 	},
 	{
 		"title": "Kolibri in the Management Office",
+		"slug": "Kolibri-in-the-Management-Office",
 		"part": "Protektors",
 		"place": ["Protektor Archive"],
 		"text": [
@@ -150,6 +167,7 @@
 	},
 	{
 		"title": "Replika Known Issues, Part II",
+		"slug": "Replika-Known-Issues,-Part-II",
 		"part": "Protektors",
 		"place": ["Workshop"],
 		"text": [
@@ -160,6 +178,7 @@
 	},
 	{
 		"title": "Replika Known Issues, Part I",
+		"slug": "Replika-Known-Issues,-Part-I",
 		"part": "Protektors",
 		"place": ["KLBR Study"],
 		"text": [
@@ -171,6 +190,7 @@
 	},
 	{
 		"title": "Replika Overview: KLBR",
+		"slug": "Replika-Overview:-KLBR",
 		"part": "Protektors",
 		"place": ["KLBR Study"],
 		"text": [
@@ -181,6 +201,7 @@
 	},
 	{
 		"title": "Kolibri's Note",
+		"slug": "Kolibri's-Note",
 		"part": "Protektors",
 		"place": ["KLBR Study"],
 		"text": [
@@ -189,12 +210,14 @@
 	},
 	{
 		"title": "Rotfront",
+		"slug": "Rotfront",
 		"part": "Protektors",
 		"place": ["Flood Overflow"],
 		"text": ["Hope for the Future: Rotfront"]
 	},
 	{
 		"title": "Adler's Diary",
+		"slug": "Adler's-Diary",
 		"part": "Protektors",
 		"place": ["ADLR Study"],
 		"text": [
@@ -209,6 +232,7 @@
 	},
 	{
 		"title": "Replika Overview: LSTR",
+		"slug": "Replika-Overview:-LSTR",
 		"part": "Protektors",
 		"place": ["ADLR Study"],
 		"text": [
@@ -218,6 +242,7 @@
 	},
 	{
 		"title": "Replika Overview: MNHR",
+		"slug": "Replika-Overview:-MNHR",
 		"part": "Protektors",
 		"place": ["Library"],
 		"text": [
@@ -228,6 +253,7 @@
 	},
 	{
 		"title": "Replika Known Issues, Part IV",
+		"slug": "Replika-Known-Issues,-Part-IV",
 		"part": "Protektors",
 		"place": ["Library"],
 		"text": [
@@ -239,6 +265,7 @@
 	},
 	{
 		"title": "Shrine Diary",
+		"slug": "Shrine-Diary",
 		"part": "Protektors",
 		"place": ["ADLR Study"],
 		"text": [

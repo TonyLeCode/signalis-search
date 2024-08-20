@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Penrose-Type Vessel Field Operations Manual",
+		"slug": "Penrose-Type-Vessel-Field-Operations-Manual",
 		"part": "The Penrose",
 		"place": ["Stern Hall"],
 		"text": [
@@ -11,6 +12,7 @@
 	},
 	{
 		"title": "Smeared Diary Page",
+		"slug": "Smeared-Diary-Page",
 		"part": "The Penrose",
 		"place": ["Personnel"],
 		"text": [

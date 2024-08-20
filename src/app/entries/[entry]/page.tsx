@@ -1,4 +1,4 @@
-import { getAllEntrySlugs, getEntry } from '@/app/kysely/database';
+import { getAllEntrySlugs, getEntry } from '@/app/lib/transcriptions';
 import EntryPage from './EntryPage';
 import { Metadata } from 'next';
 import { tokenize } from '@/app/lib/tokenize';
@@ -9,21 +9,21 @@ type Props = { params: { entry: string } };
 export const dynamic = 'force-static';
 
 export async function generateStaticParams() {
-	const slugs = await getAllEntrySlugs();
-	return slugs.map((slug) => ({ entry: slug.slug }));
+	const slugs = getAllEntrySlugs().map((slug) => ({ entry: slug }));
+	return slugs;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-	const title = decodeURIComponent(params.entry.replace(/-/gm, ' '));
+	const entry = getEntry(params.entry);
 	// const description = params.entry.text[0];
 	return {
-		title: `${title} - Kohlibri`,
+		title: `${entry?.title} - Kohlibri`,
 		// description: description,
 	};
 }
 
 export default async function Page({ params }: Props) {
-	const entry = await getEntry(decodeURIComponent(params.entry));
+	const entry = getEntry(params.entry);
 
 	if (!entry) notFound();
 

@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Welcome to S-23 Sierpinski",
+		"slug": "Welcome-to-S-23-Sierpinski",
 		"part": "Reeducation",
 		"place": ["Surface Access"],
 		"text": [
@@ -12,6 +13,7 @@
 	},
 	{
 		"title": "The Rule of Six",
+		"slug": "The-Rule-of-Six",
 		"part": "Reeducation",
 		"place": ["Corridor"],
 		"text": [
@@ -20,6 +22,7 @@
 	},
 	{
 		"title": "Keep Records!",
+		"slug": "Keep-Records!",
 		"part": "Reeducation",
 		"place": ["Staff Room"],
 		"text": [
@@ -28,12 +31,14 @@
 	},
 	{
 		"title": "No running in the hallways!",
+		"slug": "No-running-in-the-hallways!",
 		"part": "Reeducation",
 		"place": ["Class 4B"],
 		"text": ["No running in the hallways!\n Be mindful of your neighbors.\n everyone can hear you run!"]
 	},
 	{
 		"title": "Memorandum: Wall Safe Codes",
+		"slug": "Memorandum:-Wall-Safe-Codes",
 		"part": "Reeducation",
 		"place": ["Staff Room", "Office (Workers)", "Nurse Station (Hospital)"],
 		"text": [
@@ -42,6 +47,7 @@
 	},
 	{
 		"title": "Service Request Form F-29",
+		"slug": "Service-Request-Form-F-29",
 		"part": "Reeducation",
 		"place": ["Staff Room"],
 		"text": [
@@ -51,6 +57,7 @@
 	},
 	{
 		"title": "Memorandum: Terminology",
+		"slug": "Memorandum:-Terminology",
 		"part": "Reeducation",
 		"place": ["Observation Room"],
 		"text": [
@@ -61,6 +68,7 @@
 	},
 	{
 		"title": "Mond&Töchter High-Security Wall Safe (Numeric)",
+		"slug": "Mond&Töchter-High-Security-Wall-Safe-(Numeric)",
 		"part": "Reeducation",
 		"place": ["Library"],
 		"text": [
@@ -71,14 +79,16 @@
 	},
 	{
 		"title": "Isa's Note",
+		"slug": "Isa's-Note",
 		"part": "Reeducation",
 		"place": ["Library"],
-		"text": ["Erika,\n If you find this note,\n despite everything that's happened,\n I've come to look for you.\n Isa"]
+		"text": ["Erika,\n\n if you find this note,\n despite everything that's happened,\n I've come to look for you.\n\n Isa"]
 	},
 	{
+		"title": "Dictionary",
+		"slug": "Dictionary",
 		"part": "Reeducation",
 		"place": ["Library"],
-		"title": "Dictionary",
 		"text": [
 			"Replika, /Re•pli•ká/, noun. Pl. Replikas (Kitezh: Replika).\nShortened from (archaic) Replikat (→Copy, →Replica).\nBiomechanical person. Synthetic reproduction of a →Gestalt. Biological culture grafted onto an artificial endoskeleton and enclosed in a protective exoskeleton. ",
 			"Gestalt, /Ge•shtalt/, noun. Pl.\nGestalts. Shortened from (archaic) Urgestalt (Original shape; compare →Archetype, →Prototype).\n A person that is not a →Replika. "

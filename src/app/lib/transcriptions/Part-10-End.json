@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Workforce assignment for Yeong, Ariane",
+		"slug": "Workforce-assignment-for-Yeong-Ariane",
 		"part": "End",
 		"place": ["Home"],
 		"text": [
@@ -11,6 +12,7 @@
 	},
 	{
 		"title": "Auntie's Note",
+		"slug": "Auntie's-Note",
 		"part": "End",
 		"place": ["Home"],
 		"text": [
@@ -19,6 +21,7 @@
 	},
 	{
 		"title": "Letter from Mother",
+		"slug": "Letter-from-Mother",
 		"part": "End",
 		"place": ["Home"],
 		"text": [
@@ -29,6 +32,7 @@
 	},
 	{
 		"title": "Adler's Note",
+		"slug": "Adler's-Note",
 		"part": "End",
 		"place": ["Falke Hall"],
 		"text": [
@@ -38,6 +42,7 @@
 	},
 	{
 		"title": "A Red Dream",
+		"slug": "A-Red-Dream",
 		"part": "End",
 		"place": ["Falke Hall"],
 		"text": [
@@ -49,6 +54,7 @@
 	},
 	{
 		"title": "STOP",
+		"slug": "STOP",
 		"part": "End",
 		"place": ["Falke Hall"],
 		"text": [
@@ -59,6 +65,7 @@
 	},
 	{
 		"title": "Falke's Memory",
+		"slug": "Falke's-Memory",
 		"part": "End",
 		"place": ["Falke Hall"],
 		"text": [
@@ -70,12 +77,15 @@
 	},
 	{
 		"title": "Excavation Team C",
+		"slug": "Excavation-Team-C",
 		"part": "End",
 		"place": ["ADLR Study"],
 		"text": ["MNHR-S2301\n MNHR-S2302\n MNHR-S2303\n LSTR-S2301\n ARAR-S2317\n ARAR-S2318"]
 	},
 	{
-		"title": "Adler's Diary (Hidden Top)",
+		"title": "Adler's Diary",
+		"slug": "Adler's-Diary-(Hidden-Top)",
+		"browseTitle": "Adler's Diary (Hidden Top)",
 		"part": "End",
 		"place": ["ADLR Study"],
 		"text": [
@@ -89,7 +99,9 @@
 		]
 	},
 	{
-		"title": "Adler's Diary (Hidden Right)",
+		"title": "Adler's Diary",
+		"slug": "Adler's-Diary-(Hidden-Right)",
+		"browseTitle": "Adler's Diary (Hidden Right)",
 		"part": "End",
 		"place": ["ADLR Study"],
 		"text": [
@@ -104,6 +116,7 @@
 	},
 	{
 		"title": "Cycle 225",
+		"slug": "Cycle-225",
 		"part": "End",
 		"place": ["Upper Gallery"],
 		"text": [
@@ -115,6 +128,7 @@
 	},
 	{
 		"title": "Penrose Briefing: Phase III",
+		"slug": "Penrose-Briefing:-Phase-III",
 		"part": "End",
 		"place": ["Medical"],
 		"text": [
@@ -127,6 +141,7 @@
 	},
 	{
 		"title": "Cycle 1294",
+		"slug": "Cycle-1294",
 		"part": "End",
 		"place": ["Reaktor"],
 		"text": [
@@ -139,6 +154,7 @@
 	},
 	{
 		"title": "Cycle 5309",
+		"slug": "Cycle-5309",
 		"part": "End",
 		"place": ["Stern Hall"],
 		"text": [

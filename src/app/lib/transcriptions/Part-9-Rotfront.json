@@ -1,12 +1,14 @@
 [
 	{
 		"title": "Blockwart",
+		"slug": "Blockwart",
 		"part": "Rotfront",
 		"place": ["Hallway"],
 		"text": ["It's your duty!\n Report suspicious elements immediately to the Blockwart!"]
 	},
 	{
 		"title": "Stolen Document",
+		"slug": "Stolen-Document",
 		"part": "Rotfront",
 		"place": ["Dark Apartment"],
 		"text": [
@@ -20,6 +22,7 @@
 	},
 	{
 		"title": "Message Inbox",
+		"slug": "Message-Inbox",
 		"part": "Rotfront",
 		"place": ["Blockwart Office"],
 		"text": [
@@ -35,6 +38,7 @@
 	},
 	{
 		"title": "Teacher's Evaluation: Ariane Yeong",
+		"slug": "Teacher's-Evaluation:-Ariane-Yeong",
 		"part": "Rotfront",
 		"place": ["Hospital Room"],
 		"text": [
@@ -45,6 +49,7 @@
 	},
 	{
 		"title": "Mondfest celebrations canceled over safety concerns",
+		"slug": "Mondfest-celebrations-canceled-over-safety-concerns",
 		"part": "Rotfront",
 		"place": ["Apartment"],
 		"text": [
@@ -55,6 +60,7 @@
 	},
 	{
 		"title": "The Red Eye",
+		"slug": "The-Red-Eye",
 		"part": "Rotfront",
 		"place": ["Alley"],
 		"text": [
@@ -66,6 +72,7 @@
 	},
 	{
 		"title": "Reunification",
+		"slug": "Reunification",
 		"part": "Rotfront",
 		"place": ["Apartment"],
 		"text": [
@@ -74,6 +81,7 @@
 	},
 	{
 		"title": "Bioresonance Technology and its Limitations",
+		"slug": "Bioresonance-Technology-and-its-Limitations",
 		"part": "Rotfront",
 		"place": ["Butterfly Room"],
 		"text": [
@@ -85,6 +93,7 @@
 	},
 	{
 		"title": "Medical Database",
+		"slug": "Medical-Database",
 		"part": "Rotfront",
 		"place": ["Blockwart Office"],
 		"text": [
@@ -114,6 +123,7 @@
 	},
 	{
 		"title": "Song of the Gods",
+		"slug": "Song-of-the-Gods",
 		"part": "Rotfront",
 		"place": ["Backroom"],
 		"text": [
@@ -125,6 +135,7 @@
 	},
 	{
 		"title": "Prometheus",
+		"slug": "Prometheus",
 		"part": "Rotfront",
 		"place": ["Book Store"],
 		"text": [
@@ -133,6 +144,7 @@
 	},
 	{
 		"title": "Resonant Phenomena",
+		"slug": "Resonant-Phenomena",
 		"part": "Rotfront",
 		"place": ["Book Store"],
 		"text": [
@@ -144,6 +156,7 @@
 	},
 	{
 		"title": "Dream Diary",
+		"slug": "Dream-Diary",
 		"part": "Rotfront",
 		"place": ["Meat Room"],
 		"text": [
@@ -156,6 +169,7 @@
 	},
 	{
 		"title": "People's Army, 5th Vinetan Infantry Division, Unit 12",
+		"slug": "People's-Army-5th-Vinetan-Infantry-Division-Unit-12",
 		"part": "Rotfront",
 		"place": ["Photo Store"],
 		"text": [
@@ -164,6 +178,7 @@
 	},
 	{
 		"title": "Leaving",
+		"slug": "Leaving",
 		"part": "Rotfront",
 		"place": ["Packstation"],
 		"text": [
