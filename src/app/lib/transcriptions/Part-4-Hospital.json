@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Alina's Diary (2)",
-		"slug": "Alinas-Diary-(2)",
+		"slug": "Alina's-Diary-(2)",
 		"part": "Hospital",
 		"place": ["ICU 01"],
 		"text": [
@@ -55,8 +55,8 @@
 		]
 	},
 	{
-		"title": "Personal Grievance Form P-14",
-		"slug": "Personal-Grievance-Form-P-14",
+		"title": "Personnel Grievance Form P-14",
+		"slug": "Personnel-Grievance-Form-P-14",
 		"part": "Hospital",
 		"place": ["Vent Room"],
 		"text": [

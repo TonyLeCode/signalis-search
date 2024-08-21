@@ -11,7 +11,7 @@
 	},
 	{
 		"title": "Replika Overview: STAR",
-		"slug": "Replika-Overview-STAR",
+		"slug": "Replika-Overview:-STAR",
 		"part": "Protektors",
 		"place": ["Cleaning Room"],
 		"text": [
@@ -28,7 +28,7 @@
 	},
 	{
 		"title": "Operational Procedures: Control",
-		"slug": "Operational-Procedures-Control",
+		"slug": "Operational-Procedures:-Control",
 		"part": "Protektors",
 		"place": ["Service Tunnel"],
 		"text": [
@@ -53,7 +53,7 @@
 	},
 	{
 		"title": "Replika Overview: ARAR",
-		"slug": "Replika-Overview-ARAR",
+		"slug": "Replika-Overview:-ARAR",
 		"part": "Protektors",
 		"place": ["ARAR Dorm"],
 		"text": [

@@ -59,6 +59,16 @@
 		]
 	},
 	{
+		"title": "Millions starve as Imperial blockade continues",
+		"slug": "Millions-starve-as-Imperial-blockade-continues",
+		"part": "Rotfront",
+		"place": ["Public House"],
+		"text": [
+			"Due to the ongoing transit of Kitezh, ration shipments to Vineta have been disrupted by Imperial forces again. Millions of Eusan citizens must starve for yet another month as Imperial missile frigates in Kitezh orbit critically damaged one of our humanitarian convoys on their way to Vineta, sending diplomatic efforts with the Empire into another crisis.",
+			"The orbit of Kitezh will continue to block free travel between Vineta, Rotfront and Heimat for another 8 seasons, which leaves our liberation troops on Vineta stranded on the desolate ocean world with minimal support. Convoys will continue to be sent despite the Imperial blockade. Only through perseverance can we rebuild what remains of Vineta."
+		]
+	},
+	{
 		"title": "The Red Eye",
 		"slug": "The-Red-Eye",
 		"part": "Rotfront",
@@ -169,7 +179,7 @@
 	},
 	{
 		"title": "People's Army, 5th Vinetan Infantry Division, Unit 12",
-		"slug": "People's-Army-5th-Vinetan-Infantry-Division-Unit-12",
+		"slug": "People's-Army,-5th-Vinetan-Infantry-Division,-Unit-12",
 		"part": "Rotfront",
 		"place": ["Photo Store"],
 		"text": [
