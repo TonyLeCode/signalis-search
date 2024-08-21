@@ -38,7 +38,8 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 	useEffect(() => {
 		function keyHandler(e: KeyboardEvent) {
 			switch (e.code) {
-				case 'ArrowRight' || 's':
+				case 'ArrowRight':
+				case 's':
 					next();
 					break;
 				case 'ArrowLeft':
