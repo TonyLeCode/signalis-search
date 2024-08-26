@@ -1,7 +1,6 @@
 import Accordion from './Accordion';
 import Dialog from './Dialog';
-// import { chapters } from './BrowseData';
-import { getBrowseEntries } from '../lib/transcriptions';
+import { getBrowseEntries } from '@/lib/transcriptions';
 
 export const metadata = {
 	title: 'Entries - Kohlibri',

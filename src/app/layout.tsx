@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import './globals.css';
 import { Raleway } from 'next/font/google';
-import Breadcrumbs from './components/Breadcrumbs';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const raleway = Raleway({ weight: ['200', '300', '400', '500', '600', '700'], subsets: ['latin'] });
 

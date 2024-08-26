@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { test, expect } from '@playwright/test';
-import { getAllEntrySlugs, getEntry } from '@/app/lib/transcriptions';
+import { getAllEntrySlugs, getEntry } from '@/lib/transcriptions';
 
 //TODO test.describe
 test('should navigate to browse page', async ({ page }) => {
