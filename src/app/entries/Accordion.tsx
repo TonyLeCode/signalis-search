@@ -1,25 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-
-function useMediaQuery(query: string) {
-	const [matches, setMatches] = useState(false);
-
-	useEffect(() => {
-		setMatches(window.matchMedia(query).matches);
-	}, []);
-
-	useEffect(() => {
-		const mediaQuery = window.matchMedia(query);
-		const listener = (event: MediaQueryListEvent) => setMatches(event.matches);
-
-		mediaQuery.addEventListener('change', listener);
-
-		return () => mediaQuery.removeEventListener('change', listener);
-	}, [query]);
-
-	return matches;
-}
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 interface ItemsProps {
 	part: string;
@@ -32,20 +14,22 @@ interface ItemsProps {
 
 export default function Accordion({ part, entries, index }: ItemsProps) {
 	const [open, setOpen] = useState(false);
-	const isMobile = useMediaQuery('(min-width: 640px)');
+
+	const isMobile = useMediaQuery('(min-width: 640px)'); // We don't compare the boolean, but we check if media query changes to calculate height
+	const usesReducedMotion = useMediaQuery('(prefers-reduced-motion)');
+
 	const ref = useRef<HTMLUListElement>(null);
 	const itemsRef = useRef<HTMLAnchorElement[]>([]);
 
 	useEffect(() => {
 		if (ref.current) {
-			const reduceMotion = window.matchMedia('(prefers-reduced-motion)').matches;
 			const scrollHeight = ref.current.scrollHeight;
 			const itemHeight = 32;
 			const duration = 10 * (scrollHeight / itemHeight) + 140;
 
 			ref.current.style.maxHeight = open ? `${scrollHeight}px` : '';
 
-			if (reduceMotion) {
+			if (usesReducedMotion) {
 				ref.current.style.transition = 'none';
 			} else {
 				ref.current.style.transition = `max-height ${duration}ms ease-in-out`;
@@ -53,14 +37,13 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 		}
 
 		itemsRef.current.forEach((item, index) => {
-			const reduceMotion = window.matchMedia('(prefers-reduced-motion)').matches;
-			if (item && !reduceMotion) {
+			if (item && !usesReducedMotion) {
 				const delay = index * 13; // milliseconds
 				item.style.animation = open ? `150ms ease-in ${delay}ms fly-left, 150ms ease-in ${delay}ms fade` : '';
 				item.style.animationFillMode = open ? 'both' : '';
 			}
 		});
-	}, [open, isMobile]);
+	}, [open, isMobile, usesReducedMotion]);
 
 	return (
 		<li key={part} className="accordion fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
