@@ -1,11 +1,11 @@
-name: CI
+name: Test
 on:
   push:
-    branches: [main, master]
+    branches: '*'
   pull_request:
-    branches: [main, master]
+    branches: '*'
 jobs:
-  build-and-test:
+  test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -32,10 +32,3 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-      
-      - name: Repopulate Algolia
-        if: success()
-        run: npm run algolia
-        env:
-          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
-          ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
