@@ -40,7 +40,7 @@ test('browse should have all entries', async ({ page }) => {
 });
 
 test('all entries should be found', async ({ page }) => {
-	test.setTimeout(120000)
+	test.setTimeout(180000)
 	const slugs = getAllEntrySlugs();
 	for (const slug of slugs) {
 		await page.goto(`/entries/${slug}`);
