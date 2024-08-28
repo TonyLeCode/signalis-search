@@ -1,42 +1,34 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import SearchInput from './SearchInput';
+import { useKeyDown } from '@/hooks/useKeyDown';
 
 export default function Dialog() {
 	const dialogRef = useRef<HTMLDialogElement>(null);
-	function clickHandler() {
+	useKeyDown(keyHandler);
+
+	function closeHandler() {
 		if (!dialogRef.current) return;
 
-		if (dialogRef.current.open) {
-			dialogRef.current.close();
-		} else {
-			dialogRef.current.showModal();
-		}
+		const dialog = dialogRef.current;
+		dialog.open ? dialog.close() : dialog.showModal();
 	}
 
 	function keyHandler(e: KeyboardEvent) {
+		if (!dialogRef.current) return;
+
 		switch (e.code) {
 			case 'Escape':
-				if (!dialogRef.current) return;
-				if (dialogRef.current.open) {
-					dialogRef.current.close();
-				}
+				dialogRef.current.close();
 				break;
 		}
 	}
 
-	useEffect(() => {
-		window.addEventListener('keydown', keyHandler);
-		return () => {
-			window.removeEventListener('keydown', keyHandler);
-		};
-	}, []);
-
 	return (
 		<>
 			<button
-				onClick={clickHandler}
+				onClick={closeHandler}
 				className="search-button absolute -right-12 sm:mt-1 bg-primary-red text-white hover:bg-off-white hover:text-black rounded-full focus:bg-off-white focus:outline-off-white focus:outline-offset-2 focus:outline-4 focus:outline focus:text-black"
 				title={'Click to open search'}
 			>
@@ -53,18 +45,19 @@ export default function Dialog() {
 					<path
 						fill="currentColor"
 						d="M394.8,213.5c0,58.9-47.7,106.6-106.6,106.6c-58.9,0-106.6-47.7-106.6-106.6c0-58.9,47.7-106.6,106.6-106.6
-	C347.1,106.9,394.8,154.6,394.8,213.5z M412.5,304.3c18.6-25.5,29.6-56.8,29.6-90.8c0-85-68.9-153.9-153.9-153.9
-	c-85,0-153.9,68.9-153.9,153.9c0,85,68.9,153.9,153.9,153.9c34,0,65.4-11,90.8-29.6l46.4,46.4c9.2,9.3,24.2,9.3,33.5,0
-	c9.3-9.2,9.3-24.2,0-33.5L412.5,304.3z"
+							C347.1,106.9,394.8,154.6,394.8,213.5z M412.5,304.3c18.6-25.5,29.6-56.8,29.6-90.8c0-85-68.9-153.9-153.9-153.9
+							c-85,0-153.9,68.9-153.9,153.9c0,85,68.9,153.9,153.9,153.9c34,0,65.4-11,90.8-29.6l46.4,46.4c9.2,9.3,24.2,9.3,33.5,0
+							c9.3-9.2,9.3-24.2,0-33.5L412.5,304.3z"
 					/>
 				</svg>
 			</button>
+
 			<dialog
 				ref={dialogRef}
-				onClick={clickHandler}
+				onClick={closeHandler}
 				className="p-2 max-w-5xl w-full mt-2 sm:mt-16 bg-transparent backdrop:cursor-pointer backdrop:bg-zinc-950/90"
 			>
-				<SearchInput clickHandler={clickHandler} />
+				<SearchInput closeHandler={closeHandler} />
 			</dialog>
 		</>
 	);

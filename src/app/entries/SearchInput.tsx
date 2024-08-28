@@ -123,7 +123,7 @@ function EmptyQueryBoundary({ children, fallback }: { children: ReactNode; fallb
 	return children;
 }
 
-export default function SearchInput(props: { clickHandler: () => void }) {
+export default function SearchInput(props: { closeHandler: () => void }) {
 	function preventDefault(e: React.MouseEvent<HTMLElement>) {
 		e.stopPropagation();
 	}
@@ -144,7 +144,7 @@ export default function SearchInput(props: { clickHandler: () => void }) {
 						autoFocus={true}
 						queryHook={queryHook}
 					/>
-					<button onClick={props.clickHandler} className="mt-2 h-min text-base sm:text-norm">
+					<button onClick={props.closeHandler} className="mt-2 h-min text-base sm:text-norm">
 						Close
 					</button>
 					<div className="absolute top-16 ml-auto mr-8 flex w-full max-w-xl justify-end gap-2 text-xs font-light sm:text-sm">
