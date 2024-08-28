@@ -4,13 +4,11 @@ import { useKeyDown } from '@/hooks/useKeyDown';
 import { usePagination } from '@/hooks/usePagination';
 import { useState, useRef } from 'react';
 
-type Direction = 'left' | 'right';
-
 export default function EntryPage({ text }: { text: { __html: string }[] }) {
 	const totalPages = text.length;
 
 	const { page, next, prev, hasNext, hasPrev } = usePagination(totalPages);
-	const [direction, setDirection] = useState<Direction>('right');
+	const [direction, setDirection] = useState<'left' | 'right'>('right');
 	const ref = useRef<HTMLParagraphElement>(null);
 	useKeyDown(keyHandler);
 
@@ -20,7 +18,9 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 		element.style.removeProperty('animation');
 	}
 
-	function pageChangeHandler(directionInput: Direction) {
+	function pageChangeHandler(input: 'prev' | 'next') {
+		const directionInput = input === 'prev' ? 'left' : 'right';
+
 		if (!ref?.current) return;
 		const canChange = directionInput === 'left' ? hasPrev : hasNext;
 		if (!canChange) return;
@@ -32,13 +32,13 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 
 	function keyHandler(e: KeyboardEvent) {
 		switch (e.code) {
-			case 'ArrowRight':
-			case 'KeyD':
-				pageChangeHandler('right');
-				break;
 			case 'ArrowLeft':
 			case 'KeyA':
-				pageChangeHandler('left');
+				pageChangeHandler('prev');
+				break;
+			case 'ArrowRight':
+			case 'KeyD':
+				pageChangeHandler('next');
 				break;
 		}
 	}
@@ -58,14 +58,11 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 				className="fly-right-fade flex select-none items-center text-base font-light text-white/80 sm:text-norm"
 				style={{ animationDelay: '200ms' }}
 			>
-				<button className={`px-4 py-1 ${page == 0 ? 'invisible' : ''}`} onClick={() => pageChangeHandler('left')}>
+				<button className={`px-4 py-1 ${!hasPrev ? 'invisible' : ''}`} onClick={() => pageChangeHandler('prev')}>
 					{'\u003C'}
 				</button>{' '}
 				{String(page + 1).padStart(2, '0')} / {String(totalPages).padStart(2, '0')}
-				<button
-					className={`px-4 py-1 ${page == totalPages - 1 ? 'invisible' : ''}`}
-					onClick={() => pageChangeHandler('right')}
-				>
+				<button className={`px-4 py-1 ${!hasNext ? 'invisible' : ''}`} onClick={() => pageChangeHandler('next')}>
 					{'\u003E'}
 				</button>
 			</div>
