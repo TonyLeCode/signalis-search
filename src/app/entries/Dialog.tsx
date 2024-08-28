@@ -1,34 +1,15 @@
 'use client';
 
-import { useRef } from 'react';
 import SearchInput from './SearchInput';
-import { useKeyDown } from '@/hooks';
+import { useDialog } from '@/hooks';
 
 export default function Dialog() {
-	const dialogRef = useRef<HTMLDialogElement>(null);
-	useKeyDown(keyHandler);
-
-	function closeHandler() {
-		if (!dialogRef.current) return;
-
-		const dialog = dialogRef.current;
-		dialog.open ? dialog.close() : dialog.showModal();
-	}
-
-	function keyHandler(e: KeyboardEvent) {
-		if (!dialogRef.current) return;
-
-		switch (e.code) {
-			case 'Escape':
-				dialogRef.current.close();
-				break;
-		}
-	}
+	const { ref, openDialog, closeDialog } = useDialog();
 
 	return (
 		<>
 			<button
-				onClick={closeHandler}
+				onClick={openDialog}
 				className="search-button absolute -right-12 sm:mt-1 bg-primary-red text-white hover:bg-off-white hover:text-black rounded-full focus:bg-off-white focus:outline-off-white focus:outline-offset-2 focus:outline-4 focus:outline focus:text-black"
 				title={'Click to open search'}
 			>
@@ -53,11 +34,11 @@ export default function Dialog() {
 			</button>
 
 			<dialog
-				ref={dialogRef}
-				onClick={closeHandler}
+				ref={ref}
+				onClick={closeDialog}
 				className="p-2 max-w-5xl w-full mt-2 sm:mt-16 bg-transparent backdrop:cursor-pointer backdrop:bg-zinc-950/90"
 			>
-				<SearchInput closeHandler={closeHandler} />
+				<SearchInput closeHandler={closeDialog} />
 			</dialog>
 		</>
 	);
