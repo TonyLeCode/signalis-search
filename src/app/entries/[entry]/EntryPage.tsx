@@ -1,60 +1,47 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useKeyDown } from '@/hooks/useKeyDown';
+import { usePagination } from '@/hooks/usePagination';
+import { useState, useRef } from 'react';
+
+type Direction = 'left' | 'right';
 
 export default function EntryPage({ text }: { text: { __html: string }[] }) {
-	const [page, setPage] = useState(0);
-	const [direction, setDirection] = useState('right');
+	const totalPages = text.length;
+
+	const { page, next, prev, hasNext, hasPrev } = usePagination(totalPages);
+	const [direction, setDirection] = useState<Direction>('right');
 	const ref = useRef<HTMLParagraphElement>(null);
-	function prev() {
-		setPage((current) => {
-			if (current !== 0) {
-				setDirection('right');
-				if (ref?.current) {
-					ref.current.style.animation = 'none';
-					ref.current.offsetHeight;
-					ref.current.style.removeProperty('animation');
-				}
-				return current - 1;
-			}
-			return current;
-		});
-	}
-	function next() {
-		setPage((current) => {
-			if (current !== text.length - 1) {
-				setDirection('left');
-				if (ref?.current) {
-					ref.current.style.animation = 'none';
-					ref.current.offsetHeight;
-					ref.current.style.removeProperty('animation');
-				}
-				return current + 1;
-			}
-			return current;
-		});
+	useKeyDown(keyHandler);
+
+	function reanimate(element: HTMLElement) {
+		element.style.animation = 'none';
+		void element.offsetHeight; // Triggers reflow; necessary to make re-animation work.
+		element.style.removeProperty('animation');
 	}
 
-	useEffect(() => {
-		function keyHandler(e: KeyboardEvent) {
-			switch (e.code) {
-				case 'ArrowRight':
-				case 's':
-					next();
-					break;
-				case 'ArrowLeft':
-					prev();
-					break;
-				default:
-					break;
-			}
+	function pageChangeHandler(directionInput: Direction) {
+		if (!ref?.current) return;
+		const canChange = directionInput === 'left' ? hasPrev : hasNext;
+		if (!canChange) return;
+
+		directionInput === 'left' ? prev() : next();
+		setDirection(directionInput);
+		reanimate(ref.current);
+	}
+
+	function keyHandler(e: KeyboardEvent) {
+		switch (e.code) {
+			case 'ArrowRight':
+			case 'KeyD':
+				pageChangeHandler('right');
+				break;
+			case 'ArrowLeft':
+			case 'KeyA':
+				pageChangeHandler('left');
+				break;
 		}
-
-		window.addEventListener('keydown', keyHandler);
-		return () => {
-			window.removeEventListener('keydown', keyHandler);
-		};
-	}, []);
+	}
 
 	return (
 		<>
@@ -66,15 +53,19 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 				style={{ animationDelay: '100ms' }}
 				dangerouslySetInnerHTML={text[page]}
 			></p>
+
 			<div
 				className="fly-right-fade flex select-none items-center text-base font-light text-white/80 sm:text-norm"
 				style={{ animationDelay: '200ms' }}
 			>
-				<button className={`px-4 py-1 ${page == 0 ? 'invisible' : ''}`} onClick={prev}>
+				<button className={`px-4 py-1 ${page == 0 ? 'invisible' : ''}`} onClick={() => pageChangeHandler('left')}>
 					{'\u003C'}
 				</button>{' '}
-				{String(page + 1).padStart(2, '0')} / {String(text.length).padStart(2, '0')}
-				<button className={`px-4 py-1 ${page == text.length - 1 ? 'invisible' : ''}`} onClick={next}>
+				{String(page + 1).padStart(2, '0')} / {String(totalPages).padStart(2, '0')}
+				<button
+					className={`px-4 py-1 ${page == totalPages - 1 ? 'invisible' : ''}`}
+					onClick={() => pageChangeHandler('right')}
+				>
 					{'\u003E'}
 				</button>
 			</div>
