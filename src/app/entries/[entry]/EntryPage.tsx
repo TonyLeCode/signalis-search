@@ -1,7 +1,7 @@
 'use client';
 
-import { useKeyDown } from '@/hooks/useKeyDown';
-import { usePagination } from '@/hooks/usePagination';
+import { useKeyDown } from '@/hooks';
+import { usePagination } from '@/hooks';
 import { useState, useRef } from 'react';
 
 export default function EntryPage({ text }: { text: { __html: string }[] }) {

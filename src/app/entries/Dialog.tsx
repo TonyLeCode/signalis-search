@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import SearchInput from './SearchInput';
-import { useKeyDown } from '@/hooks/useKeyDown';
+import { useKeyDown } from '@/hooks';
 
 export default function Dialog() {
 	const dialogRef = useRef<HTMLDialogElement>(null);

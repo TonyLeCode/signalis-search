@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { useMediaQuery } from '@/hooks';
 
 interface ItemsProps {
 	part: string;
