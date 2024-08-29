@@ -12,12 +12,6 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 	const ref = useRef<HTMLParagraphElement>(null);
 	useKeyDown(keyHandler);
 
-	function reanimate(element: HTMLElement) {
-		element.style.animation = 'none';
-		void element.offsetHeight; // Triggers reflow; necessary to make re-animation work.
-		element.style.removeProperty('animation');
-	}
-
 	function pageChangeHandler(input: 'prev' | 'next') {
 		const directionInput = input === 'prev' ? 'left' : 'right';
 
@@ -26,8 +20,7 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 		if (!canChange) return;
 
 		directionInput === 'left' ? prev() : next();
-		setDirection(directionInput);
-		reanimate(ref.current);
+		setDirection(directionInput === 'left' ? 'right' : 'left');
 	}
 
 	function keyHandler(e: KeyboardEvent) {
@@ -46,6 +39,7 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 	return (
 		<>
 			<p
+				key={page}
 				ref={ref}
 				className={`${
 					direction === 'right' ? 'fly-right-fade' : 'fly-left-fade'
