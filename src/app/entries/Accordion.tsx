@@ -27,20 +27,14 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 			const itemHeight = 32;
 			const duration = 10 * (scrollHeight / itemHeight) + 140;
 
-			ref.current.style.maxHeight = open ? `${scrollHeight}px` : '';
-
-			if (usesReducedMotion) {
-				ref.current.style.transition = 'none';
-			} else {
-				ref.current.style.transition = `max-height ${duration}ms ease-in-out`;
-			}
+			ref.current.style.setProperty('--max-height', `${open ? scrollHeight : 0}px`);
+			ref.current.style.setProperty('--duration', `${duration}ms`);
 		}
 
 		itemsRef.current.forEach((item, index) => {
 			if (item && !usesReducedMotion) {
 				const delay = index * 13; // milliseconds
-				item.style.animation = open ? `150ms ease-in ${delay}ms fly-left, 150ms ease-in ${delay}ms fade` : '';
-				item.style.animationFillMode = open ? 'both' : '';
+				item.style.setProperty('--delay', `${delay}ms`);
 			}
 		});
 	}, [open, isMobile, usesReducedMotion]);
@@ -59,7 +53,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 				{part}
 			</button>
 
-			<ul ref={ref} className={`max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
+			<ul ref={ref} className={`accordion-ul max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
 				{entries.map((entry, i) => {
 					return (
 						<li key={entry.title + entry.place}>
@@ -71,7 +65,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 								}}
 								href={`/entries/${entry.title.replace(/\s/gm, '-')}`}
 								key={entry.title}
-								className="flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm"
+								className={`${open ? 'accordion-item' : ''} flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm`}
 							>
 								<div title={entry.title}>
 									{entry.title.substring(0, 30)}

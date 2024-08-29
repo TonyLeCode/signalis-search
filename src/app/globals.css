@@ -106,9 +106,27 @@ input::-webkit-search-cancel-button {
 	vertical-align: text-top;
 }
 
+.accordion {
+	--duration: 0;
+	--delay: 0;
+	--max-height: 0;
+}
+
 .accordion:has(.accordion-button:focus) {
 	position: relative;
 	z-index: 10;
+}
+
+.accordion-ul {
+	transition: max-height var(--duration) ease-in-out;
+	max-height: var(--max-height);
+}
+
+.accordion-item {
+	animation:
+		150ms ease-in-out var(--delay) fly-left,
+		150ms ease-in-out var(--delay) fade;
+	animation-fill-mode: both;
 }
 
 .fly-up-fade {
