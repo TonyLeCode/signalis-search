@@ -27,6 +27,7 @@ type BrowseData = {
 		entries: {
 			title: string;
 			place: string;
+			slug: string;
 		}[];
 	}[];
 }[];
@@ -38,6 +39,7 @@ export function getBrowseEntries() {
 		const partEntries = transcriptions[i].map((memory) => ({
 			title: memory?.browseTitle || memory.title,
 			place: memory.place[0],
+			slug: memory.slug,
 		}));
 
 		const chapterIndex = chapters.indexOf(getChapter(i));

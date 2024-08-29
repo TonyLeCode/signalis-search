@@ -8,9 +8,13 @@ interface ItemsProps {
 	entries: {
 		title: string;
 		place: string;
+		slug: string;
 	}[];
 	index: number;
 }
+
+const leftAngleBracket = '\u003C';
+const rightAngleBracket = '\u003E';
 
 export default function Accordion({ part, entries, index }: ItemsProps) {
 	const [open, setOpen] = useState(false);
@@ -63,7 +67,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 								ref={(el: HTMLAnchorElement | null) => {
 									if (el) itemsRef.current[i] = el;
 								}}
-								href={`/entries/${entry.title.replace(/\s/gm, '-')}`}
+								href={`/entries/${entry.slug}`}
 								key={entry.title}
 								className={`${open ? 'accordion-item' : ''} flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm`}
 							>
@@ -72,9 +76,9 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 									{entry.title.length >= 30 ? '...' : ''}
 								</div>
 								<div className="text-sm font-light text-white/80 sm:ml-auto sm:text-base">
-									{'\u003C'}
+									{leftAngleBracket}
 									{entry.place}
-									{'\u003E'}
+									{rightAngleBracket}
 								</div>
 							</a>
 						</li>
