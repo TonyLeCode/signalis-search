@@ -4,6 +4,9 @@ import { useKeyDown } from '@/hooks';
 import { usePagination } from '@/hooks';
 import { useState, useRef } from 'react';
 
+const leftAngleBracket = '\u003C';
+const rightAngleBracket = '\u003E';
+
 export default function EntryPage({ text }: { text: { __html: string }[] }) {
 	const totalPages = text.length;
 
@@ -53,11 +56,11 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 				style={{ animationDelay: '200ms' }}
 			>
 				<button className={`px-4 py-1 ${!hasPrev ? 'invisible' : ''}`} onClick={() => pageChangeHandler('prev')}>
-					{'\u003C'}
-				</button>{' '}
+					{leftAngleBracket}
+				</button>
 				{String(page + 1).padStart(2, '0')} / {String(totalPages).padStart(2, '0')}
 				<button className={`px-4 py-1 ${!hasNext ? 'invisible' : ''}`} onClick={() => pageChangeHandler('next')}>
-					{'\u003E'}
+					{rightAngleBracket}
 				</button>
 			</div>
 		</>
