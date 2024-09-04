@@ -45,9 +45,6 @@ function Hit({
 						classNames={{ highlighted: highlightedClasses, nonHighlighted: 'font-light' }}
 					/>
 				</p>
-				{/* <p>${hit.text[0]}</p> */}
-				{/* <p>${hit.tags[0]}</p>
-      				<p>${hit.place[0]}</p> */}
 			</a>
 		</li>
 	);

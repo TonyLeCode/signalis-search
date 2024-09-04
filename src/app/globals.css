@@ -12,6 +12,7 @@ body {
 	font-size: 1.2rem;
 	letter-spacing: 0.5px;
 	min-height: 100vh;
+	min-height: 100lvh;
 	display: flex;
 	flex-direction: column;
 }
@@ -61,6 +62,7 @@ input::-webkit-search-cancel-button {
 
 .ais-InfiniteHits-list {
 	max-height: calc(100vh - 13rem);
+	max-height: calc(100lvh - 13rem);
 }
 
 .ais-InfiniteHits-list::-webkit-scrollbar {
@@ -202,6 +204,7 @@ input::-webkit-search-cancel-button {
 @media (min-width: 640px) {
 	.ais-InfiniteHits-list {
 		max-height: calc(100vh - 16rem);
+		max-height: calc(100lvh - 16rem);
 	}
 	.entry-title:after,
 	.entry-title:before {
