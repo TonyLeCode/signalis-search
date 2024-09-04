@@ -1,4 +1,4 @@
-import { transcriptions, memories, subChapters, chapters } from './transcriptions/';
+import { transcriptions, memories, subChapters, chapters } from './transcriptions/index';
 
 export function getAllEntrySlugs(): string[] {
 	return memories.map((memory) => memory.slug);
