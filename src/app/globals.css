@@ -60,8 +60,8 @@ input::-webkit-search-cancel-button {
 }
 
 .ais-InfiniteHits-list {
-	max-height: calc(100vh - 14rem);
-	max-height: calc(100lvh - 14rem);
+	max-height: calc(100vh - 15rem);
+	max-height: calc(100lvh - 15rem);
 }
 
 .ais-InfiniteHits-list::-webkit-scrollbar {
