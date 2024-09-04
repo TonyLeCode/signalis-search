@@ -18,7 +18,6 @@ body {
 }
 main {
 	flex: 1;
-	/* min-height: calc(100vh - 4rem); */
 }
 .bg {
 	color: white;
@@ -61,8 +60,8 @@ input::-webkit-search-cancel-button {
 }
 
 .ais-InfiniteHits-list {
-	max-height: calc(100vh - 13rem);
-	max-height: calc(100lvh - 13rem);
+	max-height: calc(100vh - 14rem);
+	max-height: calc(100lvh - 14rem);
 }
 
 .ais-InfiniteHits-list::-webkit-scrollbar {
@@ -195,11 +194,6 @@ input::-webkit-search-cancel-button {
 		opacity: 1;
 	}
 }
-/* .accordion-animate {
-  max-height: 0;
-  overflow:hidden;
-  transition: max-height ease-out;
-} */
 
 @media (min-width: 640px) {
 	.ais-InfiniteHits-list {
