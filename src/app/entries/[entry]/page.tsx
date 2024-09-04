@@ -1,7 +1,7 @@
-import { getAllEntrySlugs, getEntry } from '@/app/lib/transcriptions';
+import { getAllEntrySlugs, getEntry } from '@/lib/transcriptions';
 import EntryPage from './EntryPage';
 import { Metadata } from 'next';
-import { tokenize } from '@/app/lib/tokenize';
+import { tokenize } from '@/lib/tokenize';
 import { notFound } from 'next/navigation';
 
 type Props = { params: { entry: string } };

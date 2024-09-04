@@ -1,66 +1,47 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-
-function useMediaQuery(query: string) {
-	const [matches, setMatches] = useState(false);
-
-	useEffect(() => {
-		setMatches(window.matchMedia(query).matches);
-	}, []);
-
-	useEffect(() => {
-		const mediaQuery = window.matchMedia(query);
-		const listener = (event: MediaQueryListEvent) => setMatches(event.matches);
-
-		mediaQuery.addEventListener('change', listener);
-
-		return () => mediaQuery.removeEventListener('change', listener);
-	}, [query]);
-
-	return matches;
-}
+import { useMediaQuery } from '@/hooks';
 
 interface ItemsProps {
 	part: string;
 	entries: {
 		title: string;
 		place: string;
+		slug: string;
 	}[];
 	index: number;
 }
 
+const leftAngleBracket = '\u003C';
+const rightAngleBracket = '\u003E';
+
 export default function Accordion({ part, entries, index }: ItemsProps) {
 	const [open, setOpen] = useState(false);
-	const isMobile = useMediaQuery('(min-width: 640px)');
+
+	const isMobile = useMediaQuery('(min-width: 640px)'); // We don't compare the boolean, but we check if media query changes to calculate height
+	const usesReducedMotion = useMediaQuery('(prefers-reduced-motion)');
+
 	const ref = useRef<HTMLUListElement>(null);
 	const itemsRef = useRef<HTMLAnchorElement[]>([]);
 
 	useEffect(() => {
 		if (ref.current) {
-			const reduceMotion = window.matchMedia('(prefers-reduced-motion)').matches;
 			const scrollHeight = ref.current.scrollHeight;
 			const itemHeight = 32;
 			const duration = 10 * (scrollHeight / itemHeight) + 140;
 
-			ref.current.style.maxHeight = open ? `${scrollHeight}px` : '';
-
-			if (reduceMotion) {
-				ref.current.style.transition = 'none';
-			} else {
-				ref.current.style.transition = `max-height ${duration}ms ease-in-out`;
-			}
+			ref.current.style.setProperty('--max-height', `${open ? scrollHeight : 0}px`);
+			ref.current.style.setProperty('--duration', `${duration}ms`);
 		}
 
 		itemsRef.current.forEach((item, index) => {
-			const reduceMotion = window.matchMedia('(prefers-reduced-motion)').matches;
-			if (item && !reduceMotion) {
+			if (item && !usesReducedMotion) {
 				const delay = index * 13; // milliseconds
-				item.style.animation = open ? `150ms ease-in ${delay}ms fly-left, 150ms ease-in ${delay}ms fade` : '';
-				item.style.animationFillMode = open ? 'both' : '';
+				item.style.setProperty('--delay', `${delay}ms`);
 			}
 		});
-	}, [open, isMobile]);
+	}, [open, isMobile, usesReducedMotion]);
 
 	return (
 		<li key={part} className="accordion fly-right-fade" style={{ animationDelay: `${index * 50 + 100}ms` }}>
@@ -76,7 +57,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 				{part}
 			</button>
 
-			<ul ref={ref} className={`max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
+			<ul ref={ref} className={`accordion-ul max-h-0 overflow-hidden ${open ? 'mb-1' : ''}`}>
 				{entries.map((entry, i) => {
 					return (
 						<li key={entry.title + entry.place}>
@@ -86,18 +67,18 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 								ref={(el: HTMLAnchorElement | null) => {
 									if (el) itemsRef.current[i] = el;
 								}}
-								href={`/entries/${entry.title.replace(/\s/gm, '-')}`}
+								href={`/entries/${entry.slug}`}
 								key={entry.title}
-								className="flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm"
+								className={`${open ? 'accordion-item' : ''} flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm`}
 							>
 								<div title={entry.title}>
 									{entry.title.substring(0, 30)}
 									{entry.title.length >= 30 ? '...' : ''}
 								</div>
 								<div className="text-sm font-light text-white/80 sm:ml-auto sm:text-base">
-									{'\u003C'}
+									{leftAngleBracket}
 									{entry.place}
-									{'\u003E'}
+									{rightAngleBracket}
 								</div>
 							</a>
 						</li>
