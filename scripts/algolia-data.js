@@ -1,16 +1,16 @@
 const algoliasearch = require('algoliasearch');
 require('dotenv').config();
 
-const part1 = require('../src/app/lib/transcriptions/Part-1-The Penrose.json');
-const part2 = require('../src/app/lib/transcriptions/Part-2-Reeducation.json');
-const part3 = require('../src/app/lib/transcriptions/Part-3-Workers.json');
-const part4 = require('../src/app/lib/transcriptions/Part-4-Hospital.json');
-const part5 = require('../src/app/lib/transcriptions/Part-5-Protektors.json');
-const part6 = require('../src/app/lib/transcriptions/Part-6-Excavation.json');
-const part7 = require('../src/app/lib/transcriptions/Part-7-Nowhere.json');
-const part8 = require('../src/app/lib/transcriptions/Part-8-Memory.json');
-const part9 = require('../src/app/lib/transcriptions/Part-9-Rotfront.json');
-const part10 = require('../src/app/lib/transcriptions/Part-10-End.json');
+const part1 = require('../src/lib/transcriptions/Part-1-The Penrose.json');
+const part2 = require('../src/lib/transcriptions/Part-2-Reeducation.json');
+const part3 = require('../src/lib/transcriptions/Part-3-Workers.json');
+const part4 = require('../src/lib/transcriptions/Part-4-Hospital.json');
+const part5 = require('../src/lib/transcriptions/Part-5-Protektors.json');
+const part6 = require('../src/lib/transcriptions/Part-6-Excavation.json');
+const part7 = require('../src/lib/transcriptions/Part-7-Nowhere.json');
+const part8 = require('../src/lib/transcriptions/Part-8-Memory.json');
+const part9 = require('../src/lib/transcriptions/Part-9-Rotfront.json');
+const part10 = require('../src/lib/transcriptions/Part-10-End.json');
 
 function getAllEntries() {
 	const transcriptions = [part1, part2, part3, part4, part5, part6, part7, part8, part9, part10];
